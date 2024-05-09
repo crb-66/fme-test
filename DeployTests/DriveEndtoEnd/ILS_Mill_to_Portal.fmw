@@ -1,0 +1,1335 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        D:\FME\fme.exe D:\Projects\FIRST\ILS_Mill_to_Portal.fmw
+#          --DestDataset_ARCGISPORTALFEATURES "https://webgis-uat.weyer.com/gisportal"
+#          --SourceDataset_MSSQL_SPATIAL "ILS"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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23/jNPf8cQ2PN2nBSjN2/ABOdCEjWBgITvO7pv0C/Xaanv80x4iR0Zni4sLLeUOwAKhB+wGoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACoQbAAqEGwAKhBsACo8W9WCNaMgZbovwAAAABJRU5ErkJggg=="
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="1231.38 224.377"
+#!   DOC_TOP_LEFT="-473.501 -132.498"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24187"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="e0729dda-5c53-4e59-a493-0796c757dfca"
+#!   FME_DOCUMENT_PRIORGUID="a3535164-225a-46a6-a312-005a19fa2499,41287547-9bd9-4f13-bab8-bf14f2109919,573b9f33-c40d-49b9-881e-bae7bd34ea50,1bcfcb8f-b685-4b18-b2b3-7320d37a597f,d5be64de-271c-46a1-9a5e-cbe170224f5d,ee5dc781-076c-4429-ae21-f588b506ffc9,051875a1-bc6f-4947-a813-1b82a388635c"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.0.0 (20240304 - Build 24187 - WIN64)"
+#!   LAST_SAVE_DATE="2024-04-10T08:40:43"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="ArcGISPro30"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1153.14 450.005"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="MSSQL_SPATIAL"
+#!   DATASET="$(SourceDataset_MSSQL_SPATIAL)"
+#!   KEYWORD="MSSQL_SPATIAL_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="mssql_where_clause_wwjd &quot;&quot; mssql_geom_column &quot;&quot; mssql_geog_column &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) mssql_spatial_type char(254) multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP mssql_reader_group mssql_where_clause_wwjd%mssql_geog_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP mssql_geog_group mssql_has_geog%mssql_geom_column%mssql_geog_column Spatial&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG mssql_where_clause_wwjd MODE,SQL;FORMAT,MSSQL_SPATIAL WHERE Clause&quot; &quot;&quot; &quot;GUI IGNORE_VALUE ACTIVECHOICE mssql_has_geog Yes,mssql_geom_column%No,mssql_geog_column Specify Geography (Geodetic) Column&quot; No &quot;GUI OPTIONAL WHOLE_LINE TEXT mssql_geom_column Geometry Column&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT mssql_geog_column Geography Column&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Indexed IndexedNotNull Unique UniqueClustered Clustered ClusteredNotNull NotNull PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24187"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="MSSQL_SPATIAL_IN_APPLICATION_INTENT MSSQL_SPATIAL_IN_READ_CACHE_SIZE MSSQL_SPATIAL_IN_ASSUME_ONE_SRID_PER_COL MSSQL_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS MSSQL_SPATIAL_IN_USE_MAKE_VALID MSSQL_SPATIAL_IN_BEGIN_SQL{0} MSSQL_SPATIAL_IN_END_SQL{0} MSSQL_SPATIAL_OUT_BULK_INSERT MSSQL_SPATIAL_OUT_TRANSACTION_INTERVAL MSSQL_SPATIAL_OUT_BEGIN_SQL{0} MSSQL_SPATIAL_OUT_END_SQL{0} MSSQL_SPATIAL_OUT_ORIENT_POLYGONS MSSQL_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#!   DATASET="$(DestDataset_ARCGISPORTALFEATURES)"
+#!   KEYWORD="ARCGISPORTALFEATURES_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="arcgisonline_type {FME_GEN_GEOMETRY} arcgisonline_mode &quot;&quot; arcgisonline_truncate_layer &quot;&quot; fme_update_geometry YES fme_feature_operation INSERT fme_table_handling USE_EXISTING"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="arcgisonline_attachment{}.content_type String arcgisonline_attachment{}.data String arcgisonline_attachment{}.globalid GlobalID(38) arcgisonline_attachment{}.id Integer arcgisonline_attachment{}.name String arcgisonline_attachment{}.size Integer arcgisonline_globalid GlobalID(38) arcgisonline_objectid Integer arcgisonline_subtype_code Integer arcgisonline_subtype_name String arcgisonline_type String fme_basename String(50) fme_color String(50) fme_dataset String(50) fme_db_operation String fme_feature_type String(50) fme_fill_color String(50) fme_geometry String(50) fme_primary_axis Double fme_rotation Double fme_secondary_axis Double fme_start_angle Double fme_sweep_angle Double fme_text_size Double fme_text_string String(50) fme_type String(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP arcgisonline_layer_group fme_feature_operation%fme_table_handling%fme_update_geometry%fme_match_id_attribute Layer&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_match_id_attribute%Update,UPDATE,fme_match_columns,fme_match_id_attribute%Delete,DELETE,fme_update_geometry,fme_match_id_attribute%Upsert,UPSERT%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,fme_match_id_attribute Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING Feature Type Handling&quot; USE_EXISTING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI WHOLE_LINE ATTR fme_match_id_attribute ALLOW_NEW Upsert Match Column&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="&lt;&gt;|\\&quot;;=:$?*)([%#&apos;&amp;+-]^~,{}./`!@"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="URL"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24187"
+#!   COORDSYS="USA_Contiguous_Albers_Equal_Area_Conic"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ARCGISPORTALFEATURES_IN_FEATURES_PER_REQUEST ARCGISPORTALFEATURES_OUT_FEATURES_PER_REQUEST ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID ARCGISPORTALFEATURES_IN_VERIFY_HTTPS ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS ARCGISPORTALFEATURES_OUT_ASYNC_WRITE ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT ARCGISPORTALFEATURES_OUT_ASYNC_FEATURE_SERVICE_CREATE_FILEGDB"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcGIS Portal URL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcGIS Portal URL"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bit"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar_max"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar_max"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbinary_max"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="image"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nvarchar_max"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ntext"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uniqueidentifier"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="tinyint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="identity"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime2"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime2(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetimeoffset(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smalldatetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time(width)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="money"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallmoney"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varbinary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Integer"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Integer"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Integer"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="SmallInteger"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="SmallInteger"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Single"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Date"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="String"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="OID"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="OID(width)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="Double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="SmallInteger"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="GUID(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="GlobalID(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_circularstring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_compoundcurve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_curvepolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_linestring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_linestring"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_linestring"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="mssql_spatial_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="MSSQL_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="arcgisonline_no_geom"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ARCGISPORTALFEATURES"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Mills"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="dbo"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_NAMEDGEOMTYPE="Shape,mssql_spatial_circularstring&lt;space&gt;mssql_spatial_compoundcurve&lt;space&gt;mssql_spatial_curvepolygon&lt;space&gt;mssql_spatial_geometrycollection&lt;space&gt;mssql_spatial_linestring&lt;space&gt;mssql_spatial_multilinestring&lt;space&gt;mssql_spatial_multipoint&lt;space&gt;mssql_spatial_multipolygon&lt;space&gt;mssql_spatial_point&lt;space&gt;mssql_spatial_polygon"
+#!   POSITION="-473.50137501375013 91.878218782187815"
+#!   BOUNDING_RECT="-473.50137501375013 91.878218782187815 436 65"
+#!   ORDER="500000000000027"
+#!   COLLAPSED="true"
+#!   KEYWORD="MSSQL_SPATIAL_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Source" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MillID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MillName" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ParentCompany" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="State" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrimaryMillType" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SubMillType" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Status" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TL_Region" ATTR_TYPE="varchar(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TL_Area" ATTR_TYPE="varchar(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MicroMarketName" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MicroMarketID" ATTR_TYPE="smallint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Latitude" ATTR_TYPE="numeric(38,8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Longitude" ATTR_TYPE="numeric(38,8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ModifiedOn" ATTR_TYPE="datetime2" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Address1" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Address2" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Address3" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ZipCode" ATTR_TYPE="varchar(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DestinationID" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LIMSName" ATTR_TYPE="varchar(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MapLabel" ATTR_TYPE="varchar(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ForiskID" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ForiskName" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ForiskStatus" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Region" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Capacity" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Units" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Species" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EndUse" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Demand_tons" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="RecycledPct" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Newsprint" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Printing_Writing" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Household_Sanitary" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Packaging" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Specialty_DissolvingPulp" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MarketPulp" ATTR_TYPE="numeric(38,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Certification" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_geog_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_geog_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_geom_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_has_geog" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_reader_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="mssql_where_clause_wwjd" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="OneMill_from_FME"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="arcgisonline_point"
+#!   POSITION="213.87921879218823 -67.498374983749841"
+#!   BOUNDING_RECT="213.87921879218823 -67.498374983749841 544 65"
+#!   ORDER="500000000000029"
+#!   COLLAPSED="true"
+#!   KEYWORD="ARCGISPORTALFEATURES_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="Integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Source" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MillID" ATTR_TYPE="Integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MillName" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ParentCompany" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="State" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PrimaryMillType" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SubMillType" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Status" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TL_Region" ATTR_TYPE="String(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TL_Area" ATTR_TYPE="String(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MicroMarketName" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MicroMarketID" ATTR_TYPE="SmallInteger" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Latitude" ATTR_TYPE="Double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Longitude" ATTR_TYPE="Double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ModifiedOn" ATTR_TYPE="Date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Address1" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Address2" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Address3" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Country" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ZipCode" ATTR_TYPE="String(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DestinationID" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LIMSName" ATTR_TYPE="String(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MapLabel" ATTR_TYPE="String(255)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ForiskID" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ForiskName" ATTR_TYPE="String(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ForiskStatus" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Region" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Capacity" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Units" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Species" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EndUse" ATTR_TYPE="String(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Demand_tons" ATTR_TYPE="Integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="RecycledPct" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Newsprint" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Printing_Writing" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Household_Sanitary" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Packaging" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Specialty_DissolvingPulp" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="MarketPulp" ATTR_TYPE="Single" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Certification" ATTR_TYPE="String(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="arcgisonline_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_id_attribute" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="USE_EXISTING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_update_geometry" PARM_VALUE="&lt;Unused&gt;"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI URL DestDataset_ARCGISPORTALFEATURES https%http Portal URL:"
+#!   DEFAULT_VALUE="https://webgis-uat.weyer.com/gisportal"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI STRING SourceDataset_MSSQL_SPATIAL Database:"
+#!   DEFAULT_VALUE="ILS"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJEZXN0RGF0YXNldF9BUkNHSVNQT1JUQUxGRUFUVVJFUyIsInByb21wdCI6IlBvcnRhbCBVUkw6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHJpbVdoaXRlc3BhY2UiOnRydWUsInR5cGUiOiJ0ZXh0IiwidXJsU2V0dGluZ3MiOnsidmFsaWRTY2hlbWVzIjpbImh0dHBzIiwiaHR0cCJdfSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiU0VSVkVSIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiU0VSVkVSIn19LHsibmFtZSI6IlVTRV9TU1BJIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiVVNFX1NTUEkifX0seyJuYW1lIjoiVVNFUl9OQU1FIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiVVNFUl9OQU1FIn19LHsibmFtZSI6IlBBU1NXT1JEIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiUEFTU1dPUkQifX0seyJuYW1lIjoiQ09NTUFORF9USU1FT1VUIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiQ09NTUFORF9USU1FT1VUIn19LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9EQVRBQkFTRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6IkZNRV9TRU5USU5FTF9EQVRBU0VUX0ZPUl9EQVRBQkFTRV9MSVNUSU5HIiwicmVhZENhbGxUb1VzZSI6InJlYWRTY2hlbWEiLCJ2YWx1ZXNUb1VzZSI6ImZlYXR1cmVUeXBlcyJ9LCJkZWZhdWx0VmFsdWUiOiJJTFMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9NU1NRTF9TUEFUSUFMIiwicHJvbXB0IjoiRGF0YWJhc2U6IiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="DestDataset_ARCGISPORTALFEATURES" 
+#!   DEFAULT_VALUE="https://webgis-uat.weyer.com/gisportal"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI URL DestDataset_ARCGISPORTALFEATURES https%http Portal URL:"
+#! />
+#!     <INFO NAME="SourceDataset_MSSQL_SPATIAL" 
+#!   DEFAULT_VALUE="ILS"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI STRING SourceDataset_MSSQL_SPATIAL Database:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION ArcGISPro30
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE MSSQL_SPATIAL_IN_SERVER_MSSQL_SPATIAL_1,SourceDataset_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_USE_SSPI_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_USER_NAME_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_PASSWORD_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_ENCRYPT_CONNECTION_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_MULTI_SUBNET_FAILOVER_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_FME_CONNECTION_GROUP_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_PERSISTENT_CONNECTION_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_COMMAND_TIMEOUT_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_FME_GROUP_NAMED1_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_WHERE_CLAUSE_WWJD_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_USE_SEARCH_ENVELOPE_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINX_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINY_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_CLIP_TO_ENVELOPE_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_ADVANCED_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_APPLICATION_INTENT_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_READ_CACHE_SIZE_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_ASSUME_ONE_SRID_PER_COL_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_USE_MAKE_VALID_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_BEGIN_SQL{0}_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_END_SQL{0}_MSSQL_SPATIAL_1,DestDataset_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FME_GROUP_NAMED1_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_AUTH_TYPE_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_SELECTION_SOURCE_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FOLDER_NAME_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_GROUP_ID_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURESERVICE_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURESERVICE_NAME_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_EXISTING_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_PUBLISH_GROUP_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_TARGET_WKID_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_USE_BRANCH_VERSIONING_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_VERSION_NAME_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_RECONCILE_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_POST_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_AGOL_ADV_PARM_GROUP_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURES_PER_REQUEST_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_USE_GLOBAL_ID_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_CREATE_FILEGDB_ARCGISPORTALFEATURES_1
+# ============================================================================
+DEFAULT_MACRO DestDataset_ARCGISPORTALFEATURES https://webgis-uat.weyer.com/gisportal
+
+DEFAULT_MACRO SourceDataset_MSSQL_SPATIAL ILS
+
+# ============================================================================
+INCLUDE [ if {{$(DestDataset_ARCGISPORTALFEATURES$encode)} == {}} { puts_real {Parameter 'DestDataset_ARCGISPORTALFEATURES' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_MSSQL_SPATIAL$encode)} == {}} { puts_real {Parameter 'SourceDataset_MSSQL_SPATIAL' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} MSSQL_SPATIAL
+MULTI_READER_KEYWORD{0} MSSQL_SPATIAL_1
+MULTI_READER_GEN_DIRECTIVES{0} NAMED_CONNECTION,ILSDV-UAT-RO,READ_CACHE_SIZE,10,TABLELIST,dbo.Mills,CLIP_TO_ENVELOPE,NO,COMMAND_TIMEOUT,30,WHERE_CLAUSE_WWJD,,ADVANCED,,BEGIN_SQL<opencurly>0<closecurly>,,HANDLE_MULTIPLE_SPATIAL_COLUMNS,NO,USE_MAKE_VALID,NO,EXPOSE_ATTRS_GROUP,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,MSSQL_SPATIAL_EXPOSE_FORMAT_ATTRS,,CREATE_FEATURE_TABLES_FROM_DATA,Yes,SEARCH_ENVELOPE_MINY,0,APPLICATION_INTENT,ReadWrite,ASSUME_ONE_SRID_PER_COL,,_MERGE_SCHEMAS,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,END_SQL<opencurly>0<closecurly>,,SEARCH_ENVELOPE_MAXX,0,PERSISTENT_CONNECTION,NO,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_MINX,0
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} ARCGISPORTALFEATURES
+PRIMARY_DEST_KEYWORD{0} ARCGISPORTALFEATURES_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} ADD_WRITER_NEXT_ACTION,automatic,USER,svc-fme,ASYNC_WRITE_WAIT,<lt>Unused<gt>,FEATURE_SERVICE_CREATE_FILEGDB,NO,ASYNC_WRITE,NO,FEATURE_SERVICE_HANDLING,CREATE_IF_MISSING,TARGET_WKID,102100,FEATURESERVICE_NAME,OneMill,NC,<lt>Unused<gt>,POST,<lt>Unused<gt>,AGOL_ADV_PARM_GROUP,,FEATURE_SERVICE_SELECTION_SOURCE,User,VERSION_NAME,<lt>Unused<gt>,FEATURES_PER_REQUEST,1000,PRESERVE_GLOBALID,<lt>Unused<gt>,VERIFY_HTTPS,Yes,ASYNC_WRITE_TIMEOUT,<lt>Unused<gt>,EXISTING_FEATURE_SERVICE_HANDLING,USE_EXISTING,USE_BRANCH_VERSIONING,NO,GROUP_ID,<lt>Unused<gt>,FEATURESERVICE,<lt>Unused<gt>,AUTH_TYPE,generate_token,RECONCILE,<lt>Unused<gt>,USE_GLOBAL_ID,No,FOLDER_NAME,<lt>solidus<gt>,DESTINATION_DATASETTYPE_VALIDATION,Yes
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "MSSQL_SPATIAL_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER MSSQL_SPATIAL MSSQL_SPATIAL_1
+DEFAULT_MACRO MSSQL_SPATIAL_IN_SERVER_MSSQL_SPATIAL_1 ILSDB-UAT
+MSSQL_SPATIAL_1_SERVER "$(MSSQL_SPATIAL_IN_SERVER_MSSQL_SPATIAL_1)"
+GUI TEXT_ENCODED MSSQL_SPATIAL_IN_SERVER_MSSQL_SPATIAL_1 Server:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_MSSQL_SPATIAL_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER MSSQL_SPATIAL MSSQL_SPATIAL_1
+DEFAULT_MACRO SourceDataset_MSSQL_SPATIAL_1 $(SourceDataset_MSSQL_SPATIAL)
+MSSQL_SPATIAL_1_DATASET "$(SourceDataset_MSSQL_SPATIAL_1)"
+GUI DYNAMIC_SINGLE_SELECT SourceDataset_MSSQL_SPATIAL_1 FME_SENTINEL_DATASET_FOR_DATABASE_LISTING,SERVER,$[SERVER],USE_SSPI,$[USE_SSPI],USER_NAME,$[USER_NAME],PASSWORD,$[PASSWORD],COMMAND_TIMEOUT,$[COMMAND_TIMEOUT],FME_READ_SCHEMA,YES,RETRIEVE_ALL_DATABASES,YES Database:
+DEFAULT_MACRO MSSQL_SPATIAL_IN_USE_SSPI_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_USE_SSPI "$(MSSQL_SPATIAL_IN_USE_SSPI_MSSQL_SPATIAL_1)"
+GUI ACTIVECHOICE_LOOKUP MSSQL_SPATIAL_IN_USE_SSPI_MSSQL_SPATIAL_1 Windows<space>Authentication,YES,MSSQL_SPATIAL_IN_USER_NAME_MSSQL_SPATIAL_1,MSSQL_SPATIAL_IN_PASSWORD_MSSQL_SPATIAL_1%SQL<space>Server<space>Authentication,NO Authentication:
+DEFAULT_MACRO MSSQL_SPATIAL_IN_USER_NAME_MSSQL_SPATIAL_1 svc-APP_FME_RO
+MSSQL_SPATIAL_1_USER_NAME "$(MSSQL_SPATIAL_IN_USER_NAME_MSSQL_SPATIAL_1)"
+GUI TEXT MSSQL_SPATIAL_IN_USER_NAME_MSSQL_SPATIAL_1 Username:
+DEFAULT_MACRO MSSQL_SPATIAL_IN_PASSWORD_MSSQL_SPATIAL_1 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszeD1Y1a2boDA0uCIVL0nBAgPy0KJMI/gUnc2+E/n0J+9G8H4pgZKmNLodtTtzX1w+YVVEOt/24Rs2A99B7QRLqtrgEmidTeb1kyXm5IqPkRyQwAHf2pVlwDKB4JNQKeviytnIbH06B7z3C+W4kwXOosXVQsRJ4XYNX6rk9uFdRubjv8a97S6u1XU6eVkxU502JnEL59H0jL6cME44OKS1yCmUGTTJegAJSVlbSlJTe8i3CtFtlPYAsdreICMJysJSmQE7RXNfXwUk+OznWmxnf91Bt13nkUsIgEJV4qDbE5PYCj5E+qH92khxbJmY8oHnsQznUR6pTsKfqhkxtEh41j3mBR4nhKtN)
+MSSQL_SPATIAL_1_PASSWORD "$(MSSQL_SPATIAL_IN_PASSWORD_MSSQL_SPATIAL_1)"
+GUI PASSWORD_ENCODED MSSQL_SPATIAL_IN_PASSWORD_MSSQL_SPATIAL_1 Password:
+DEFAULT_MACRO MSSQL_SPATIAL_IN_ENCRYPT_CONNECTION_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_ENCRYPT_CONNECTION "$(MSSQL_SPATIAL_IN_ENCRYPT_CONNECTION_MSSQL_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX MSSQL_SPATIAL_IN_ENCRYPT_CONNECTION_MSSQL_SPATIAL_1 YES%NO Encrypt Connection
+DEFAULT_MACRO MSSQL_SPATIAL_IN_MULTI_SUBNET_FAILOVER_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_MULTI_SUBNET_FAILOVER "$(MSSQL_SPATIAL_IN_MULTI_SUBNET_FAILOVER_MSSQL_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX MSSQL_SPATIAL_IN_MULTI_SUBNET_FAILOVER_MSSQL_SPATIAL_1 YES%NO Multi-Subnet Failover
+# The dataset this mapping file was generated from was:
+DEFAULT_MACRO MSSQL_SPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_MSSQL_SPATIAL_1 Yes
+MSSQL_SPATIAL_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(MSSQL_SPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_MSSQL_SPATIAL_1)"
+DEFAULT_MACRO MSSQL_SPATIAL_IN_FME_CONNECTION_GROUP_MSSQL_SPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP MSSQL_SPATIAL_IN_FME_CONNECTION_GROUP_MSSQL_SPATIAL_1 MSSQL_SPATIAL_IN_NAMED_CONNECTION%MSSQL_SPATIAL_IN_PERSISTENT_CONNECTION_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_COMMAND_TIMEOUT_MSSQL_SPATIAL_1 Database Connection
+# ============================================================================
+# The following specifies whether to create a persistent connection. If set
+# to YES, the connection will remain open until FME is shut down.
+DEFAULT_MACRO MSSQL_SPATIAL_IN_PERSISTENT_CONNECTION_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_PERSISTENT_CONNECTION "$(MSSQL_SPATIAL_IN_PERSISTENT_CONNECTION_MSSQL_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX MSSQL_SPATIAL_IN_PERSISTENT_CONNECTION_MSSQL_SPATIAL_1 YES%NO Persistent Connection
+# Timeout
+DEFAULT_MACRO MSSQL_SPATIAL_IN_COMMAND_TIMEOUT_MSSQL_SPATIAL_1 30
+MSSQL_SPATIAL_1_COMMAND_TIMEOUT "$(MSSQL_SPATIAL_IN_COMMAND_TIMEOUT_MSSQL_SPATIAL_1)"
+GUI OPTIONAL INTEGER MSSQL_SPATIAL_IN_COMMAND_TIMEOUT_MSSQL_SPATIAL_1 Command Timeout (Seconds):
+DEFAULT_MACRO MSSQL_SPATIAL_IN_FME_GROUP_NAMED1_MSSQL_SPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP MSSQL_SPATIAL_IN_FME_GROUP_NAMED1_MSSQL_SPATIAL_1 MSSQL_SPATIAL_IN_TABLELIST%MSSQL_SPATIAL_IN_WHERE_CLAUSE_WWJD_MSSQL_SPATIAL_1 Constraints
+# ============================================================================
+# And an optional global WHERE clause
+DEFAULT_MACRO MSSQL_SPATIAL_IN_WHERE_CLAUSE_WWJD_MSSQL_SPATIAL_1 
+MSSQL_SPATIAL_1_WHERE_CLAUSE_WWJD "$(MSSQL_SPATIAL_IN_WHERE_CLAUSE_WWJD_MSSQL_SPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG MSSQL_SPATIAL_IN_WHERE_CLAUSE_WWJD_MSSQL_SPATIAL_1 MODE,WHERE WHERE Clause:
+# ============================================================================
+# bounding box with optional clipping
+DEFAULT_MACRO MSSQL_SPATIAL_IN_EXPOSE_ATTRS_GROUP_MSSQL_SPATIAL_1 
+MSSQL_SPATIAL_1_EXPOSE_ATTRS_GROUP "$(MSSQL_SPATIAL_IN_EXPOSE_ATTRS_GROUP_MSSQL_SPATIAL_1)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO MSSQL_SPATIAL_IN_USE_SEARCH_ENVELOPE_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_USE_SEARCH_ENVELOPE "$(MSSQL_SPATIAL_IN_USE_SEARCH_ENVELOPE_MSSQL_SPATIAL_1)"
+GUI ACTIVEDISCLOSUREGROUP MSSQL_SPATIAL_IN_USE_SEARCH_ENVELOPE_MSSQL_SPATIAL_1 MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINX_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINY_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_CLIP_TO_ENVELOPE_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_SEARCH_METHOD%MSSQL_SPATIAL_IN_SEARCH_METHOD_FILTER%MSSQL_SPATIAL_IN_SEARCH_ORDER%MSSQL_SPATIAL_IN_SEARCH_FEATURE%MSSQL_SPATIAL_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINX_MSSQL_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINX_MSSQL_SPATIAL_1 0
+MSSQL_SPATIAL_1_SEARCH_ENVELOPE "$(MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINX_MSSQL_SPATIAL_1)"
+GUI OPTIONAL FLOAT MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINX_MSSQL_SPATIAL_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINY_MSSQL_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINY_MSSQL_SPATIAL_1 0
+MSSQL_SPATIAL_1_SEARCH_ENVELOPE "$(MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINY_MSSQL_SPATIAL_1)"
+GUI OPTIONAL FLOAT MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MINY_MSSQL_SPATIAL_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_MSSQL_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_MSSQL_SPATIAL_1 0
+MSSQL_SPATIAL_1_SEARCH_ENVELOPE "$(MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_MSSQL_SPATIAL_1)"
+GUI OPTIONAL FLOAT MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_MSSQL_SPATIAL_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_MSSQL_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_MSSQL_SPATIAL_1 0
+MSSQL_SPATIAL_1_SEARCH_ENVELOPE "$(MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_MSSQL_SPATIAL_1)"
+GUI OPTIONAL FLOAT MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_MSSQL_SPATIAL_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MSSQL_SPATIAL_1 <Unused>, 
+DEFAULT_MACRO MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MSSQL_SPATIAL_1 
+MSSQL_SPATIAL_1_SEARCH_ENVELOPE "$(MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MSSQL_SPATIAL_1)"
+GUI OPTIONAL COORDSYS MSSQL_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_MSSQL_SPATIAL_1 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP MSSQL_SPATIAL_IN_CLIP_TO_ENVELOPE_MSSQL_SPATIAL_1 <Unused>,NO 
+DEFAULT_MACRO MSSQL_SPATIAL_IN_CLIP_TO_ENVELOPE_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_CLIP_TO_ENVELOPE "$(MSSQL_SPATIAL_IN_CLIP_TO_ENVELOPE_MSSQL_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX MSSQL_SPATIAL_IN_CLIP_TO_ENVELOPE_MSSQL_SPATIAL_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO MSSQL_SPATIAL_IN_ADVANCED_MSSQL_SPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP MSSQL_SPATIAL_IN_ADVANCED_MSSQL_SPATIAL_1 MSSQL_SPATIAL_IN_APPLICATION_INTENT_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_READ_CACHE_SIZE_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_ASSUME_ONE_SRID_PER_COL_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_USE_MAKE_VALID_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_BEGIN_SQL{0}_MSSQL_SPATIAL_1%MSSQL_SPATIAL_IN_END_SQL{0}_MSSQL_SPATIAL_1 Advanced
+DEFAULT_MACRO MSSQL_SPATIAL_IN_APPLICATION_INTENT_MSSQL_SPATIAL_1 ReadWrite
+MSSQL_SPATIAL_1_APPLICATION_INTENT "$(MSSQL_SPATIAL_IN_APPLICATION_INTENT_MSSQL_SPATIAL_1)"
+GUI CHOICE MSSQL_SPATIAL_IN_APPLICATION_INTENT_MSSQL_SPATIAL_1 ReadWrite%ReadOnly Application Intent
+# ============================================================================
+# This keyword controls how many records to retrieve at one time into local
+# memory from the provider
+DEFAULT_MACRO MSSQL_SPATIAL_IN_READ_CACHE_SIZE_MSSQL_SPATIAL_1 10
+MSSQL_SPATIAL_1_READ_CACHE_SIZE "$(MSSQL_SPATIAL_IN_READ_CACHE_SIZE_MSSQL_SPATIAL_1)"
+GUI OPTIONAL TEXT MSSQL_SPATIAL_IN_READ_CACHE_SIZE_MSSQL_SPATIAL_1 Number Of Records To Fetch At A Time
+# ============================================================================
+# Assume that geometry columns have exactly one SRID?
+DEFAULT_MACRO MSSQL_SPATIAL_IN_ASSUME_ONE_SRID_PER_COL_MSSQL_SPATIAL_1 
+MSSQL_SPATIAL_1_ASSUME_ONE_SRID_PER_COL "$(MSSQL_SPATIAL_IN_ASSUME_ONE_SRID_PER_COL_MSSQL_SPATIAL_1)"
+GUI OPTIONAL CHOICE MSSQL_SPATIAL_IN_ASSUME_ONE_SRID_PER_COL_MSSQL_SPATIAL_1 YES%NO Geometry Columns Have Exactly One SRID
+# ============================================================================
+# The following specifies whether to maintain multiple geometries or not.
+# If set to YES, the Multiple Geometries will be read into an aggregate
+# If NO, the default behavior of selecting one geometry will occur
+DEFAULT_MACRO MSSQL_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_HANDLE_MULTIPLE_SPATIAL_COLUMNS "$(MSSQL_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_MSSQL_SPATIAL_1)"
+GUI CHOICE MSSQL_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_MSSQL_SPATIAL_1 YES%NO Handle Multiple Spatial Columns
+# ============================================================================
+# The following specifies whether to use the MakeValid() command when reading
+# with a search envelope, may modify invalid source data
+# If YES, invalid data will be made valid; if valid will be read normally.
+# If NO, invalid data will cause the translation to fail.
+DEFAULT_MACRO MSSQL_SPATIAL_IN_USE_MAKE_VALID_MSSQL_SPATIAL_1 NO
+MSSQL_SPATIAL_1_USE_MAKE_VALID "$(MSSQL_SPATIAL_IN_USE_MAKE_VALID_MSSQL_SPATIAL_1)"
+GUI CHOICE MSSQL_SPATIAL_IN_USE_MAKE_VALID_MSSQL_SPATIAL_1 YES%NO Use MakeValid with Search Envelope
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# table.
+DEFAULT_MACRO MSSQL_SPATIAL_IN_BEGIN_SQL{0}_MSSQL_SPATIAL_1 
+MSSQL_SPATIAL_1_BEGIN_SQL{0} "$(MSSQL_SPATIAL_IN_BEGIN_SQL{0}_MSSQL_SPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG MSSQL_SPATIAL_IN_BEGIN_SQL{0}_MSSQL_SPATIAL_1 MODE,SQL;FORMAT,MSSQL_SPATIAL SQL To Run Before Read
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# tables.
+DEFAULT_MACRO MSSQL_SPATIAL_IN_END_SQL{0}_MSSQL_SPATIAL_1 
+MSSQL_SPATIAL_1_END_SQL{0} "$(MSSQL_SPATIAL_IN_END_SQL{0}_MSSQL_SPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG MSSQL_SPATIAL_IN_END_SQL{0}_MSSQL_SPATIAL_1 MODE,SQL;FORMAT,MSSQL_SPATIAL SQL To Run After Read
+DEFAULT_MACRO MSSQL_SPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_MSSQL_SPATIAL_1 Yes
+MSSQL_SPATIAL_1_CREATE_FEATURE_TABLES_FROM_DATA "$(MSSQL_SPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_MSSQL_SPATIAL_1)"
+# ============================================================================
+DEFAULT_MACRO MSSQL_SPATIAL_IN_ATTRIBUTE_READING_MSSQL_SPATIAL_1 DEFLINE_ATTRS
+MSSQL_SPATIAL_1_ATTRIBUTE_READING "$(MSSQL_SPATIAL_IN_ATTRIBUTE_READING_MSSQL_SPATIAL_1)"
+# ============================================================================
+MSSQL_SPATIAL_1_GENERATE_FME_BUILD_NUM 24187
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ARCGISPORTALFEATURES_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER ARCGISPORTALFEATURES ARCGISPORTALFEATURES_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ARCGISPORTALFEATURES_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ARCGISPORTALFEATURES ARCGISPORTALFEATURES_1
+DEFAULT_MACRO DestDataset_ARCGISPORTALFEATURES_1 $(DestDataset_ARCGISPORTALFEATURES)
+GUI URL DestDataset_ARCGISPORTALFEATURES_1 https%http Portal URL:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FME_GROUP_NAMED1_ARCGISPORTALFEATURES_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP ARCGISPORTALFEATURES_OUT_FME_GROUP_NAMED1_ARCGISPORTALFEATURES_1 ARCGISPORTALFEATURES_OUT_DATASET%ARCGISPORTALFEATURES_OUT_AUTH_TYPE_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1 Connection
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_AUTH_TYPE_ARCGISPORTALFEATURES_1 generate_token
+ARCGISPORTALFEATURES_1_AUTH_TYPE "$(ARCGISPORTALFEATURES_OUT_AUTH_TYPE_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISPORTALFEATURES_OUT_AUTH_TYPE_ARCGISPORTALFEATURES_1 "\"Web Service\",web_service,ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1"%"\"Generate Token\",generate_token,ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1"%Basic,Basic,ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1%Digest,Digest,ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1%NTLM,NTLM,ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1%Kerberos,Kerberos,ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1 Authentication Type:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_NC "$(ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1)"
+GUI NAMED_CONNECTION_ENCODED ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1 "Esri ArcGIS Portal (Template)" ArcGIS Portal Connection:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1 svc-fme
+ARCGISPORTALFEATURES_1_USER "$(ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1)"
+GUI STRING_ENCODED ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1 User:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1 fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszk+xJGJpDYOVbfJKnHPFyH+qF1t+qWnEclyIZW6309c9k/3RysCZO2auZN/PonNxKFRkPXHAtazVkm6RCdrspLJAupAPDzYFPVYS8mntpdGlD8eieHbcLae38zD06ukppcVLd2COfa9fZIkyUdGqivhaykOY6QOr30/Q5MLfMHtgQpH/JI+H6FL2LMmjjz/XL9dT3DWujSQPISdmogCkzPqlshEn71HB8AqMJC2qBS630cPiE7NA0ItSI/4VKwsY/o+jbs9OhIpYM0jBEf9aZbkyM2fMJiCLjoMXljlJNgPwDQnCwKefmsKre9B3at3kJbiWEA+z+tMk4OQ3+E3v7KyXpBAiSnNTs)
+ARCGISPORTALFEATURES_1_PASSWORD "$(ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1)"
+GUI PASSWORD_ENCODED ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1 Password:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_SELECTION_SOURCE_ARCGISPORTALFEATURES_1 User
+ARCGISPORTALFEATURES_1_FEATURE_SERVICE_SELECTION_SOURCE "$(ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_SELECTION_SOURCE_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_SELECTION_SOURCE_ARCGISPORTALFEATURES_1 User<space>Content,User,ARCGISPORTALFEATURES_OUT_GROUP_ID_ARCGISPORTALFEATURES_1%Group,Group,ARCGISPORTALFEATURES_OUT_FOLDER_NAME_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1 Item Source
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FOLDER_NAME_ARCGISPORTALFEATURES_1 <solidus>
+ARCGISPORTALFEATURES_1_FOLDER_NAME "$(ARCGISPORTALFEATURES_OUT_FOLDER_NAME_ARCGISPORTALFEATURES_1)"
+GUI WEB_SELECT_ENCODED ARCGISPORTALFEATURES_OUT_FOLDER_NAME_ARCGISPORTALFEATURES_1 DEPENDENT_PARAMETERS:NC:DATASET:AUTH_TYPE:USER:PASSWORD:VERIFY_HTTPS%SHOWID%PROMPTFORTITLE%NO_SEARCH%SINGLEDEPTH%ITEM_ICON:%MODULE:arcgisonlinefeatures.arcgisonlinefeatureswebselector%KEYVALS:mode,portalwriter,target,folders Folder
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_GROUP_ID_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_GROUP_ID "$(ARCGISPORTALFEATURES_OUT_GROUP_ID_ARCGISPORTALFEATURES_1)"
+GUI WEB_SELECT_ENCODED ARCGISPORTALFEATURES_OUT_GROUP_ID_ARCGISPORTALFEATURES_1 DEPENDENT_PARAMETERS:DATASET:NC:AUTH_TYPE:USER:PASSWORD:VERIFY_HTTPS%SHOWID%PROMPTFORTITLE%SINGLEDEPTH%NO_SEARCH%ITEM_ICON:%MODULE:arcgisonlinefeatures.arcgisonlinefeatureswebselector%KEYVALS:mode,portalwriter,target,groups Group
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1 CREATE_IF_MISSING
+ARCGISPORTALFEATURES_1_FEATURE_SERVICE_HANDLING "$(ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1 Use<space>Existing,USE_EXISTING,ARCGISPORTALFEATURES_OUT_FEATURESERVICE_NAME_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_EXISTING_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_CREATE_FILEGDB_ARCGISPORTALFEATURES_1%Create<space>If<space>Needed,CREATE_IF_MISSING,ARCGISPORTALFEATURES_OUT_FEATURESERVICE_ARCGISPORTALFEATURES_1%Overwrite<space>Existing,DROP_CREATE,ARCGISPORTALFEATURES_OUT_FEATURESERVICE_NAME_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_EXISTING_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1 Feature Service Handling
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FEATURESERVICE_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_FEATURESERVICE "$(ARCGISPORTALFEATURES_OUT_FEATURESERVICE_ARCGISPORTALFEATURES_1)"
+GUI WEB_SELECT_ENCODED ARCGISPORTALFEATURES_OUT_FEATURESERVICE_ARCGISPORTALFEATURES_1 DEPENDENT_PARAMETERS:NC:DATASET:AUTH_TYPE:USER:PASSWORD:VERIFY_HTTPS:FOLDER_NAME:GROUP_ID:FEATURE_SERVICE_SELECTION_SOURCE%SHOWID%PROMPTFORTITLE%NO_SEARCH%ITEM_ICON:%MODULE:arcgisonlinefeatures.arcgisonlinefeatureswebselector%KEYVALS:mode,portalwriter,target,featureservices Selected Feature Service
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FEATURESERVICE_NAME_ARCGISPORTALFEATURES_1 OneMill_from_FME
+ARCGISPORTALFEATURES_1_FEATURESERVICE_NAME "$(ARCGISPORTALFEATURES_OUT_FEATURESERVICE_NAME_ARCGISPORTALFEATURES_1)"
+GUI TEXT_EDIT_ENCODED ARCGISPORTALFEATURES_OUT_FEATURESERVICE_NAME_ARCGISPORTALFEATURES_1 Feature Service Name
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_EXISTING_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1 DROP_CREATE
+ARCGISPORTALFEATURES_1_EXISTING_FEATURE_SERVICE_HANDLING "$(ARCGISPORTALFEATURES_OUT_EXISTING_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1)"
+GUI LOOKUP_CHOICE ARCGISPORTALFEATURES_OUT_EXISTING_FEATURE_SERVICE_HANDLING_ARCGISPORTALFEATURES_1 Use<space>Existing,USE_EXISTING%Overwrite<space>Existing,DROP_CREATE If Feature Service Exists
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_PUBLISH_GROUP_ARCGISPORTALFEATURES_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP ARCGISPORTALFEATURES_OUT_PUBLISH_GROUP_ARCGISPORTALFEATURES_1 ARCGISPORTALFEATURES_OUT_TARGET_WKID_ARCGISPORTALFEATURES_1 Publishing
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_TARGET_WKID_ARCGISPORTALFEATURES_1 102100
+ARCGISPORTALFEATURES_1_TARGET_WKID "$(ARCGISPORTALFEATURES_OUT_TARGET_WKID_ARCGISPORTALFEATURES_1)"
+GUI OPTIONAL RANGE_SLIDER ARCGISPORTALFEATURES_OUT_TARGET_WKID_ARCGISPORTALFEATURES_1 2000%105000%0%OFF Target WKID:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_USE_BRANCH_VERSIONING_ARCGISPORTALFEATURES_1 NO
+ARCGISPORTALFEATURES_1_USE_BRANCH_VERSIONING "$(ARCGISPORTALFEATURES_OUT_USE_BRANCH_VERSIONING_ARCGISPORTALFEATURES_1)"
+GUI ACTIVEDISCLOSUREGROUP ARCGISPORTALFEATURES_OUT_USE_BRANCH_VERSIONING_ARCGISPORTALFEATURES_1 ARCGISPORTALFEATURES_OUT_VERSION_NAME_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_RECONCILE_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_POST_ARCGISPORTALFEATURES_1 Branch Versioning
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_VERSION_NAME_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_VERSION_NAME "$(ARCGISPORTALFEATURES_OUT_VERSION_NAME_ARCGISPORTALFEATURES_1)"
+GUI DYNAMIC_SINGLE_SELECT ARCGISPORTALFEATURES_OUT_VERSION_NAME_ARCGISPORTALFEATURES_1 $[DestDataset_ARCGISPORTALFEATURES_1],LIST_NAMES_MODE,VERSIONS,AUTH_TYPE,$[ARCGISPORTALFEATURES_OUT_AUTH_TYPE_ARCGISPORTALFEATURES_1],USER,$[ARCGISPORTALFEATURES_OUT_USER_ARCGISPORTALFEATURES_1],PASSWORD,$[ARCGISPORTALFEATURES_OUT_PASSWORD_ARCGISPORTALFEATURES_1],NC,$[ARCGISPORTALFEATURES_OUT_NC_ARCGISPORTALFEATURES_1],FEATURESERVICE,$[ARCGISPORTALFEATURES_OUT_FEATURESERVICE_ARCGISPORTALFEATURES_1],VERIFY_HTTPS,$[ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS_ARCGISPORTALFEATURES_1],FEATURE_SERVICE_SELECTION_SOURCE,$[ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_SELECTION_SOURCE_ARCGISPORTALFEATURES_1],GROUP_ID,$[ARCGISPORTALFEATURES_OUT_GROUP_ID_ARCGISPORTALFEATURES_1],FOLDER_NAME,$[ARCGISPORTALFEATURES_OUT_FOLDER_NAME_ARCGISPORTALFEATURES_1],_FORMAT_OVERRIDE_,ARCGISPORTALFEATURES Version Name:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_RECONCILE_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_RECONCILE "$(ARCGISPORTALFEATURES_OUT_RECONCILE_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISPORTALFEATURES_OUT_RECONCILE_ARCGISPORTALFEATURES_1 Yes,YES%No,NO,ARCGISPORTALFEATURES_OUT_POST_ARCGISPORTALFEATURES_1 Reconcile:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_POST_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_POST "$(ARCGISPORTALFEATURES_OUT_POST_ARCGISPORTALFEATURES_1)"
+GUI LOOKUP_CHOICE ARCGISPORTALFEATURES_OUT_POST_ARCGISPORTALFEATURES_1 "\"If No Conflicts\",IF_NO_CONFLICT"%Yes,YES%No,NO Post:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_AGOL_ADV_PARM_GROUP_ARCGISPORTALFEATURES_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP ARCGISPORTALFEATURES_OUT_AGOL_ADV_PARM_GROUP_ARCGISPORTALFEATURES_1 ARCGISPORTALFEATURES_OUT_FEATURES_PER_REQUEST_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_USE_GLOBAL_ID_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1%ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_CREATE_FILEGDB_ARCGISPORTALFEATURES_1 Advanced
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FEATURES_PER_REQUEST_ARCGISPORTALFEATURES_1 100
+ARCGISPORTALFEATURES_1_FEATURES_PER_REQUEST "$(ARCGISPORTALFEATURES_OUT_FEATURES_PER_REQUEST_ARCGISPORTALFEATURES_1)"
+GUI INTEGER ARCGISPORTALFEATURES_OUT_FEATURES_PER_REQUEST_ARCGISPORTALFEATURES_1 Features Per Request:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_USE_GLOBAL_ID_ARCGISPORTALFEATURES_1 No
+ARCGISPORTALFEATURES_1_USE_GLOBAL_ID "$(ARCGISPORTALFEATURES_OUT_USE_GLOBAL_ID_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE ARCGISPORTALFEATURES_OUT_USE_GLOBAL_ID_ARCGISPORTALFEATURES_1 Yes%No,ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID_ARCGISPORTALFEATURES_1 Use Global IDs:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_PRESERVE_GLOBALID "$(ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID_ARCGISPORTALFEATURES_1)"
+GUI CHOICE ARCGISPORTALFEATURES_OUT_PRESERVE_GLOBALID_ARCGISPORTALFEATURES_1 Yes%No Preserve Global ID:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS_ARCGISPORTALFEATURES_1 No
+ARCGISPORTALFEATURES_1_VERIFY_HTTPS "$(ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS_ARCGISPORTALFEATURES_1)"
+GUI CHOICE ARCGISPORTALFEATURES_OUT_VERIFY_HTTPS_ARCGISPORTALFEATURES_1 Yes%No Verify HTTPS Certificates:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_ARCGISPORTALFEATURES_1 NO
+ARCGISPORTALFEATURES_1_ASYNC_WRITE "$(ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_ARCGISPORTALFEATURES_1 Yes,YES%No,NO,ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT_ARCGISPORTALFEATURES_1,ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1 Asynchronous Writes:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_ASYNC_WRITE_WAIT "$(ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT_ARCGISPORTALFEATURES_1)"
+GUI ACTIVECHOICE_LOOKUP ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_WAIT_ARCGISPORTALFEATURES_1 Yes,YES%No,NO,ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1 Report Asynchronous Write Statuses:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1 <Unused>
+ARCGISPORTALFEATURES_1_ASYNC_WRITE_TIMEOUT "$(ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1)"
+GUI INTEGER ARCGISPORTALFEATURES_OUT_ASYNC_WRITE_TIMEOUT_ARCGISPORTALFEATURES_1 Timeout:
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_CREATE_FILEGDB_ARCGISPORTALFEATURES_1 YES
+ARCGISPORTALFEATURES_1_FEATURE_SERVICE_CREATE_FILEGDB "$(ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_CREATE_FILEGDB_ARCGISPORTALFEATURES_1)"
+GUI LOOKUP_CHOICE ARCGISPORTALFEATURES_OUT_FEATURE_SERVICE_CREATE_FILEGDB_ARCGISPORTALFEATURES_1 Yes,YES%No,NO Create Feature Service Using File Upload:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO ARCGISPORTALFEATURES_OUT_DESTINATION_DATASETTYPE_VALIDATION_ARCGISPORTALFEATURES_1 Yes
+ARCGISPORTALFEATURES_1_DESTINATION_DATASETTYPE_VALIDATION "$(ARCGISPORTALFEATURES_OUT_DESTINATION_DATASETTYPE_VALIDATION_ARCGISPORTALFEATURES_1)"
+# ============================================================================
+ARCGISPORTALFEATURES_1_GENERATE_FME_BUILD_NUM 24187
+ARCGISPORTALFEATURES_1_DATASET "$(DestDataset_ARCGISPORTALFEATURES_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)ILS_Mill_to_Portal.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.0.0 (20240304 - Build 24187 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_MSSQL_SPATIAL_1 MSSQL_SPATIAL_1
+DEFAULT_MACRO DATASET_KEYWORD_ARCGISPORTALFEATURES_1 ARCGISPORTALFEATURES_1
+# -------------------------------------------------------------------------
+
+MSSQL_SPATIAL_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ARCGISPORTALFEATURES_1_COORDINATE_SYSTEM USA_Contiguous_Albers_Equal_Area_Conic
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME ILS_Mill_to_Portal
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_MSSQL_SPATIAL_1)   INPUT FEATURE_TYPE *    ROUTE MSSQL_SPATIAL MSSQL_SPATIAL_1::dbo.Mills multi_reader_keyword,$(DATASET_KEYWORD_MSSQL_SPATIAL_1) TO FME_GENERIC ::dbo.Mills ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+MSSQL_SPATIAL_1_MERGE_DEF MSSQL_SPATIAL_1::dbo.Mills EXACT dbo.Mills DEFLINE mssql_where_clause_wwjd,,OBJECTID,integer,Source,varchar<openparen>255<closeparen>,MillID,integer,MillName,varchar<openparen>255<closeparen>,ParentCompany,varchar<openparen>255<closeparen>,City,varchar<openparen>255<closeparen>,State,varchar<openparen>255<closeparen>,PrimaryMillType,varchar<openparen>255<closeparen>,SubMillType,varchar<openparen>255<closeparen>,Status,varchar<openparen>255<closeparen>,TL_Region,varchar<openparen>100<closeparen>,TL_Area,varchar<openparen>100<closeparen>,MicroMarketName,varchar<openparen>50<closeparen>,MicroMarketID,smallint,Latitude,numeric<openparen>38<comma>8<closeparen>,Longitude,numeric<openparen>38<comma>8<closeparen>,ModifiedOn,datetime2,Address1,varchar<openparen>255<closeparen>,Address2,varchar<openparen>255<closeparen>,Address3,varchar<openparen>255<closeparen>,Country,varchar<openparen>50<closeparen>,ZipCode,varchar<openparen>10<closeparen>,DestinationID,varchar<openparen>50<closeparen>,LIMSName,varchar<openparen>100<closeparen>,MapLabel,varchar<openparen>255<closeparen>,ForiskID,varchar<openparen>50<closeparen>,ForiskName,varchar<openparen>200<closeparen>,ForiskStatus,varchar<openparen>50<closeparen>,Region,varchar<openparen>50<closeparen>,Capacity,numeric<openparen>38<comma>4<closeparen>,Units,varchar<openparen>50<closeparen>,Species,varchar<openparen>50<closeparen>,EndUse,varchar<openparen>200<closeparen>,Demand_tons,integer,RecycledPct,numeric<openparen>38<comma>4<closeparen>,Newsprint,numeric<openparen>38<comma>4<closeparen>,Printing_Writing,numeric<openparen>38<comma>4<closeparen>,Household_Sanitary,numeric<openparen>38<comma>4<closeparen>,Packaging,numeric<openparen>38<comma>4<closeparen>,Specialty_DissolvingPulp,numeric<openparen>38<comma>4<closeparen>,MarketPulp,numeric<openparen>38<comma>4<closeparen>,Certification,varchar<openparen>50<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "dbo.Mills_MSSQL_SPATIAL_1 Splitter"    INPUT FEATURE_TYPE dbo.Mills    OUTPUT FEATURE_TYPE dbo.Mills_MSSQL_SPATIAL_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC dbo.Mills_MSSQL_SPATIAL_1 TO ARCGISPORTALFEATURES __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>OneMill_from_FME<closeparen> COORDINATE_SYSTEM USA_Contiguous_Albers_Equal_Area_Conic GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+ARCGISPORTALFEATURES_1_DEF OneMill_from_FME   arcgisonline_type            arcgisonline_point   arcgisonline_mode            ""   arcgisonline_truncate_layer  ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   OBJECTID                     Integer   Source                       String(255)   MillID                       Integer   MillName                     String(255)   ParentCompany                String(255)   City                         String(255)   State                        String(255)   PrimaryMillType              String(255)   SubMillType                  String(255)   Status                       String(255)   TL_Region                    String(100)   TL_Area                      String(100)   MicroMarketName              String(50)   MicroMarketID                SmallInteger   Latitude                     Double   Longitude                    Double   ModifiedOn                   Date   Address1                     String(255)   Address2                     String(255)   Address3                     String(255)   Country                      String(50)   ZipCode                      String(10)   DestinationID                String(50)   LIMSName                     String(100)   MapLabel                     String(255)   ForiskID                     String(50)   ForiskName                   String(200)   ForiskStatus                 String(50)   Region                       String(50)   Capacity                     Single   Units                        String(50)   Species                      String(50)   EndUse                       String(200)   Demand_tons                  Integer   RecycledPct                  Single   Newsprint                    Single   Printing_Writing             Single   Household_Sanitary           Single   Packaging                    Single   Specialty_DissolvingPulp     Single   MarketPulp                   Single   Certification                String(50)

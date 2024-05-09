@@ -1,0 +1,52 @@
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|Current FME version: FME 2024.0.0.0 (20240304 - Build 24187 - WIN64)
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|System Time: 20240411160944 UTC
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|Workspace was last saved in FME version: FME 2024.0.0.0 (20240304 - Build 24187 - WIN64)
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME_HOME is 'D:\FMEFlow\Server\fme\'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Form (floating)
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|Temporary License: 81 days left.
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|Machine host name is: TLTSTAPGISFME01
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|OS Locale Name     : en_US
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\FME_Flow_Share\repositories\DeployTests\DriveEndtoEnd/'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'ILS_Mill_to_Portal.fmw'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.0.0.0'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|Operating System: Microsoft Windows Server 2019 64-bit  (Build 17763)
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Platform: WIN64
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|System Status: 29.69 GB of disk space available in the FME temporary folder (C:\Users\SVCARC~1\AppData\Local\Temp\fmeengines\localhost_Engine1)
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|System Status: 31.73 GB of physical memory available
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|System Status: 126.94 GB of virtual memory available
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|START - ProcessID: 17452, peak process memory usage: 70424 kB, current process memory usage: 69796 kB
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `D:\FMEFlow\Server\fme\fme.exe' `D:/FME_Flow_Share/repositories/DeployTests/DriveEndtoEnd/ILS_Mill_to_Portal.fmw' `--DestDataset_ARCGISPORTALFEATURES' `https://webgis-uat.weyer.com/gisportal' `--SourceDataset_MSSQL_SPATIAL' `ILS' `--FME_LAUNCH_VIEWER_APP' `YES'
+2024-04-11 09:09:44|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\svcArcGISEnt-UAT\AppData\Roaming\Safe Software\FME\'
+2024-04-11 09:09:44|   0.1|  0.1|INFORM|Shared folders for formats are : D:\FMEFlow\Server\fme\datasources;D:\FME_Flow_Share\resources\engine\Formats;C:\Users\svcArcGISEnt-UAT\Documents\FME\Formats
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|Shared folders for transformers are : C:\Users\svcArcGISEnt-UAT\AppData\Roaming\Safe Software\FME\Packages\24187-win64\transformers;D:\FMEFlow\Server\fme\transformers;D:\FME_Flow_Share\repositories\DeployTests\DriveEndtoEnd;D:\FME_Flow_Share\resources\engine\Transformers
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|Shared folders for coordinate systems are : D:\FME_Flow_Share\resources\engine\CoordinateSystems;C:\Users\svcArcGISEnt-UAT\Documents\FME\CoordinateSystems
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|Shared folders for coordinate system exceptions are : D:\FME_Flow_Share\resources\engine\CoordinateSystemExceptions;C:\Users\svcArcGISEnt-UAT\Documents\FME\CoordinateSystemExceptions
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|Shared folders for coordinate system grid overrides are : D:\FME_Flow_Share\resources\engine\CoordinateSystemGridOverrides;C:\Users\svcArcGISEnt-UAT\Documents\FME\CoordinateSystemGridOverrides
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : D:\FME_Flow_Share\resources\engine\CsmapTransformationExceptions;C:\Users\svcArcGISEnt-UAT\Documents\FME\CsmapTransformationExceptions
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\svcArcGISEnt-UAT\Documents\FME\TransformerCategories
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `PRIMARY_DEST'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `PRIMARY_DEST_DEF'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Current working folder is `D:\FME_Flow_Share\repositories'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\SVCARC~1\AppData\Local\Temp\fmeengines\localhost_Engine1', set from environment variable `FME_TEMP'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\SVCARC~1\AppData\Local\Temp\fmeengines\localhost_Engine1'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `D:\FMEFlow\Server\fme\'
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 95.20 GB
+2024-04-11 09:09:44|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 71.40 GB
+2024-04-11 09:09:44|   0.2|  0.1|INFORM|Creating writer for format: 
+2024-04-11 09:09:44|   0.2|  0.0|INFORM|Creating reader for format: 
+2024-04-11 09:09:44|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2024-04-11 09:09:44|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding MSSQL_SPATIAL Reader with keyword MSSQL_SPATIAL_1
+2024-04-11 09:09:44|   0.2|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2024-04-11 09:09:45|   1.4|  1.2|ERROR |Connection database directory 'C:\Users\svcArcGISEnt-UAT\AppData\Roaming\Safe Software\FME\' does not exist. Please choose an existing directory
+2024-04-11 09:09:45|   1.4|  0.0|ERROR |Internal Error: Unable to access connection database
+2024-04-11 09:09:45|   1.4|  0.0|INFORM|Translation FAILED with 2 error(s) and 0 warning(s) (0 feature(s) output)
+2024-04-11 09:09:45|   1.4|  0.0|INFORM|FME Session Duration: 1.6 seconds. (CPU: 0.5s user, 0.9s system)
+2024-04-11 09:09:45|   1.4|  0.0|INFORM|END - ProcessID: 17452, peak process memory usage: 74008 kB, current process memory usage: 74008 kB

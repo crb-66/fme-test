@@ -1,0 +1,627 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        D:\FME\fme.exe C:\Users\WYADML~1\AppData\Local\Temp\3\wb_publish_1712851175453_13936/DriveEndtoEnd.fmw
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2842.08 673.132"
+#!   DOC_TOP_LEFT="189.064 -188.752"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24187"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="b07f774f-49e6-4db6-aed2-8ea9a8c022ad"
+#!   FME_DOCUMENT_PRIORGUID="8ab75dd6-0c20-42c8-9fbd-666e204ac55c,0e7eca34-b7d0-49b7-b1e9-e0aa2bf30e95,4d3e6ec8-e78c-4366-a513-a71c94d0fdf4,5f28a514-a608-4974-8137-95197aa0d5c0,1f003035-fd59-45d4-905a-afe635e29eab,28eb9075-8355-43bb-963c-9f652fb676f8,eeed67c3-c550-4e96-ab64-3c81a212658a,77eb6fec-c140-436c-8bea-29343e286ffc"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.0.0 (20240304 - Build 24187 - WIN64)"
+#!   LAST_SAVE_DATE="2024-04-11T08:59:35"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="ArcGISPro30"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-152.345 777.352"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="80"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="DeployTests"
+#! />
+#! <ITEM
+#!   NAME="DriveEndtoEnd.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBParameterNode_13:WORKSPACE_FILE"
+#!   VALUE="$(FME_MF_DIR_ENCODED)Mill_Ring_Portal_to_FIRSTDW.fmw"
+#! />
+#! <MODIFICATION
+#!   UID=":WBParameterNode_5:WORKSPACE_FILE"
+#!   VALUE="$(FME_MF_DIR_ENCODED)ILS_Mill_to_Portal.fmw"
+#! />
+#! <MODIFICATION
+#!   UID=":WBParameterNode_6:WORKSPACE_FILE"
+#!   VALUE="$(FME_MF_DIR_ENCODED)Mill_Portal_to_FIRSTDW.fmw"
+#! />
+#! </MODIFICATIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbXX0="
+#! >
+#! <PARAMETER_INFO>
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="WorkspaceRunner"
+#!   VERSION="5"
+#!   POSITION="821.10196101961037 234.3773437734377"
+#!   BOUNDING_RECT="821.10196101961037 234.3773437734377 574 65"
+#!   ORDER="500000000000033"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_failure_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_proc_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_processes{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="LAST_KNOWN_PARAM_DEFS" PARM_VALUE="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJEZXN0RGF0YXNldF9BUkNHSVNQT1JUQUxGRUFUVVJFUyIsInByb21wdCI6IlBvcnRhbCBVUkw6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHJpbVdoaXRlc3BhY2UiOnRydWUsInR5cGUiOiJ0ZXh0IiwidXJsU2V0dGluZ3MiOnsidmFsaWRTY2hlbWVzIjpbImh0dHBzIiwiaHR0cCJdfSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiU0VSVkVSIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiU0VSVkVSIn19LHsibmFtZSI6IlVTRV9TU1BJIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiVVNFX1NTUEkifX0seyJuYW1lIjoiVVNFUl9OQU1FIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiVVNFUl9OQU1FIn19LHsibmFtZSI6IlBBU1NXT1JEIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiUEFTU1dPUkQifX0seyJuYW1lIjoiQ09NTUFORF9USU1FT1VUIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiQ09NTUFORF9USU1FT1VUIn19LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9EQVRBQkFTRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6IkZNRV9TRU5USU5FTF9EQVRBU0VUX0ZPUl9EQVRBQkFTRV9MSVNUSU5HIiwicmVhZENhbGxUb1VzZSI6InJlYWRTY2hlbWEiLCJ2YWx1ZXNUb1VzZSI6ImZlYXR1cmVUeXBlcyJ9LCJkZWZhdWx0VmFsdWUiOiJJTFMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9NU1NRTF9TUEFUSUFMIiwicHJvbXB0IjoiRGF0YWJhc2U6IiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="/>
+#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_TO_BATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_FILE" PARM_VALUE="$(FME_MF_DIR)ILS_Mill_to_Portal.fmw"/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="DestDataset_ARCGISPORTALFEATURES,https:&lt;solidus&gt;&lt;solidus&gt;webgis-uat.weyer.com&lt;solidus&gt;gisportal,SourceDataset_MSSQL_SPATIAL,ILS"/>
+#!     <XFORM_PARM PARM_NAME="WS_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Step1_ILS_Mill_To_Portal"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="Creator"
+#!   VERSION="6"
+#!   POSITION="189.06439064390639 234.3773437734377"
+#!   BOUNDING_RECT="189.06439064390639 234.3773437734377 436 65"
+#!   ORDER="500000000000034"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="SystemCaller"
+#!   VERSION="3"
+#!   POSITION="1597.7293672936726 424.37984379843795"
+#!   BOUNDING_RECT="1597.7293672936726 424.37984379843795 471 65"
+#!   ORDER="500000000000036"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CMD" PARM_VALUE="D:&lt;backslash&gt;ArcGIS&lt;backslash&gt;Pro&lt;backslash&gt;bin&lt;backslash&gt;Python&lt;backslash&gt;envs&lt;backslash&gt;arcgispro-py3&lt;backslash&gt;python.exe&lt;space&gt;$(FME_MF_DIR_ENCODED)create_drive_time_areas&lt;backslash&gt;OneMillDriveTimeAreas.py"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Step2_DriveTimeAreas"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="WorkspaceRunner"
+#!   VERSION="5"
+#!   POSITION="2228.1472814728154 484.37984379843795"
+#!   BOUNDING_RECT="2228.1472814728154 484.37984379843795 803 65"
+#!   ORDER="500000000000037"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_failure_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_proc_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_processes{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="LAST_KNOWN_PARAM_DEFS" PARM_VALUE="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0FSQ0dJU1BPUlRBTEZFQVRVUkVTIiwicHJvbXB0IjoiUG9ydGFsIFVSTDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0cmltV2hpdGVzcGFjZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ1cmxTZXR0aW5ncyI6eyJ2YWxpZFNjaGVtZXMiOlsiaHR0cHMiLCJodHRwIl19LCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJyZWFkIiwiZGVmYXVsdFZhbHVlIjoiRDpcXEZNRV9TaGFyZVxcVExERVZEQlNGUlMwMV9GSVJTVF9GSVJTVERXX0VkaXRvci5zZGUiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkVzcmkgQ29ubmVjdGlvbiBGaWxlIiwiZmlsdGVyIjpbIiouc2RlIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X0dFT0RBVEFCQVNFX1NERV8xIiwicHJvbXB0IjoiQ29ubmVjdGlvbiBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOnRydWUsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="/>
+#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_TO_BATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_FILE" PARM_VALUE="$(FME_MF_DIR)Mill_Portal_to_FIRSTDW.fmw"/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="SourceDataset_ARCGISPORTALFEATURES,https:&lt;solidus&gt;&lt;solidus&gt;webgis-uat.weyer.com&lt;solidus&gt;gisportal,DestDataset_GEODATABASE_SDE_1,D:&lt;backslash&gt;FME_Share&lt;backslash&gt;TLDEVDBSFRS01_FIRST_FIRSTDW_Editor.sde"/>
+#!     <XFORM_PARM PARM_NAME="WS_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Step3_Copy_to_FIRSTDW"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="SystemCaller"
+#!   VERSION="3"
+#!   POSITION="1599.7293672936726 12.96839360117232"
+#!   BOUNDING_RECT="1599.7293672936726 12.96839360117232 469 65"
+#!   ORDER="500000000000036"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CMD" PARM_VALUE="D:&lt;backslash&gt;ArcGIS&lt;backslash&gt;Pro&lt;backslash&gt;bin&lt;backslash&gt;Python&lt;backslash&gt;envs&lt;backslash&gt;arcgispro-py3&lt;backslash&gt;python.exe&lt;space&gt;$(FME_MF_DIR_ENCODED)DriveRings&lt;backslash&gt;OneMillRings.py"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Step2_DriveTimeRings"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="WorkspaceRunner"
+#!   VERSION="5"
+#!   POSITION="2228.1472814728154 -123.75172359999971"
+#!   BOUNDING_RECT="2228.1472814728154 -123.75172359999971 803 65"
+#!   ORDER="500000000000037"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="SUCCEEDED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_failure_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="_proc_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_processes{}" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="BLOCKING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="LAST_KNOWN_PARAM_DEFS" PARM_VALUE="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxGTUVfU2hhcmVcXFRMREVWREJTRlJTMDFfRklSU1RfRklSU1REV19FZGl0b3Iuc2RlIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFc3JpIENvbm5lY3Rpb24gRmlsZSIsImZpbHRlciI6WyIqLnNkZSJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9HRU9EQVRBQkFTRV9TREUiLCJwcm9tcHQiOiJDb25uZWN0aW9uIEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6dHJ1ZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0FSQ0dJU1BPUlRBTEZFQVRVUkVTIiwicHJvbXB0IjoiUG9ydGFsIFVSTDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0cmltV2hpdGVzcGFjZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ1cmxTZXR0aW5ncyI6eyJ2YWxpZFNjaGVtZXMiOlsiaHR0cHMiLCJodHRwIl19LCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"/>
+#!     <XFORM_PARM PARM_NAME="MAX_PROC" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_TO_BATCH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_FILE" PARM_VALUE="$(FME_MF_DIR)Mill_Ring_Portal_to_FIRSTDW.fmw"/>
+#!     <XFORM_PARM PARM_NAME="WORKSPACE_PARAMETERS" PARM_VALUE="DestDataset_GEODATABASE_SDE,D:&lt;backslash&gt;FME_Share&lt;backslash&gt;TLDEVDBSFRS01_FIRST_FIRSTDW_Editor.sde,SourceDataset_ARCGISPORTALFEATURES,https:&lt;solidus&gt;&lt;solidus&gt;webgis-uat.weyer.com&lt;solidus&gt;gisportal"/>
+#!     <XFORM_PARM PARM_NAME="WS_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Step3_Copy_RingResultsto_FIRSTDW"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 0 SUCCEEDED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 SUCCEEDED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION ArcGISPro30
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)DriveEndtoEnd.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.0.0 (20240304 - Build 24187 - WIN64)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME DriveEndtoEnd
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_CLASSIC_Creator }    $(Creator_2D3D) { $(Creator_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_CREATED        fme_feature_type Creator         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 7"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {Step1_ILS_Mill_To_Portal_64e86668_8cf6_443f_94d6_2ba91dc538593} ]
+# ------------------------------------------------------------------------------
+# Determine the "NULL" device so we can ensure we don't get stray output
+# messing up our stdout if we are running workspaces in the background
+# See http://wiki.tcl.tk/1649 for a description of the tcl_platform
+# variable, the "platform" part seems to have valid values windows, unix, and
+# macintosh (the latter of which is actually pre-OS X)
+# PR#83334 - On Windows when we are creating child process asynchronously
+# (BLOCKING == NO), we use FME's @System() call (FME_Execute System) ensuring
+# that the child process doesn't inherit handles from parent process. This allows
+# parent process to close feature caches and not depend on spawned processes.
+Tcl2 if { $tcl_platform(platform) == {windows} } {         set ::null_device {NUL:};         set ::__WR_ENV_HELPER__ {};         set ::__platform__ {windows};      } else {         set ::null_device {/dev/null};         set ::__WR_ENV_HELPER__ {/usr/bin/env FME_SUBPROCESS_RUN_DETACHED=1};         set ::__platform__ {unix};      };
+# ------------------------------------------------------------------------------
+# Quote parameter strings for inclusion in command file using raw strings, with
+# a tag computed to be unique within source string ${_uniq_=_sourceString_=_uniq_}
+# [FMEENGINE-62584]
+Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $sourceString] == 0} {      return {\"\"};   };   if {[regexp {[^a-zA-Z0-9_]} $sourceString]} {     set uniq {};     while {[string first [format \"=%s\}\" $uniq] $sourceString] >= 0} {       if {[catch {incr uniq}]} { set uniq 0 };     };     return [format \"$\{%s=%s=%s\}\" $uniq $sourceString $uniq];   } else {     return $sourceString;   }; };
+# ------------------------------------------------------------------------------
+# Main runner procedure, takes in a parameter list as string which is delimited
+# by \x07 (BELL) character and the workspace to run. <parmListString> consists of
+# parameter name and value pairs. Value part is always wwjd encoded whether it is
+# literal value or resolved expression value resulting from @EvaluateExpression().
+# Each value part had to be wwjd encoded because mapping file parsing was mangling
+# the values by removing double quotes and spaces when passed in to this Tcl routine.
+Tcl2 proc $(FME_UUID_SAFE)_runner { parmListString workspaceFile } {    global $(FME_UUID_SAFE)_commands;    global $(FME_UUID_SAFE)_batch_count;    incr $(FME_UUID_SAFE)_batch_count 0;    if { [info exists $(FME_UUID_SAFE)_commands] == 0 } {       set $(FME_UUID_SAFE)_commands {};    };    set workspaceFileUnix [regsub -all {\\} [FME_DecodeText $workspaceFile] {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    package require json;    package require base64;    set pwdParms {};    foreach {parmDef} [dict get [::json::json2dict [::base64::decode {eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJEZXN0RGF0YXNldF9BUkNHSVNQT1JUQUxGRUFUVVJFUyIsInByb21wdCI6IlBvcnRhbCBVUkw6IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHJpbVdoaXRlc3BhY2UiOnRydWUsInR5cGUiOiJ0ZXh0IiwidXJsU2V0dGluZ3MiOnsidmFsaWRTY2hlbWVzIjpbImh0dHBzIiwiaHR0cCJdfSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJyZWFkZXJWYWx1ZXMiLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiU0VSVkVSIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiU0VSVkVSIn19LHsibmFtZSI6IlVTRV9TU1BJIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiVVNFX1NTUEkifX0seyJuYW1lIjoiVVNFUl9OQU1FIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiVVNFUl9OQU1FIn19LHsibmFtZSI6IlBBU1NXT1JEIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiUEFTU1dPUkQifX0seyJuYW1lIjoiQ09NTUFORF9USU1FT1VUIiwidmFsdWUiOnsicGFyYW1ldGVyIjoiQ09NTUFORF9USU1FT1VUIn19LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9EQVRBQkFTRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6IkZNRV9TRU5USU5FTF9EQVRBU0VUX0ZPUl9EQVRBQkFTRV9MSVNUSU5HIiwicmVhZENhbGxUb1VzZSI6InJlYWRTY2hlbWEiLCJ2YWx1ZXNUb1VzZSI6ImZlYXR1cmVUeXBlcyJ9LCJkZWZhdWx0VmFsdWUiOiJJTFMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9NU1NRTF9TUEFUSUFMIiwicHJvbXB0IjoiRGF0YWJhc2U6IiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0=}]] {parameters}] {       if {{password} == [dict get $parmDef type]} {          lappend pwdParms [dict get $parmDef name];       };    };    foreach {parmName parmValue} $parameterList {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { $parmName in $pwdParms } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend $(FME_UUID_SAFE)_commands [join $commandArguments " "];    incr $(FME_UUID_SAFE)_batch_count;    if { {Yes} == {No} && {<Unused>} > 1  && $$(FME_UUID_SAFE)_batch_count <= {<Unused>} } {       FME_LogMessage fme_inform 933450 Step1_ILS_Mill_To_Portal $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Step1_ILS_Mill_To_Portal $commandArgumentsToLog;    };    if { {Yes} != {No} || $$(FME_UUID_SAFE)_batch_count == {<Unused>} } {       set $(FME_UUID_SAFE)_batch_count 0;       set commandFile [$(FME_UUID_SAFE)_writeCommandFile $$(FME_UUID_SAFE)_commands];       if { $commandFile == {} } {          return FAILURE;       };       set $(FME_UUID_SAFE)_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {Yes} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [$(FME_UUID_SAFE)_runCommand $cmdArgs $workspaceFileUnix]; }
+# ------------------------------------------------------------------------------
+# When batching commands, any overflow commands will be run at the end. Say you
+# batch by 2 and there are 5 incoming features. Then we will have 2 batches with
+# 2 commands each and 1 overflow batch with 1 command
+Tcl2 proc $(FME_UUID_SAFE)_flushNeeded { } {    global $(FME_UUID_SAFE)_commands;    if { [info exists $(FME_UUID_SAFE)_commands] == 1 && [llength $$(FME_UUID_SAFE)_commands] > 0 } {       return YES;    } else {       return NO;    }; }
+Tcl2 proc $(FME_UUID_SAFE)_flushPending { } {    global $(FME_UUID_SAFE)_commands;    if { [info exists $(FME_UUID_SAFE)_commands] == 1 && [llength $$(FME_UUID_SAFE)_commands] > 0 } {       set workspaceToRun [lindex $$(FME_UUID_SAFE)_commands 0];       set commandFile [$(FME_UUID_SAFE)_writeCommandFile $$(FME_UUID_SAFE)_commands];       if { $commandFile == {} } {          return FAILURE;       };       set $(FME_UUID_SAFE)_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {Yes} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [$(FME_UUID_SAFE)_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+# ------------------------------------------------------------------------------
+# Build and run the command
+Tcl2 proc $(FME_UUID_SAFE)_runCommand {commandArguments workspaceFileUnix} {    if { {Yes} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {Yes} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {Yes} == {No} } {        lappend commandArguments {&};    };    if { {Yes} == {No} } {       after 1000;       while { [FME_CanSpawnFme <Unused>] == {0} } {             after 2000;       };    };    if { Yes == {No} && {<Unused>} > 1 } {       FME_LogMessage fme_inform 933452 Step1_ILS_Mill_To_Portal $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Step1_ILS_Mill_To_Portal $commandArguments;    };    if { $::__platform__ == {windows} && {Yes} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Step1_ILS_Mill_To_Portal $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global $(FME_UUID_SAFE)_process_count;       incr $(FME_UUID_SAFE)_process_count;       if { {Yes} == {No} } {           FME_LogMessage fme_inform 933455 Step1_ILS_Mill_To_Portal $workspaceFileUnix;           global $(FME_UUID_SAFE)_all_processes;           lappend $(FME_UUID_SAFE)_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Step1_ILS_Mill_To_Portal $workspaceFileUnix;       };       return SUCCESS;    }; }
+# ------------------------------------------------------------------------------
+# Create and write commands to command file
+Tcl2 proc $(FME_UUID_SAFE)_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Step1_ILS_Mill_To_Portal $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+# ------------------------------------------------------------------------------
+# Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
+# to mapping file
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step1_ILS_Mill_To_Portal_ExecutorAndRouter }    INPUT  FEATURE_TYPE Creator_CREATED    TEST @Tcl2("$(FME_UUID_SAFE)_runner {DestDataset_ARCGISPORTALFEATUREShttps:<solidus><solidus>webgis-uat.weyer.com<solidus>gisportalSourceDataset_MSSQL_SPATIALILS} {@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR$encode)ILS_Mill_to_Portal.fmw,Step1_ILS_Mill_To_Portal)}") == SUCCESS    OUTPUT { PASSED FEATURE_TYPE Step1_ILS_Mill_To_Portal_SUCCEEDED         }
+Tcl2 proc $(FME_UUID_SAFE)_summarizer { } {     global $(FME_UUID_SAFE)_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr $(FME_UUID_SAFE)_process_count 0;     FME_SetAttribute _proc_count [set $(FME_UUID_SAFE)_process_count];     global $(FME_UUID_SAFE)_all_processes;     if {[info exists $(FME_UUID_SAFE)_all_processes]} {         set index 0;         foreach pid [set $(FME_UUID_SAFE)_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+# ------------------------------------------------------------------------------
+# Clean up the last batch, if anything was pending.
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Step1_ILS_Mill_To_Portal_CleanerUpperOfBatchesInitiator }    CREATE_AT_END yes    OUTPUT { FEATURE_TYPE Step1_ILS_Mill_To_Portal___cleanup___ }
+# ------------------------------------------------------------------------------
+# We only want to actually trigger the flush if there was something to run
+# Otherwise we send out spurious extra features at the end of a run that are completely unnecessary
+# As it stands, we are set up here to send out one "dud" completely empty feature that will
+# go out FAILURE if there was a problem. It will have no attributes. Only sent out if there was something
+# left to process and the run did not succeed.
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step1_ILS_Mill_To_Portal_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT { FEATURE_TYPE Step1_ILS_Mill_To_Portal___cleanup___ }    TEST { @Tcl2($(FME_UUID_SAFE)_flushNeeded) == YES }    OUTPUT { PASSED FEATURE_TYPE Step1_ILS_Mill_To_Portal___cleanup___ }
+# Note that we don't output anything if we succeed -- we only catch and output the failure
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step1_ILS_Mill_To_Portal_CleanerUpperOfBatchesRunner }    INPUT { FEATURE_TYPE Step1_ILS_Mill_To_Portal___cleanup___ }    TEST { @Tcl2($(FME_UUID_SAFE)_flushPending) == SUCCESS }
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Step1_ILS_Mill_To_Portal_SummaryMaker }    CREATE_AT_END yes
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Step1_ILS_Mill_To_Portal SUCCEEDED Splitter"   INPUT FEATURE_TYPE Step1_ILS_Mill_To_Portal_SUCCEEDED   OUTPUT FEATURE_TYPE Step1_ILS_Mill_To_Portal_SUCCEEDED_0_TEVn89gtSqg=   OUTPUT FEATURE_TYPE Step1_ILS_Mill_To_Portal_SUCCEEDED_1_3nWMg/Gsuqs=
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Step2_DriveTimeAreas }    INPUT  FEATURE_TYPE Step1_ILS_Mill_To_Portal_SUCCEEDED_0_TEVn89gtSqg=    OUTPUT { FEATURE_TYPE Step2_DriveTimeAreas_OUTPUT         @System(LOG_PREFIX,Step2_DriveTimeAreas,ENCODED,"@EvaluateExpression(FDIV,STRING_ENCODED,D:<backslash>ArcGIS<backslash>Pro<backslash>bin<backslash>Python<backslash>envs<backslash>arcgispro-py3<backslash>python.exe<space>$(FME_MF_DIR_ENCODED)create_drive_time_areas<backslash>OneMillDriveTimeAreas.py,Step2_DriveTimeAreas)")          }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {Step3_Copy_to_FIRSTDW_1b5bce65_b602_433b_883a_7474303796103} ]
+# ------------------------------------------------------------------------------
+# Determine the "NULL" device so we can ensure we don't get stray output
+# messing up our stdout if we are running workspaces in the background
+# See http://wiki.tcl.tk/1649 for a description of the tcl_platform
+# variable, the "platform" part seems to have valid values windows, unix, and
+# macintosh (the latter of which is actually pre-OS X)
+# PR#83334 - On Windows when we are creating child process asynchronously
+# (BLOCKING == NO), we use FME's @System() call (FME_Execute System) ensuring
+# that the child process doesn't inherit handles from parent process. This allows
+# parent process to close feature caches and not depend on spawned processes.
+Tcl2 if { $tcl_platform(platform) == {windows} } {         set ::null_device {NUL:};         set ::__WR_ENV_HELPER__ {};         set ::__platform__ {windows};      } else {         set ::null_device {/dev/null};         set ::__WR_ENV_HELPER__ {/usr/bin/env FME_SUBPROCESS_RUN_DETACHED=1};         set ::__platform__ {unix};      };
+# ------------------------------------------------------------------------------
+# Quote parameter strings for inclusion in command file using raw strings, with
+# a tag computed to be unique within source string ${_uniq_=_sourceString_=_uniq_}
+# [FMEENGINE-62584]
+Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $sourceString] == 0} {      return {\"\"};   };   if {[regexp {[^a-zA-Z0-9_]} $sourceString]} {     set uniq {};     while {[string first [format \"=%s\}\" $uniq] $sourceString] >= 0} {       if {[catch {incr uniq}]} { set uniq 0 };     };     return [format \"$\{%s=%s=%s\}\" $uniq $sourceString $uniq];   } else {     return $sourceString;   }; };
+# ------------------------------------------------------------------------------
+# Main runner procedure, takes in a parameter list as string which is delimited
+# by \x07 (BELL) character and the workspace to run. <parmListString> consists of
+# parameter name and value pairs. Value part is always wwjd encoded whether it is
+# literal value or resolved expression value resulting from @EvaluateExpression().
+# Each value part had to be wwjd encoded because mapping file parsing was mangling
+# the values by removing double quotes and spaces when passed in to this Tcl routine.
+Tcl2 proc $(FME_UUID_SAFE)_runner { parmListString workspaceFile } {    global $(FME_UUID_SAFE)_commands;    global $(FME_UUID_SAFE)_batch_count;    incr $(FME_UUID_SAFE)_batch_count 0;    if { [info exists $(FME_UUID_SAFE)_commands] == 0 } {       set $(FME_UUID_SAFE)_commands {};    };    set workspaceFileUnix [regsub -all {\\} [FME_DecodeText $workspaceFile] {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    package require json;    package require base64;    set pwdParms {};    foreach {parmDef} [dict get [::json::json2dict [::base64::decode {eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0FSQ0dJU1BPUlRBTEZFQVRVUkVTIiwicHJvbXB0IjoiUG9ydGFsIFVSTDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0cmltV2hpdGVzcGFjZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ1cmxTZXR0aW5ncyI6eyJ2YWxpZFNjaGVtZXMiOlsiaHR0cHMiLCJodHRwIl19LCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJyZWFkIiwiZGVmYXVsdFZhbHVlIjoiRDpcXEZNRV9TaGFyZVxcVExERVZEQlNGUlMwMV9GSVJTVF9GSVJTVERXX0VkaXRvci5zZGUiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkVzcmkgQ29ubmVjdGlvbiBGaWxlIiwiZmlsdGVyIjpbIiouc2RlIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X0dFT0RBVEFCQVNFX1NERV8xIiwicHJvbXB0IjoiQ29ubmVjdGlvbiBGaWxlOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOnRydWUsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0=}]] {parameters}] {       if {{password} == [dict get $parmDef type]} {          lappend pwdParms [dict get $parmDef name];       };    };    foreach {parmName parmValue} $parameterList {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { $parmName in $pwdParms } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend $(FME_UUID_SAFE)_commands [join $commandArguments " "];    incr $(FME_UUID_SAFE)_batch_count;    if { {Yes} == {No} && {<Unused>} > 1  && $$(FME_UUID_SAFE)_batch_count <= {<Unused>} } {       FME_LogMessage fme_inform 933450 Step3_Copy_to_FIRSTDW $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Step3_Copy_to_FIRSTDW $commandArgumentsToLog;    };    if { {Yes} != {No} || $$(FME_UUID_SAFE)_batch_count == {<Unused>} } {       set $(FME_UUID_SAFE)_batch_count 0;       set commandFile [$(FME_UUID_SAFE)_writeCommandFile $$(FME_UUID_SAFE)_commands];       if { $commandFile == {} } {          return FAILURE;       };       set $(FME_UUID_SAFE)_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {Yes} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [$(FME_UUID_SAFE)_runCommand $cmdArgs $workspaceFileUnix]; }
+# ------------------------------------------------------------------------------
+# When batching commands, any overflow commands will be run at the end. Say you
+# batch by 2 and there are 5 incoming features. Then we will have 2 batches with
+# 2 commands each and 1 overflow batch with 1 command
+Tcl2 proc $(FME_UUID_SAFE)_flushNeeded { } {    global $(FME_UUID_SAFE)_commands;    if { [info exists $(FME_UUID_SAFE)_commands] == 1 && [llength $$(FME_UUID_SAFE)_commands] > 0 } {       return YES;    } else {       return NO;    }; }
+Tcl2 proc $(FME_UUID_SAFE)_flushPending { } {    global $(FME_UUID_SAFE)_commands;    if { [info exists $(FME_UUID_SAFE)_commands] == 1 && [llength $$(FME_UUID_SAFE)_commands] > 0 } {       set workspaceToRun [lindex $$(FME_UUID_SAFE)_commands 0];       set commandFile [$(FME_UUID_SAFE)_writeCommandFile $$(FME_UUID_SAFE)_commands];       if { $commandFile == {} } {          return FAILURE;       };       set $(FME_UUID_SAFE)_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {Yes} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [$(FME_UUID_SAFE)_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+# ------------------------------------------------------------------------------
+# Build and run the command
+Tcl2 proc $(FME_UUID_SAFE)_runCommand {commandArguments workspaceFileUnix} {    if { {Yes} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {Yes} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {Yes} == {No} } {        lappend commandArguments {&};    };    if { {Yes} == {No} } {       after 1000;       while { [FME_CanSpawnFme <Unused>] == {0} } {             after 2000;       };    };    if { Yes == {No} && {<Unused>} > 1 } {       FME_LogMessage fme_inform 933452 Step3_Copy_to_FIRSTDW $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Step3_Copy_to_FIRSTDW $commandArguments;    };    if { $::__platform__ == {windows} && {Yes} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Step3_Copy_to_FIRSTDW $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global $(FME_UUID_SAFE)_process_count;       incr $(FME_UUID_SAFE)_process_count;       if { {Yes} == {No} } {           FME_LogMessage fme_inform 933455 Step3_Copy_to_FIRSTDW $workspaceFileUnix;           global $(FME_UUID_SAFE)_all_processes;           lappend $(FME_UUID_SAFE)_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Step3_Copy_to_FIRSTDW $workspaceFileUnix;       };       return SUCCESS;    }; }
+# ------------------------------------------------------------------------------
+# Create and write commands to command file
+Tcl2 proc $(FME_UUID_SAFE)_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Step3_Copy_to_FIRSTDW $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+# ------------------------------------------------------------------------------
+# Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
+# to mapping file
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step3_Copy_to_FIRSTDW_ExecutorAndRouter }    INPUT  FEATURE_TYPE Step2_DriveTimeAreas_OUTPUT    TEST @Tcl2("$(FME_UUID_SAFE)_runner {SourceDataset_ARCGISPORTALFEATUREShttps:<solidus><solidus>webgis-uat.weyer.com<solidus>gisportalDestDataset_GEODATABASE_SDE_1D:<backslash>FME_Share<backslash>TLDEVDBSFRS01_FIRST_FIRSTDW_Editor.sde} {@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR$encode)Mill_Portal_to_FIRSTDW.fmw,Step3_Copy_to_FIRSTDW)}") == SUCCESS
+Tcl2 proc $(FME_UUID_SAFE)_summarizer { } {     global $(FME_UUID_SAFE)_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr $(FME_UUID_SAFE)_process_count 0;     FME_SetAttribute _proc_count [set $(FME_UUID_SAFE)_process_count];     global $(FME_UUID_SAFE)_all_processes;     if {[info exists $(FME_UUID_SAFE)_all_processes]} {         set index 0;         foreach pid [set $(FME_UUID_SAFE)_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+# ------------------------------------------------------------------------------
+# Clean up the last batch, if anything was pending.
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Step3_Copy_to_FIRSTDW_CleanerUpperOfBatchesInitiator }    CREATE_AT_END yes    OUTPUT { FEATURE_TYPE Step3_Copy_to_FIRSTDW___cleanup___ }
+# ------------------------------------------------------------------------------
+# We only want to actually trigger the flush if there was something to run
+# Otherwise we send out spurious extra features at the end of a run that are completely unnecessary
+# As it stands, we are set up here to send out one "dud" completely empty feature that will
+# go out FAILURE if there was a problem. It will have no attributes. Only sent out if there was something
+# left to process and the run did not succeed.
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step3_Copy_to_FIRSTDW_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT { FEATURE_TYPE Step3_Copy_to_FIRSTDW___cleanup___ }    TEST { @Tcl2($(FME_UUID_SAFE)_flushNeeded) == YES }    OUTPUT { PASSED FEATURE_TYPE Step3_Copy_to_FIRSTDW___cleanup___ }
+# Note that we don't output anything if we succeed -- we only catch and output the failure
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step3_Copy_to_FIRSTDW_CleanerUpperOfBatchesRunner }    INPUT { FEATURE_TYPE Step3_Copy_to_FIRSTDW___cleanup___ }    TEST { @Tcl2($(FME_UUID_SAFE)_flushPending) == SUCCESS }
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Step3_Copy_to_FIRSTDW_SummaryMaker }    CREATE_AT_END yes
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Step2_DriveTimeRings }    INPUT  FEATURE_TYPE Step1_ILS_Mill_To_Portal_SUCCEEDED_1_3nWMg/Gsuqs=    OUTPUT { FEATURE_TYPE Step2_DriveTimeRings_OUTPUT         @System(LOG_PREFIX,Step2_DriveTimeRings,ENCODED,"@EvaluateExpression(FDIV,STRING_ENCODED,D:<backslash>ArcGIS<backslash>Pro<backslash>bin<backslash>Python<backslash>envs<backslash>arcgispro-py3<backslash>python.exe<space>$(FME_MF_DIR_ENCODED)DriveRings<backslash>OneMillRings.py,Step2_DriveTimeRings)")          }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {Step3_Copy_RingResultsto_FIRSTDW_45438ed8_32f1_4a1c_9a7b_1ec80d5d92363} ]
+# ------------------------------------------------------------------------------
+# Determine the "NULL" device so we can ensure we don't get stray output
+# messing up our stdout if we are running workspaces in the background
+# See http://wiki.tcl.tk/1649 for a description of the tcl_platform
+# variable, the "platform" part seems to have valid values windows, unix, and
+# macintosh (the latter of which is actually pre-OS X)
+# PR#83334 - On Windows when we are creating child process asynchronously
+# (BLOCKING == NO), we use FME's @System() call (FME_Execute System) ensuring
+# that the child process doesn't inherit handles from parent process. This allows
+# parent process to close feature caches and not depend on spawned processes.
+Tcl2 if { $tcl_platform(platform) == {windows} } {         set ::null_device {NUL:};         set ::__WR_ENV_HELPER__ {};         set ::__platform__ {windows};      } else {         set ::null_device {/dev/null};         set ::__WR_ENV_HELPER__ {/usr/bin/env FME_SUBPROCESS_RUN_DETACHED=1};         set ::__platform__ {unix};      };
+# ------------------------------------------------------------------------------
+# Quote parameter strings for inclusion in command file using raw strings, with
+# a tag computed to be unique within source string ${_uniq_=_sourceString_=_uniq_}
+# [FMEENGINE-62584]
+Tcl2 proc quotifyForParameterFileV3a { sourceString } {   if {[string length $sourceString] == 0} {      return {\"\"};   };   if {[regexp {[^a-zA-Z0-9_]} $sourceString]} {     set uniq {};     while {[string first [format \"=%s\}\" $uniq] $sourceString] >= 0} {       if {[catch {incr uniq}]} { set uniq 0 };     };     return [format \"$\{%s=%s=%s\}\" $uniq $sourceString $uniq];   } else {     return $sourceString;   }; };
+# ------------------------------------------------------------------------------
+# Main runner procedure, takes in a parameter list as string which is delimited
+# by \x07 (BELL) character and the workspace to run. <parmListString> consists of
+# parameter name and value pairs. Value part is always wwjd encoded whether it is
+# literal value or resolved expression value resulting from @EvaluateExpression().
+# Each value part had to be wwjd encoded because mapping file parsing was mangling
+# the values by removing double quotes and spaces when passed in to this Tcl routine.
+Tcl2 proc $(FME_UUID_SAFE)_runner { parmListString workspaceFile } {    global $(FME_UUID_SAFE)_commands;    global $(FME_UUID_SAFE)_batch_count;    incr $(FME_UUID_SAFE)_batch_count 0;    if { [info exists $(FME_UUID_SAFE)_commands] == 0 } {       set $(FME_UUID_SAFE)_commands {};    };    set workspaceFileUnix [regsub -all {\\} [FME_DecodeText $workspaceFile] {/}];    set comment    {        Build up the command line in a list, which we'll write it out to a        parameter file.    };    set commandArguments {};    set commandArgumentsToLog {};    set workspaceToRun [quotifyForParameterFileV3a $workspaceFileUnix];    lappend commandArguments $workspaceToRun;    lappend commandArgumentsToLog $workspaceToRun;    set parameterList [split $parmListString \x07];    package require json;    package require base64;    set pwdParms {};    foreach {parmDef} [dict get [::json::json2dict [::base64::decode {eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxGTUVfU2hhcmVcXFRMREVWREJTRlJTMDFfRklSU1RfRklSU1REV19FZGl0b3Iuc2RlIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFc3JpIENvbm5lY3Rpb24gRmlsZSIsImZpbHRlciI6WyIqLnNkZSJdfV0sIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJEZXN0RGF0YXNldF9HRU9EQVRBQkFTRV9TREUiLCJwcm9tcHQiOiJDb25uZWN0aW9uIEZpbGU6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6dHJ1ZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJkZWZhdWx0VmFsdWUiOiJodHRwczovL3dlYmdpcy11YXQud2V5ZXIuY29tL2dpc3BvcnRhbCIsImVkaXRvciI6InVybCIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0FSQ0dJU1BPUlRBTEZFQVRVUkVTIiwicHJvbXB0IjoiUG9ydGFsIFVSTDoiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0cmltV2hpdGVzcGFjZSI6dHJ1ZSwidHlwZSI6InRleHQiLCJ1cmxTZXR0aW5ncyI6eyJ2YWxpZFNjaGVtZXMiOlsiaHR0cHMiLCJodHRwIl19LCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19}]] {parameters}] {       if {{password} == [dict get $parmDef type]} {          lappend pwdParms [dict get $parmDef name];       };    };    foreach {parmName parmValue} $parameterList {      set parmValue [quotifyForParameterFileV3a [FME_DecodeText $parmValue]];      lappend commandArguments --$parmName;      lappend commandArgumentsToLog --$parmName;      lappend commandArguments $parmValue;      if { $parmName in $pwdParms } {           lappend commandArgumentsToLog {*********};      } else {           lappend commandArgumentsToLog $parmValue;      };    };    lappend commandArguments {--FME_LAUNCH_VIEWER_APP};    lappend commandArguments {YES};    lappend $(FME_UUID_SAFE)_commands [join $commandArguments " "];    incr $(FME_UUID_SAFE)_batch_count;    if { {Yes} == {No} && {<Unused>} > 1  && $$(FME_UUID_SAFE)_batch_count <= {<Unused>} } {       FME_LogMessage fme_inform 933450 Step3_Copy_RingResultsto_FIRSTDW $commandArgumentsToLog;    } else {       FME_LogMessage fme_inform 933451 Step3_Copy_RingResultsto_FIRSTDW $commandArgumentsToLog;    };    if { {Yes} != {No} || $$(FME_UUID_SAFE)_batch_count == {<Unused>} } {       set $(FME_UUID_SAFE)_batch_count 0;       set commandFile [$(FME_UUID_SAFE)_writeCommandFile $$(FME_UUID_SAFE)_commands];       if { $commandFile == {} } {          return FAILURE;       };       set $(FME_UUID_SAFE)_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {Yes} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend cmdArgs {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;    } else {       return SUCCESS;    };    return [$(FME_UUID_SAFE)_runCommand $cmdArgs $workspaceFileUnix]; }
+# ------------------------------------------------------------------------------
+# When batching commands, any overflow commands will be run at the end. Say you
+# batch by 2 and there are 5 incoming features. Then we will have 2 batches with
+# 2 commands each and 1 overflow batch with 1 command
+Tcl2 proc $(FME_UUID_SAFE)_flushNeeded { } {    global $(FME_UUID_SAFE)_commands;    if { [info exists $(FME_UUID_SAFE)_commands] == 1 && [llength $$(FME_UUID_SAFE)_commands] > 0 } {       return YES;    } else {       return NO;    }; }
+Tcl2 proc $(FME_UUID_SAFE)_flushPending { } {    global $(FME_UUID_SAFE)_commands;    if { [info exists $(FME_UUID_SAFE)_commands] == 1 && [llength $$(FME_UUID_SAFE)_commands] > 0 } {       set workspaceToRun [lindex $$(FME_UUID_SAFE)_commands 0];       set commandFile [$(FME_UUID_SAFE)_writeCommandFile $$(FME_UUID_SAFE)_commands];       if { $commandFile == {} } {          return FAILURE;       };       set $(FME_UUID_SAFE)_commands {};       set fmeAbsPath {$(FME_HOME_UNIX)/fme};       if { {Yes} == {No} && $::__platform__ == {windows} }       {          set comment          {             Only on Windows in non-blocking mode we have to make sure that paths             are always quoted because we use non-Tcl method to run the final command          };          set commandFile \\"$commandFile\\";          set fmeAbsPath \\"$fmeAbsPath\\";       };       lappend commandArguments {*}$::__WR_ENV_HELPER__ $fmeAbsPath COMMAND_FILE $commandFile;       return [$(FME_UUID_SAFE)_runCommand $commandArguments $workspaceToRun];    };    return SUCCESS; }
+# ------------------------------------------------------------------------------
+# Build and run the command
+Tcl2 proc $(FME_UUID_SAFE)_runCommand {commandArguments workspaceFileUnix} {    if { {Yes} == {No} && $::__platform__ != {windows} } {       lappend commandArguments \">$::null_device\";       lappend commandArguments \"<$::null_device\";    };    set comment    {       The below 2>@1 forces any standard error output to go into the msg variable       or to NULL if we're running in the background.    };    if { {Yes} != {No} || $::__platform__ != {windows} } {       lappend commandArguments {2>@1};    };    if { {Yes} == {No} } {        lappend commandArguments {&};    };    if { {Yes} == {No} } {       after 1000;       while { [FME_CanSpawnFme <Unused>] == {0} } {             after 2000;       };    };    if { Yes == {No} && {<Unused>} > 1 } {       FME_LogMessage fme_inform 933452 Step3_Copy_RingResultsto_FIRSTDW $commandArguments;    } else {       FME_LogMessage fme_inform 933453 Step3_Copy_RingResultsto_FIRSTDW $commandArguments;    };    if { $::__platform__ == {windows} && {Yes} == {No} } {       set comment       {          Only on Windows in non-blocking mode we convert Tcl list to string joined          by space (affectively flattening the list). Prior to this we have already          ensured that in this mode paths are always quoted.       };       set commandArguments [join $commandArguments " "];       set catchResult [catch {FME_Execute System RETURN_PID_IF_ASYNC $commandArguments} msg];    } else {       set catchResult [catch {eval [concat exec $commandArguments]} msg];    };    if { $catchResult } {       set msg [regsub {\015*\012child[^\012]*$} $msg {}];       FME_LogMessage fme_warn 933454 Step3_Copy_RingResultsto_FIRSTDW $workspaceFileUnix "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return FAILURE;    } else {       global $(FME_UUID_SAFE)_process_count;       incr $(FME_UUID_SAFE)_process_count;       if { {Yes} == {No} } {           FME_LogMessage fme_inform 933455 Step3_Copy_RingResultsto_FIRSTDW $workspaceFileUnix;           global $(FME_UUID_SAFE)_all_processes;           lappend $(FME_UUID_SAFE)_all_processes $msg;       } else {           FME_LogMessage fme_inform 933456 Step3_Copy_RingResultsto_FIRSTDW $workspaceFileUnix;       };       return SUCCESS;    }; }
+# ------------------------------------------------------------------------------
+# Create and write commands to command file
+Tcl2 proc $(FME_UUID_SAFE)_writeCommandFile { commands } {    set commandFile [FME_TempFilename wsr_cm_];    if { [catch { set cmdFileId [open $commandFile "w"] } msg ] } {       FME_LogMessage fme_warn 933457 Step3_Copy_RingResultsto_FIRSTDW $commandFile "\n\n$msg\n";       FME_SetAttribute _failure_message $msg;       return {};    };    fconfigure $cmdFileId -encoding utf-8;    puts $cmdFileId {#! encoding=\"utf-8\"};    puts $cmdFileId DELETE_FILE_AFTER_LOAD;    foreach {command} $commands {       puts $cmdFileId $command;    };    close $cmdFileId;    return $commandFile; }
+# ------------------------------------------------------------------------------
+# Use \x07 (BELL) character as the delimiter when writing WORKSPACE_PARAMETERS
+# to mapping file
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step3_Copy_RingResultsto_FIRSTDW_ExecutorAndRouter }    INPUT  FEATURE_TYPE Step2_DriveTimeRings_OUTPUT    TEST @Tcl2("$(FME_UUID_SAFE)_runner {DestDataset_GEODATABASE_SDED:<backslash>FME_Share<backslash>TLDEVDBSFRS01_FIRST_FIRSTDW_Editor.sdeSourceDataset_ARCGISPORTALFEATUREShttps:<solidus><solidus>webgis-uat.weyer.com<solidus>gisportal} {@EvaluateExpression(FDIV,STRING_ENCODED,$(FME_MF_DIR$encode)Mill_Ring_Portal_to_FIRSTDW.fmw,Step3_Copy_RingResultsto_FIRSTDW)}") == SUCCESS
+Tcl2 proc $(FME_UUID_SAFE)_summarizer { } {     global $(FME_UUID_SAFE)_process_count;     set comment { incr 0 creates the variable if it wasn't present };     incr $(FME_UUID_SAFE)_process_count 0;     FME_SetAttribute _proc_count [set $(FME_UUID_SAFE)_process_count];     global $(FME_UUID_SAFE)_all_processes;     if {[info exists $(FME_UUID_SAFE)_all_processes]} {         set index 0;         foreach pid [set $(FME_UUID_SAFE)_all_processes] {             FME_SetAttribute \"_processes{$index}\" $pid;             incr index;         }     } }
+# ------------------------------------------------------------------------------
+# Clean up the last batch, if anything was pending.
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Step3_Copy_RingResultsto_FIRSTDW_CleanerUpperOfBatchesInitiator }    CREATE_AT_END yes    OUTPUT { FEATURE_TYPE Step3_Copy_RingResultsto_FIRSTDW___cleanup___ }
+# ------------------------------------------------------------------------------
+# We only want to actually trigger the flush if there was something to run
+# Otherwise we send out spurious extra features at the end of a run that are completely unnecessary
+# As it stands, we are set up here to send out one "dud" completely empty feature that will
+# go out FAILURE if there was a problem. It will have no attributes. Only sent out if there was something
+# left to process and the run did not succeed.
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step3_Copy_RingResultsto_FIRSTDW_CleanerUpperOfBatchesDoWeNeedToDoIt }    INPUT { FEATURE_TYPE Step3_Copy_RingResultsto_FIRSTDW___cleanup___ }    TEST { @Tcl2($(FME_UUID_SAFE)_flushNeeded) == YES }    OUTPUT { PASSED FEATURE_TYPE Step3_Copy_RingResultsto_FIRSTDW___cleanup___ }
+# Note that we don't output anything if we succeed -- we only catch and output the failure
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Step3_Copy_RingResultsto_FIRSTDW_CleanerUpperOfBatchesRunner }    INPUT { FEATURE_TYPE Step3_Copy_RingResultsto_FIRSTDW___cleanup___ }    TEST { @Tcl2($(FME_UUID_SAFE)_flushPending) == SUCCESS }
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Step3_Copy_RingResultsto_FIRSTDW_SummaryMaker }    CREATE_AT_END yes
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

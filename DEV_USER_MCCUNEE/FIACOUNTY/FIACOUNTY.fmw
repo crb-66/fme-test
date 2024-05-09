@@ -1,0 +1,2646 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" C:\Users\McCuneE\AppData\Local\Temp\wb_publish_1714071698547_10576/FIACOUNTY.fmw
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="4045.13 1745"
+#!   DOC_TOP_LEFT="-460.074 -1526.25"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24187"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="47f6adc6-d502-4369-bd22-2760374617f1"
+#!   FME_DOCUMENT_PRIORGUID="03ac6536-3c02-4d02-a826-1719f52e26d3,43a6b49c-b96f-4391-9888-174492940e22,3f240bc2-5d86-4c7e-8ba7-7943a203f2a4,2c0794c4-a475-4305-ac41-24fa25f48447,ea44d9f6-74db-4470-80dc-5adff7357aaf,b7a3b80b-8521-4cee-ac6f-c95527b0c478,a3bce6a7-ac3b-4924-8a6a-616402df7bc7,9f5191a0-fc49-469b-bc2f-b8186978bf9d,87e276bc-6ca5-4a8d-9f55-ace495bfc3de,43dc5e70-1f75-4977-8c1e-be16ba5d70a7,f44584b1-307a-48a0-b460-136e25cd705e,17691927-15f7-4b68-98c7-03738600e5c5,15efad21-96ef-4f3b-86f4-dfe084bcd39e,05399c34-1dcd-4b38-bc70-86e580fb1e6e,8549b5b9-2892-489b-9398-a4c9382ba609,9e99fafa-a025-47ef-ada1-4f6cc7d27af7,8331c321-e81c-438b-9385-d10c0a73eb2f,fa476837-502d-4d70-9ef8-6eb4c899d219,2365c6f8-fe1e-4ad3-b0fd-c10bf149a1b1,bf3ffd44-a86a-491a-9030-11a2b121debf,6e708167-6797-4f11-8d2b-d513b8ca6d04"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.0.0.0 (20240304 - Build 24187 - WIN64)"
+#!   LAST_SAVE_DATE="2024-04-25T12:01:38"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1061.06 414.248"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="86"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#!   DATASET="$(DEV_CDO_SNOWFLAKE)"
+#!   KEYWORD="SNOWFLAKE_NONSPATIAL_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="jdbc_where_clause &quot;&quot; jdbc_use_bulk_reading NO"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id number(10,0) multi_reader_id number(10,0) multi_reader_keyword varchar(50) multi_reader_type varchar(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP jdbc_query_settings_group jdbc_where_clause Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG jdbc_where_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI ACTIVEDISCLOSUREGROUP jdbc_use_bulk_reading snowflake_bulk_read_variant_as Use Bulk Reading&quot; NO &quot;GUI ACTIVECHOICE snowflake_bulk_read_variant_as JSON%XML Read Variant Columns As&quot; JSON "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24202"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SNOWFLAKE_NONSPATIAL_IN_BEGIN_SQL SNOWFLAKE_NONSPATIAL_IN_END_SQL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL END_SQL"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="GEODATABASE_SDE"
+#!   DATASET="FME-ILS-DEV-RO-V2"
+#!   KEYWORD="GEODATABASE_SDE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} geodb_where_wwjd &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) geodb_ancillary_role char(7) geodb_anno_class_id integer geodb_color char(50) geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_dim_custom_length double geodb_dim_end_dimension_x double geodb_dim_end_dimension_y double geodb_dim_end_dimension_z double geodb_dim_extn_line_angle double geodb_dim_extn_line_display smallint geodb_dim_length double geodb_dim_line_display smallint geodb_dim_line_x double geodb_dim_line_y double geodb_dim_line_z double geodb_dim_marker_display smallint geodb_dim_style_id integer geodb_dim_text_angle double geodb_dim_text_x double geodb_dim_text_y double geodb_dim_text_z double geodb_dim_type smallint geodb_dim_using_custom_length boolean geodb_edge_element_count integer geodb_edge_feature_count integer geodb_element_id integer geodb_element_index integer geodb_feature_class_alias char(254) geodb_feature_dataset char(254) geodb_feature_has_relationships boolean geodb_feature_is_simple boolean geodb_font_bold boolean geodb_font_charset smallint geodb_font_italic boolean geodb_font_name char(254) geodb_font_point_size double geodb_font_strikethrough boolean geodb_font_style char(254) geodb_font_underline boolean geodb_font_weight smallint geodb_from_junction_element_id integer geodb_h_align char(50) geodb_junction_element_count integer geodb_junction_feature_count integer geodb_linked_feature_id integer geodb_measures char(254) geodb_metadata_string char(254) geodb_oid integer geodb_primary_axis double geodb_raster_compression_quality integer geodb_raster_compression_type char(100) geodb_raster_pyramid_level integer geodb_raster_pyramid_resample_type char(100) geodb_rel_destination_oid integer geodb_rel_origin_oid integer geodb_right_to_left boolean geodb_rotation double geodb_secondary_axis double geodb_start_angle double geodb_subtype_name char(254) geodb_sweep_angle double geodb_symbol_id integer geodb_text_angle double geodb_text_break_char integer geodb_text_char_spacing double geodb_text_character_width double geodb_text_clip boolean geodb_text_color char(254) geodb_text_flip_angle double geodb_text_lc_accent_bar_color char(50) geodb_text_lc_accent_bar_width double geodb_text_lc_gap double geodb_text_lc_margin_bottom double geodb_text_lc_margin_left double geodb_text_lc_margin_right double geodb_text_lc_margin_top double geodb_text_lc_style char(20) geodb_text_lc_textbox_x1 double geodb_text_lc_textbox_x2 double geodb_text_lc_textbox_x3 double geodb_text_lc_textbox_x4 double geodb_text_lc_textbox_y1 double geodb_text_lc_textbox_y2 double geodb_text_lc_textbox_y3 double geodb_text_lc_textbox_y4 double geodb_text_leader_line char(254) geodb_text_leader_line_anchor_point char(254) geodb_text_leader_line_color char(50) geodb_text_leader_line_tolerance double geodb_text_leader_line_width double geodb_text_line_spacing double geodb_text_part_count integer geodb_text_point_scale_factor double geodb_text_ref_scale double geodb_text_scale boolean geodb_text_size double geodb_text_string char(254) geodb_text_string_with_format_tags char(254) geodb_text_word_spacing double geodb_text_x_offset double geodb_text_y_offset double geodb_to_junction_element_id integer geodb_topological_configuration char(6) geodb_type char(25) geodb_v_align char(50) multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP geodb_table_settings_group geodb_where_wwjd Table Settings&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG geodb_where_wwjd MODE,WHERE WHERE Clause&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Ascending UniqueAscending"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="NONE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24202"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="GEODATABASE_SDE_IN_WHERE GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY GEODATABASE_SDE_IN_RESOLVE_DOMAINS GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS GEODATABASE_SDE_IN_SPLIT_COMPLEX_ANNOS GEODATABASE_SDE_IN_CACHE_MULTIPATCH_TEXTURES GEODATABASE_SDE_IN_SEARCH_METHOD GEODATABASE_SDE_IN_SEARCH_ORDER GEODATABASE_SDE_IN_SEARCH_FEATURE GEODATABASE_SDE_IN_CHILD_VERSION_NAME GEODATABASE_SDE_IN_ARCHIVE_WHERE GEODATABASE_SDE_IN_CHECK_SIMPLE_GEOM GEODATABASE_SDE_IN_MERGE_FEAT_LINKED_ANNOS GEODATABASE_SDE_IN_PERSISTENT_CONNECTION GEODATABASE_SDE_IN_READ_THREE_POINT_ARCS GEODATABASE_SDE_IN_BEGIN_SQL{0} GEODATABASE_SDE_IN_END_SQL{0} GEODATABASE_SDE_IN_SIMPLE_DONUT_GEOMETRY _GEODB_IN_ALIAS_MODE GEODATABASE_SDE_IN_REMOVE_TABLE_QUALIFIER GEODATABASE_SDE_IN_USERID GEODATABASE_SDE_IN_PASSWORD GEODATABASE_SDE_IN_VERSION GEODATABASE_SDE_IN_HISTORICAL_VERSION_NAME GEODATABASE_SDE_IN_HISTORICAL_VERSION_TIMESTAMP GEODATABASE_SDE_IN_READ_VERSION_DIFFERENCES GEODATABASE_SDE_IN_COMPARE_TRANSACTIONAL_VERSION GEODATABASE_SDE_IN_COMPARE_HISTORICAL_VERSION_NAME GEODATABASE_SDE_IN_COMPARE_HISTORICAL_VERSION_TIMESTAMP NULL_OUT_SIMPLIFY_GEOM NULL_OUT_ORIGIN_X NULL_OUT_ORIGIN_Y NULL_OUT_XY_SCALE NULL_OUT_HAS_Z_VALUES NULL_OUT_Z_ORIGIN NULL_OUT_Z_SCALE NULL_OUT_GRID_1 NULL_OUT_DEFAULT_Z_VALUE NULL_OUT_TRANSACTION NULL_OUT_TRANSACTION_INTERVAL NULL_OUT_IGNORE_FAILED_FEATURE_ENTRY NULL_OUT_MAX_NUMBER_FAILED_FEATURES NULL_OUT_DUMP_FAILED_FEATURES NULL_OUT_FFS_DUMP_FILE NULL_OUT_ANNOTATION_UNITS NULL_OUT_RECONCILE_AND_POST NULL_OUT_ENABLE_FAST_DELETES NULL_OUT_ENABLE_LOAD_ONLY_MODE NULL_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST NULL_OUT_VALIDATE_FEATURES NULL_OUT_SIMPLIFY_NETWORK_FEATURES NULL_OUT_PERSISTENT_CONNECTION NULL_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE NULL_OUT_BEGIN_SQL{0} NULL_OUT_END_SQL{0} NULL_OUT_HAS_MEASURES NULL_OUT_MEASURES_ORIGIN NULL_OUT_MEASURES_SCALE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING_HISTORIC"
+#!   VALUE="ALL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="FeatureClass1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Feature Class or Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0} CHILD_VERSION_NAME"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcSDE Geodatabase Dataset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SQL_EXECUTE_DIRECTIVES"
+#!   VALUE="INCLUDE:NAMED_CONNECTION%DATASET%CREATE_FEATURE_TABLES_FROM_DATA"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Esri ArcSDE Geodatabase Dataset"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="GEODATABASE_SDE"
+#!   DATASET="TLDEVDBSFRS01_FIRST_FIRSTDW_Editor_V2"
+#!   KEYWORD="GEODATABASE_SDE_6"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="31"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME SHAPE GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_XORIGIN &quot;&quot; GEODB_YORIGIN &quot;&quot; GEODB_XYSCALE &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_ZORIGIN &quot;&quot; GEODB_ZSCALE &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_MEASURES_ORIGIN &quot;&quot; GEODB_MEASURES_SCALE &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_db_operation char(8) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) fme_where char(254) geodb_allow_symbol_overrides boolean geodb_ancillary_role char(7) geodb_anno_class_id integer geodb_color char(50) geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_dim_custom_length double geodb_dim_end_dimension_x double geodb_dim_end_dimension_y double geodb_dim_end_dimension_z double geodb_dim_extn_line_angle double geodb_dim_extn_line_display smallint geodb_dim_length double geodb_dim_line_display smallint geodb_dim_line_x double geodb_dim_line_y double geodb_dim_line_z double geodb_dim_marker_display smallint geodb_dim_style_id integer geodb_dim_text_angle double geodb_dim_text_x double geodb_dim_text_y double geodb_dim_text_z double geodb_dim_type smallint geodb_dim_using_custom_length boolean geodb_feature_class_alias char(254) geodb_feature_dataset char(254) geodb_font_bold boolean geodb_font_charset smallint geodb_font_italic boolean geodb_font_name char(254) geodb_font_point_size double geodb_font_strikethrough boolean geodb_font_style char(254) geodb_font_underline boolean geodb_font_weight smallint geodb_h_align char(50) geodb_linked_feature_id integer geodb_measures char(254) geodb_metadata_string char(254) geodb_primary_axis double geodb_raster_compression_quality integer geodb_raster_compression_type char(100) geodb_raster_pyramid_level integer geodb_raster_pyramid_resample_type char(100) geodb_right_to_left boolean geodb_rotation double geodb_secondary_axis double geodb_start_angle double geodb_subtype_name char(254) geodb_sweep_angle double geodb_symbol_id integer geodb_text_angle double geodb_text_break_char integer geodb_text_char_spacing double geodb_text_character_width double geodb_text_clip boolean geodb_text_color char(254) geodb_text_feat_class_name char(254) geodb_text_flip_angle double geodb_text_lc_accent_bar_color char(50) geodb_text_lc_accent_bar_width double geodb_text_lc_gap double geodb_text_lc_margin_bottom double geodb_text_lc_margin_left double geodb_text_lc_margin_right double geodb_text_lc_margin_top double geodb_text_lc_style char(20) geodb_text_leader_line char(254) geodb_text_leader_line_anchor_point char(254) geodb_text_leader_line_color char(50) geodb_text_leader_line_tolerance double geodb_text_leader_line_width double geodb_text_line_spacing double geodb_text_ref_scale double geodb_text_scale boolean geodb_text_size double geodb_text_string char(254) geodb_text_string_with_format_tags char(254) geodb_text_word_spacing double geodb_text_x_coord double geodb_text_x_offset double geodb_text_y_coord double geodb_text_y_offset double geodb_type char(25) geodb_v_align char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group,mie_pack%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Upsert,UPSERT,fme_where_builder_clause,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group FME_DISCLOSURE_OPEN%GEODB_FEATURE_DATASET%GEODB_HAS_Z_VALUES%GEODB_HAS_MEASURES%GEODB_ORIGIN_GROUP%GEODB_ANNO_GROUP%GEODB_ADVANCED_GROUP Table Creation&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ORIGIN_GROUP GEODB_XY_GROUP%GEODB_Z_GROUP%GEODB_MEASURES_GROUP Origin and Scale&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ANNO_GROUP GEODB_ANNO_REFERENCE_SCALE Annotation&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ADVANCED_GROUP GEODB_OBJECT_ID_NAME%GEODB_OBJECT_ID_ALIAS%GEODB_SHAPE_NAME%GEODB_SHAPE_ALIAS%GEODB_CONFIG_KEYWORD%GEODB_GRID{1}%GEODB_AVG_NUM_POINTS Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_XY_GROUP GEODB_XORIGIN%GEODB_YORIGIN%GEODB_XYSCALE X/Y&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_Z_GROUP GEODB_ZORIGIN%GEODB_ZSCALE Z&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_MEASURES_GROUP GEODB_MEASURES_ORIGIN%GEODB_MEASURES_SCALE Measures&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_NAME Shape Field&quot; SHAPE &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Average Number of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X/Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Ascending UniqueAscending"
+#!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="NONE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24187"
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="NULL_IN_WHERE NULL_IN_TRANSLATE_SPATIAL_DATA_ONLY NULL_IN_RESOLVE_DOMAINS NULL_IN_RESOLVE_SUBTYPE_NAMES NULL_IN_IGNORE_NETWORK_INFO NULL_IN_IGNORE_RELATIONSHIP_INFO NULL_IN_SPLIT_COMPLEX_EDGES NULL_IN_SPLIT_MULTI_PART_ANNOS NULL_IN_SPLIT_COMPLEX_ANNOS NULL_IN_CACHE_MULTIPATCH_TEXTURES NULL_IN_SEARCH_METHOD NULL_IN_SEARCH_ORDER NULL_IN_SEARCH_FEATURE NULL_IN_CHILD_VERSION_NAME NULL_IN_ARCHIVE_WHERE NULL_IN_CHECK_SIMPLE_GEOM NULL_IN_MERGE_FEAT_LINKED_ANNOS NULL_IN_PERSISTENT_CONNECTION NULL_IN_READ_THREE_POINT_ARCS NULL_IN_BEGIN_SQL{0} NULL_IN_END_SQL{0} NULL_IN_SIMPLE_DONUT_GEOMETRY _GEODB_IN_ALIAS_MODE NULL_IN_REMOVE_TABLE_QUALIFIER NULL_IN_USERID NULL_IN_PASSWORD NULL_IN_VERSION NULL_IN_HISTORICAL_VERSION_NAME NULL_IN_HISTORICAL_VERSION_TIMESTAMP NULL_IN_READ_VERSION_DIFFERENCES NULL_IN_COMPARE_TRANSACTIONAL_VERSION NULL_IN_COMPARE_HISTORICAL_VERSION_NAME NULL_IN_COMPARE_HISTORICAL_VERSION_TIMESTAMP GEODATABASE_SDE_OUT_SIMPLIFY_GEOM GEODATABASE_SDE_OUT_ORIGIN_X GEODATABASE_SDE_OUT_ORIGIN_Y GEODATABASE_SDE_OUT_XY_SCALE GEODATABASE_SDE_OUT_HAS_Z_VALUES GEODATABASE_SDE_OUT_Z_ORIGIN GEODATABASE_SDE_OUT_Z_SCALE GEODATABASE_SDE_OUT_GRID_1 GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE GEODATABASE_SDE_OUT_TRANSACTION GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES GEODATABASE_SDE_OUT_FFS_DUMP_FILE GEODATABASE_SDE_OUT_ANNOTATION_UNITS GEODATABASE_SDE_OUT_RECONCILE_AND_POST GEODATABASE_SDE_OUT_ENABLE_FAST_DELETES GEODATABASE_SDE_OUT_ENABLE_LOAD_ONLY_MODE GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST GEODATABASE_SDE_OUT_VALIDATE_FEATURES GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE GEODATABASE_SDE_OUT_BEGIN_SQL{0} GEODATABASE_SDE_OUT_END_SQL{0} GEODATABASE_SDE_OUT_HAS_MEASURES GEODATABASE_SDE_OUT_MEASURES_ORIGIN GEODATABASE_SDE_OUT_MEASURES_SCALE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING_HISTORIC"
+#!   VALUE="ALL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="FeatureClass1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Feature Class or Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0} CHILD_VERSION_NAME"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri ArcSDE Geodatabase Dataset"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SQL_EXECUTE_DIRECTIVES"
+#!   VALUE="INCLUDE:NAMED_CONNECTION%DATASET%CREATE_FEATURE_TABLES_FROM_DATA"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Esri ArcSDE Geodatabase Dataset"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="globalid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp_offset"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date_only"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time_only"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="subtype(stringset)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="subtype_codes(stringmap)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="range_domain(range_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="coded_domain(coded_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(3,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(5,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(3,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(5,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(21,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp_ntz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="variant"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="globalid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp_offset"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date_only"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time_only"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype(stringset)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype_codes(stringmap)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="range_domain(range_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="coded_domain(coded_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_pro_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_dimension"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_simple_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_simple_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_complex_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_attributed_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_undefined"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_metadata"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_linestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_linestring"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_multilinestring"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_multipolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_geometrycollection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_linestring"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_linestring"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="snowflake_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="SNOWFLAKE_NONSPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_pro_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_dimension"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_attributed_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_metadata"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="GEODATABASE_SDE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="FIACOUNTY"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="21"
+#!   FEAT_GEOMTYPE="geodb_polygon"
+#!   POSITION="3095.0533683114604 128.75468754687546"
+#!   BOUNDING_RECT="3095.0533683114604 128.75468754687546 436 65"
+#!   ORDER="500000000000079"
+#!   COLLAPSED="false"
+#!   KEYWORD="GEODATABASE_SDE_6"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ACRES" ATTR_TYPE="double(25,10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EVALUATION_GROUP_CODE" ATTR_TYPE="bigint" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FOREST_TYPE_ID" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIBER_GROWTH" ATTR_TYPE="double(30,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIBER_REMOVAL" ATTR_TYPE="double(30,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIBER_VOLUME" ATTR_TYPE="double(30,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GROWTH" ATTR_TYPE="double(28,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GROWTH_GRADE" ATTR_TYPE="double(29,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OWNERSHIP_CLASS" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PLOT_COUNT" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REMOVAL" ATTR_TYPE="double(28,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REMOVAL_GRADE" ATTR_TYPE="double(29,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STAND_AGE_ID" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VOLUME" ATTR_TYPE="double(28,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VOLUME_GRADE" ATTR_TYPE="double(29,12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATE_ABBREVIATION" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATENAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATECODE" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATEFIP" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTYNAME" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTYFIP" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATECOUNTYFIP" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Shape_STArea__" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Shape_STLength__" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ANNO_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ANNO_REFERENCE_SCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_CONFIG_KEYWORD" PARM_VALUE="DEFAULTS"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_GRID{1}" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_HAS_MEASURES" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_HAS_Z_VALUES" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_SCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_ALIAS" PARM_VALUE="OBJECTID"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_NAME" PARM_VALUE="OBJECTID"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ORIGIN_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_ALIAS" PARM_VALUE="SHAPE"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_NAME" PARM_VALUE="SHAPE"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_XORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_XYSCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_XY_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_YORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ZORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ZSCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_Z_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="CREATE_IF_MISSING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_update_geometry" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="DIM_COUNTY"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="PL_FIA"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="30"
+#!   FEAT_GEOMTYPE="snowflake_none snowflake_point snowflake_multipoint snowflake_linestring snowflake_multilinestring snowflake_polygon snowflake_multipolygon snowflake_geometrycollection"
+#!   POSITION="-391.27656276562743 -27.175254310682647"
+#!   BOUNDING_RECT="-391.27656276562743 -27.175254310682647 1275.9999999999989 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SNOWFLAKE_NONSPATIAL_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTY_ID" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTY_CODE" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTY_NAME" ATTR_TYPE="varchar(300)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATE_FIPS_CODE" ATTR_TYPE="varchar(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATE_ABBREVIATION" ATTR_TYPE="varchar(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="jdbc_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="jdbc_use_bulk_reading" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="jdbc_where_clause" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="snowflake_bulk_read_variant_as" PARM_VALUE="JSON"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="FACT_GROWTH_DRAIN_REMOVALS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="PL_FIA"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="31"
+#!   FEAT_GEOMTYPE="snowflake_none snowflake_point snowflake_multipoint snowflake_linestring snowflake_multilinestring snowflake_polygon snowflake_multipolygon snowflake_geometrycollection"
+#!   POSITION="-392.27656276562766 71.194222407340362"
+#!   BOUNDING_RECT="-392.27656276562766 71.194222407340362 1276.9999999999991 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SNOWFLAKE_NONSPATIAL_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ACRES" ATTR_TYPE="number(26,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTY_ID" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="EVALUATION_GROUP_CODE" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FOREST_TYPE_ID" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIBER_GROWTH" ATTR_TYPE="number(31,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIBER_REMOVAL" ATTR_TYPE="number(31,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIBER_VOLUME" ATTR_TYPE="number(31,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GROWTH" ATTR_TYPE="number(29,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GROWTH_GRADE" ATTR_TYPE="number(30,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OWNERSHIP_CLASS" ATTR_TYPE="varchar(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PLOT_COUNT" ATTR_TYPE="number(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REMOVAL" ATTR_TYPE="number(29,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REMOVAL_GRADE" ATTR_TYPE="number(30,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STAND_AGE_ID" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VOLUME" ATTR_TYPE="number(29,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VOLUME_GRADE" ATTR_TYPE="number(30,5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" ATTR_TYPE="timestamp_ntz" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="jdbc_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="jdbc_use_bulk_reading" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="jdbc_where_clause" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="snowflake_bulk_read_variant_as" PARM_VALUE="JSON"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="County"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="dbo"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="34"
+#!   FEAT_NAMEDGEOMTYPE="Shape,geodb_polygon"
+#!   POSITION="-393.27656276562766 -123.74343743437436"
+#!   BOUNDING_RECT="-393.27656276562766 -123.74343743437436 1277.9999999999991 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="GEODATABASE_SDE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="StateName" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="StateCode" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="StateFip" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CountyName" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CountyFip" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="StateCountyFip" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Shape.STArea()" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Shape.STLength()" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geodb_table_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="geodb_where_wwjd" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="DEV_USER_MCCUNEE"
+#! />
+#! <ITEM
+#!   NAME="FIACOUNTY.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":DatasetMgr_GEODATABASE_SDE_6:GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_6"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":DatasetMgr_GEODATABASE_SDE_6:GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_6"
+#!   VALUE="&lt;Unused&gt;"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_BACKUP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DASHBOARD"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_ENGINE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_LOG"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_SYSTEM"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! </MODIFICATIONS>
+#! <DEPLOYMENT_PARAMETERS>
+#! <DEPLOYMENT_PARAMETER
+#!   NAME="DEV_CDO_SNOWFLAKE"
+#!   REFERENCED_PUBLIC_USER_PARAMETER_ONLY="false"
+#! />
+#! </DEPLOYMENT_PARAMETERS>
+#! <CONNECTIONS>
+#! <CONNECTION
+#!   NAME="FME-ILS-DEV-RO-V2"
+#!   TYPE="DATABASE"
+#!   FAMILY="Esri ArcSDE Geodatabase*"
+#!   USAGE="INTERNAL"
+#! />
+#! <CONNECTION
+#!   NAME="TLDEVDBSFRS01_FIRST_FIRSTDW_Editor_V2"
+#!   TYPE="DATABASE"
+#!   FAMILY="Esri ArcSDE Geodatabase"
+#!   USAGE="INTERNAL"
+#! />
+#! </CONNECTIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbXX0="
+#! >
+#! <PARAMETER_INFO>
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="19"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Use this data to generate FIA data that is spatially enriched with county boundaries, THIS IS A CHANGE I MADE.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COMMIT 1&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COMMIT 2&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COMMIT 3&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-363.20650462318588 -466.56693311119159"
+#!   TOP_LEFT="-363.20650462318588 -466.56693311119159"
+#!   BOTTOM_RIGHT="395.98027474460775 -621.56818312369171"
+#!   BOUNDING_RECT="-363.20650462318588 -466.56693311119159 759.18677936779363 155.00125001250012"
+#!   ORDER="500000000000080"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{d0d0cb24-08f0-4fa8-b482-b40b8449073d}"
+#!   COLOUR="0.32549019607843138,0.62352941176470589,0.92549019607843142,1"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="27"
+#!   NAME="READER"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-460.07404518489614 218.75468754687546"
+#!   ORDER="500000000000048"
+#!   PALETTE_COLOR="Workflow2"
+#!   BOTTOM_RIGHT="1017.6531394943576 -281.24531245312454"
+#!   BOUNDING_RECT="-460.07404518489614 218.75468754687546 1477.7271846792537 500"
+#!   STICKY="true"
+#!   COLOUR="0.58039215686274515,0.65490196078431373,1,1"
+#!   CONTENTS="31 34 30 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="28"
+#!   NAME="TRANSFORM_SPATIAL_ENRICHMENT"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1110.6023838016163 218.75468754687546"
+#!   ORDER="500000000000050"
+#!   PALETTE_COLOR="Workflow3"
+#!   BOTTOM_RIGHT="2936.3011807895846 -1179.5874792081254"
+#!   BOUNDING_RECT="1110.6023838016163 218.75468754687546 1825.6987969879683 1398.3421667550008"
+#!   STICKY="true"
+#!   COLOUR="0.67843137254901964,0.80784313725490198,0.72941176470588232,1"
+#!   CONTENTS="20 24 17 23 22 18 11 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="29"
+#!   NAME="WRITER"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="3045.0533683114604 218.75468754687546"
+#!   ORDER="500000000000051"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="3585.0533683114604 -1526.2453124531246"
+#!   BOUNDING_RECT="3045.0533683114604 218.75468754687546 540 1745"
+#!   STICKY="true"
+#!   COLOUR="0.32549019607843138,0.62352941176470589,0.92549019607843142,1"
+#!   CONTENTS="21 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="35"
+#!   NAME="Asset Description"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-460.07404518489614 -364.58747920812533"
+#!   ORDER="500000000000081"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="557.41086480632214 -937.50937509375103"
+#!   BOUNDING_RECT="-460.07404518489614 -364.58747920812533 1017.4849099912183 572.92189588562564"
+#!   STICKY="true"
+#!   COLOUR="0.32549019607843138,0.62352941176470589,0.92549019607843142,1"
+#!   CONTENTS="19 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="1210.6023838016163 128.75468754687546"
+#!   BOUNDING_RECT="1210.6023838016163 128.75468754687546 431 71"
+#!   ORDER="500000000000034"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="COUNTY_ID COUNTY_ID AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FIA_SCHEMATIC"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="1786.4761980953135 128.75468754687546"
+#!   BOUNDING_RECT="1786.4761980953135 128.75468754687546 431 71"
+#!   ORDER="500000000000041"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateFip" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CountyName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CountyFip" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateCountyFip" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STArea()" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STLength()" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="StateName" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="StateCode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="StateFip" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CountyName" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CountyFip" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="StateCountyFip" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STArea()" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STLength()" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="StateName" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="StateCode" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="StateFip" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CountyName" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CountyFip" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="StateCountyFip" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STArea()" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STLength()" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Right"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="COUNTY_NAME CountyName AUTO COUNTY_CODE StateCountyFip AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Full"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SPATIALLY_ENRICH"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="StringCaseChanger"
+#!   VERSION="6"
+#!   POSITION="1210.6023838016163 -364.58747920812533"
+#!   BOUNDING_RECT="1210.6023838016163 -364.58747920812533 488 65"
+#!   ORDER="500000000000045"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateFip" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CountyName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CountyFip" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="StateCountyFip" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STArea()" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STLength()" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="SELECTED"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="CountyName StateCode StateName"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CHANGE_TYPE" PARM_VALUE="upper"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="MAKE_VALUES_UPPER"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="BulkAttributeRenamer"
+#!   VERSION="5"
+#!   POSITION="2309.3011807895846 128.75468754687546"
+#!   BOUNDING_RECT="2309.3011807895846 128.75468754687546 523 65"
+#!   ORDER="500000000000046"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24187"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ACRES" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="EVALUATION_GROUP_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FOREST_TYPE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_GROWTH" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIBER_VOLUME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GROWTH_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERSHIP_CLASS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PLOT_COUNT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REMOVAL_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STAND_AGE_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VOLUME_GRADE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SNOWFLAKE_LAST_UPDATED_DATE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTY_NAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_FIPS_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATE_ABBREVIATION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATENAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATECODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATEFIP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTYNAME" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTYFIP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATECOUNTYFIP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STArea()" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Shape.STLength()" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRCHOICE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="ACRES COUNTY_CODE COUNTY_ID COUNTY_NAME CountyFip CountyName EVALUATION_GROUP_CODE FIBER_GROWTH FIBER_REMOVAL FIBER_VOLUME FOREST_TYPE_ID GROWTH GROWTH_GRADE OBJECTID OWNERSHIP_CLASS PLOT_COUNT REMOVAL REMOVAL_GRADE SNOWFLAKE_LAST_UPDATED_DATE STAND_AGE_ID STATE_ABBREVIATION STATE_FIPS_CODE StateCode StateCountyFip StateFip StateName VOLUME VOLUME_GRADE"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CASE_CHANGE_TYPE" PARM_VALUE="upper"/>
+#!     <XFORM_PARM PARM_NAME="CASE_DISP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MODE_CHOICE" PARM_VALUE="RENAME"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PATTERN_ACTION_DISP" PARM_VALUE="CASECHANGE"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_PATTERN" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_STR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_STRING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="MAKE_COLUMNS_UPPER"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_FME_CONNECTION_GROUP_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_QUERY_TIMEOUT_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_FME_GROUP_NAMED1_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_WHERE_CLAUSE_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_ADVANCED_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_BEGIN_SQL_SNOWFLAKE_NONSPATIAL_1,SNOWFLAKE_NONSPATIAL_IN_END_SQL_SNOWFLAKE_NONSPATIAL_1,SourceDataset_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_FME_CONNECTION_GROUP_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_FME_GROUP_NAMED1_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_REMOVE_TABLE_QUALIFIER_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_WHERE_WWJD_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_USE_SEARCH_ENVELOPE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_GEODB_SDE_RDR_ADV_PARM_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_METHOD_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_ORDER_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SEARCH_FEATURE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_CHILD_VERSION_NAME_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_ARCHIVE_WHERE_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_STRIP_GUID_GLOBALID_BRACES_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_PERSISTENT_CONNECTION_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_READ_THREE_POINT_ARCS_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_BEGIN_SQL{0}_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_END_SQL{0}_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_GEOMETRY_GEODATABASE_SDE_1,GEODATABASE_SDE_IN_SIMPLE_DONUT_GEOMETRY_GEODATABASE_SDE_1,_GEODB_IN_ALIAS_MODE_GEODATABASE_SDE_1,DestDataset_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_IMPORT_KIND_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_ENABLE_FAST_DELETES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_PRESERVE_GLOBALID_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_6
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} SNOWFLAKE_NONSPATIAL
+MULTI_READER_KEYWORD{0} SNOWFLAKE_NONSPATIAL_1
+MULTI_READER_GEN_DIRECTIVES{0} ADVANCED,,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,NAMED_CONNECTION,DEV_CDO_FME_FIRST_SRVACCT,BEGIN_SQL,,UPDATE_FEATURE_TYPES,yes,CREATE_FEATURE_TABLES_FROM_DATA,Yes,TABLELIST,PL_FIA.DIM_COUNTY<space>PL_FIA.FACT_GROWTH_DRAIN_REMOVALS,QUERY_TIMEOUT,30,END_SQL,,COERCE_VARIANT_TO_JSON,No,SNOWFLAKE_NONSPATIAL_EXPOSE_FORMAT_ATTRS,,WHERE_CLAUSE,
+MULTI_READER_TYPE{1} GEODATABASE_SDE
+MULTI_READER_KEYWORD{1} GEODATABASE_SDE_1
+MULTI_READER_GEN_DIRECTIVES{1} CLIP_TO_ENVELOPE,NO,TABLELIST,dbo.County,UPDATE_FEATURE_TYPES,yes,TRANSLATE_SPATIAL_DATA_ONLY,no,PERSISTENT_CONNECTION,no,CHILD_VERSION_NAME,,SEARCH_METHOD,,MERGE_FEAT_LINKED_ANNOS,no,WHERE_WWJD,,COMPARE_HISTORICAL_VERSION_TIMESTAMP,,CREATE_FEATURE_TABLES_FROM_DATA,Yes,IGNORE_RELATIONSHIP_INFO,yes,EXPOSE_ATTRS_GROUP,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,GEODATABASE_SDE_EXPOSE_FORMAT_ATTRS,,NAMED_CONNECTION,FME-ILS-DEV-RO,SEARCH_ENVELOPE_MAXY,0,_MERGE_SCHEMAS,YES,FEATURE_READ_MODE,Features,COMPARE_VERSION_TYPE,<lt>Unused<gt>,SEARCH_ORDER,,CHECK_SIMPLE_GEOM,no,READ_THREE_POINT_ARCS,no,ARCHIVE_WHERE,,CACHE_MULTIPATCH_TEXTURES,yes,SIMPLE_DONUT_GEOMETRY,no,COMPARE_HISTORICAL_VERSION_NAME,,GEODB_SDE_RDR_ADV_PARM,,SEARCH_FEATURE,,SPLIT_MULTI_PART_ANNOS,no,END_SQL<opencurly>0<closecurly>,,IGNORE_NETWORK_INFO,yes,GEOMETRY,,COMPARE_TRANSACTIONAL_VERSION,,SPLIT_COMPLEX_ANNOS,no,USE_SEARCH_ENVELOPE,NO,ALIAS_MODE,NONE,READ_VERSION_DIFFERENCES,NO,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,REMOVE_TABLE_QUALIFIER,NO,BEGIN_SQL<opencurly>0<closecurly>,,SEARCH_ENVELOPE_MAXX,0,STRIP_GUID_GLOBALID_BRACES,no,RESOLVE_DOMAINS,no,RESOLVE_SUBTYPE_NAMES,yes,DISABLE_FEATURE_DATASET_ATTRIBUTE,Yes,SEARCH_ENVELOPE_MINX,0,SPLIT_COMPLEX_EDGES,no,SEARCH_ENVELOPE_MINY,0,REMOVE_FEATURE_DATASET,NO
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} GEODATABASE_SDE
+PRIMARY_DEST_KEYWORD{0} GEODATABASE_SDE_6
+PRIMARY_DEST_GEN_DIRECTIVES{0} MEASURES_SCALE,100,HAS_Z_VALUES,auto_detect,NAMED_CONNECTION,TLDEVDBSFRS01_ETL_FIRSTStaging_Editor,SIMPLIFY_NETWORK_FEATURES,no,DELETE_CHILD_AFTER_RECONCILE_AND_POST,yes,SIMPLIFY_GEOM,no,FEATURE_DATASET_HANDLING,WRITE,MEASURES_ORIGIN,0,TEMPLATEFILE,<lt>Unused<gt>,COORDINATE_SYSTEM_GRANULARITY,FEATURE_TYPE,RECONCILE_AND_POST,no,IGNORE_FAILED_FEATURE_ENTRY,no,COMMIT_TRANSACTIONS_AFTER_WRITE,no,ANNOTATION_UNITS,unknown_units,TRANSACTION,0,ORIGIN_X,0,ADD_WRITER_NEXT_ACTION,automatic,IMPORT_XML_TEMPLATE_GROUP,NO,TRANSACTION_TYPE,TRANSACTIONS,GRID_1,0,DEFAULT_Z_VALUE,0,TRANSACTION_INTERVAL,1000,TABLE_PARAMETERS_GROUP,,DUMP_FAILED_FEATURES,no,PERSISTENT_CONNECTION,no,ORIGIN_Y,0,IMPORT_KIND,<lt>Unused<gt>,ENABLE_FAST_DELETES,yes,HAS_MEASURES,no,ENABLE_LOAD_ONLY_MODE,no,XY_SCALE,0,GEODB_SDE_WRT_ADV_PARM,,MAX_NUMBER_FAILED_FEATURES,-1,Z_ORIGIN,0,PRESERVE_GLOBALID,no,BEGIN_SQL<opencurly>0<closecurly>,,FFS_DUMP_FILE,,Z_SCALE,1,VALIDATE_FEATURES,no,END_SQL<opencurly>0<closecurly>,
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SNOWFLAKE_NONSPATIAL_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SNOWFLAKE_NONSPATIAL SNOWFLAKE_NONSPATIAL_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_SNOWFLAKE_NONSPATIAL_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SNOWFLAKE_NONSPATIAL SNOWFLAKE_NONSPATIAL_1
+DEFAULT_MACRO SourceDataset_SNOWFLAKE_NONSPATIAL_1 $(DEV_CDO_SNOWFLAKE$encode)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_SNOWFLAKE_NONSPATIAL_1 FMT:SNOWFLAKE_NONSPATIAL Connection:
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_SNOWFLAKE_NONSPATIAL_1 Yes
+SNOWFLAKE_NONSPATIAL_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(SNOWFLAKE_NONSPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_SNOWFLAKE_NONSPATIAL_1)"
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_COERCE_VARIANT_TO_JSON_SNOWFLAKE_NONSPATIAL_1 No
+SNOWFLAKE_NONSPATIAL_1_COERCE_VARIANT_TO_JSON "$(SNOWFLAKE_NONSPATIAL_IN_COERCE_VARIANT_TO_JSON_SNOWFLAKE_NONSPATIAL_1)"
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_FME_CONNECTION_GROUP_SNOWFLAKE_NONSPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP SNOWFLAKE_NONSPATIAL_IN_FME_CONNECTION_GROUP_SNOWFLAKE_NONSPATIAL_1 SNOWFLAKE_NONSPATIAL_IN_NAMED_CONNECTION%SNOWFLAKE_NONSPATIAL_IN_QUERY_TIMEOUT_SNOWFLAKE_NONSPATIAL_1 Database Connection
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_QUERY_TIMEOUT_SNOWFLAKE_NONSPATIAL_1 30
+SNOWFLAKE_NONSPATIAL_1_QUERY_TIMEOUT "$(SNOWFLAKE_NONSPATIAL_IN_QUERY_TIMEOUT_SNOWFLAKE_NONSPATIAL_1)"
+GUI INT SNOWFLAKE_NONSPATIAL_IN_QUERY_TIMEOUT_SNOWFLAKE_NONSPATIAL_1 Query Timeout (Seconds):
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_FME_GROUP_NAMED1_SNOWFLAKE_NONSPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP SNOWFLAKE_NONSPATIAL_IN_FME_GROUP_NAMED1_SNOWFLAKE_NONSPATIAL_1 SNOWFLAKE_NONSPATIAL_IN_TABLELIST%SNOWFLAKE_NONSPATIAL_IN_WHERE_CLAUSE_SNOWFLAKE_NONSPATIAL_1 Constraints
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_WHERE_CLAUSE_SNOWFLAKE_NONSPATIAL_1 
+SNOWFLAKE_NONSPATIAL_1_WHERE_CLAUSE "$(SNOWFLAKE_NONSPATIAL_IN_WHERE_CLAUSE_SNOWFLAKE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG SNOWFLAKE_NONSPATIAL_IN_WHERE_CLAUSE_SNOWFLAKE_NONSPATIAL_1 MODE,WHERE;FORMAT,SNOWFLAKE_NONSPATIAL WHERE Clause:
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_ADVANCED_SNOWFLAKE_NONSPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP SNOWFLAKE_NONSPATIAL_IN_ADVANCED_SNOWFLAKE_NONSPATIAL_1 SNOWFLAKE_NONSPATIAL_IN_BEGIN_SQL_SNOWFLAKE_NONSPATIAL_1%SNOWFLAKE_NONSPATIAL_IN_END_SQL_SNOWFLAKE_NONSPATIAL_1 Advanced
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# table.
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_BEGIN_SQL_SNOWFLAKE_NONSPATIAL_1 
+SNOWFLAKE_NONSPATIAL_1_BEGIN_SQL "$(SNOWFLAKE_NONSPATIAL_IN_BEGIN_SQL_SNOWFLAKE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG SNOWFLAKE_NONSPATIAL_IN_BEGIN_SQL_SNOWFLAKE_NONSPATIAL_1 MODE,SQL;FORMAT,SNOWFLAKE_NONSPATIAL SQL To Run Before Read
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# tables.
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_END_SQL_SNOWFLAKE_NONSPATIAL_1 
+SNOWFLAKE_NONSPATIAL_1_END_SQL "$(SNOWFLAKE_NONSPATIAL_IN_END_SQL_SNOWFLAKE_NONSPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG SNOWFLAKE_NONSPATIAL_IN_END_SQL_SNOWFLAKE_NONSPATIAL_1 MODE,SQL;FORMAT,SNOWFLAKE_NONSPATIAL SQL To Run After Read
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_SNOWFLAKE_NONSPATIAL_1 Yes
+SNOWFLAKE_NONSPATIAL_1_CREATE_FEATURE_TABLES_FROM_DATA "$(SNOWFLAKE_NONSPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_SNOWFLAKE_NONSPATIAL_1)"
+# ============================================================================
+DEFAULT_MACRO SNOWFLAKE_NONSPATIAL_IN_ATTRIBUTE_READING_SNOWFLAKE_NONSPATIAL_1 DEFLINE_ATTRS
+SNOWFLAKE_NONSPATIAL_1_ATTRIBUTE_READING "$(SNOWFLAKE_NONSPATIAL_IN_ATTRIBUTE_READING_SNOWFLAKE_NONSPATIAL_1)"
+# ============================================================================
+SNOWFLAKE_NONSPATIAL_1_GENERATE_FME_BUILD_NUM 24202
+SNOWFLAKE_NONSPATIAL_1_DATASET "$(SourceDataset_SNOWFLAKE_NONSPATIAL_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEODATABASE_SDE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEODATABASE_SDE GEODATABASE_SDE_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_GEODATABASE_SDE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEODATABASE_SDE GEODATABASE_SDE_1
+DEFAULT_MACRO SourceDataset_GEODATABASE_SDE_1 FME-ILS-DEV-RO-V2
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_GEODATABASE_SDE_1 FMT:GEODATABASE_SDE Connection:
+DEFAULT_MACRO GEODATABASE_SDE_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_GEODATABASE_SDE_1 Yes
+GEODATABASE_SDE_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(GEODATABASE_SDE_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_GEODATABASE_SDE_1)"
+DEFAULT_MACRO GEODATABASE_SDE_IN_DISABLE_FEATURE_DATASET_ATTRIBUTE_GEODATABASE_SDE_1 Yes
+GEODATABASE_SDE_1_DISABLE_FEATURE_DATASET_ATTRIBUTE "$(GEODATABASE_SDE_IN_DISABLE_FEATURE_DATASET_ATTRIBUTE_GEODATABASE_SDE_1)"
+DEFAULT_MACRO GEODATABASE_SDE_IN_FME_CONNECTION_GROUP_GEODATABASE_SDE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_IN_FME_CONNECTION_GROUP_GEODATABASE_SDE_1 GEODATABASE_SDE_IN_NAMED_CONNECTION Database Connection
+# ============================================================================
+# ============================================================================
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_FME_GROUP_NAMED1_GEODATABASE_SDE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_IN_FME_GROUP_NAMED1_GEODATABASE_SDE_1 GEODATABASE_SDE_IN_REMOVE_TABLE_QUALIFIER_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_REMOVE_FEATURE_DATASET%GEODATABASE_SDE_IN_TABLELIST%GEODATABASE_SDE_IN_WHERE_WWJD_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_FEATURE_READ_MODE Constraints
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_REMOVE_TABLE_QUALIFIER_GEODATABASE_SDE_1 NO
+GEODATABASE_SDE_1_REMOVE_TABLE_QUALIFIER "$(GEODATABASE_SDE_IN_REMOVE_TABLE_QUALIFIER_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_REMOVE_TABLE_QUALIFIER_GEODATABASE_SDE_1 YES%NO Remove Table Qualifier
+# ========================================================================
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_WHERE_WWJD_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_WHERE_WWJD "$(GEODATABASE_SDE_IN_WHERE_WWJD_GEODATABASE_SDE_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_SDE_IN_WHERE_WWJD_GEODATABASE_SDE_1 Mode,WHERE WHERE Clause:
+# ========================================================================
+# Determines whether non-spatial data, such as tables, subtypes, domains,
+# and relationship classes, get translated
+DEFAULT_MACRO GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_TRANSLATE_SPATIAL_DATA_ONLY "$(GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_TRANSLATE_SPATIAL_DATA_ONLY_GEODATABASE_SDE_1 yes%no Spatial Data Only
+# ========================================================================
+# Determines whether to resolve domains
+DEFAULT_MACRO GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_RESOLVE_DOMAINS "$(GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_RESOLVE_DOMAINS_GEODATABASE_SDE_1 yes%no Resolve Domains
+# ========================================================================
+# Determines whether to resolve the subtype associated with a feature to the
+# text description linked to the subtype value. The text description will
+# be added as an attribute on the feature.
+DEFAULT_MACRO GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1 yes
+GEODATABASE_SDE_1_RESOLVE_SUBTYPE_NAMES "$(GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_RESOLVE_SUBTYPE_NAMES_GEODATABASE_SDE_1 yes%no Resolve Subtypes
+# ========================================================================
+# Determines whether to ignore the network info associated with a feature
+# coming from a network feature class. When set to 'yes', junctions will be
+# treated as point features, and edges will be treated as polyline features,
+# with the geodb_type being set to geodb_point and geodb_polyline, respectively.
+# Caution should be taken when changing the value for this keyword to a different
+# value than was specified when creating the mapping file/workspace.
+DEFAULT_MACRO GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1 yes
+GEODATABASE_SDE_1_IGNORE_NETWORK_INFO "$(GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_IGNORE_NETWORK_INFO_GEODATABASE_SDE_1 yes%no Ignore Network Info
+# ========================================================================
+# Determines whether to ignore the relationship info associated with a feature
+# coming from a feature class containing relationships. When set to 'yes', simple
+# relationships will not be read, and attributed relationships will be read as
+# tables. Caution should be taken when changing the value for this keyword to a
+# different value than was specified when creating the mapping file/workspace.
+DEFAULT_MACRO GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1 yes
+GEODATABASE_SDE_1_IGNORE_RELATIONSHIP_INFO "$(GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_IGNORE_RELATIONSHIP_INFO_GEODATABASE_SDE_1 yes%no Ignore Relationship Info
+# ========================================================================
+# Determines whether complex edge features should be split up and each edge
+# element read as a separate feature. The default behaviour is to treat an
+# entire edge *feature* as an FME feature, rather than an edge *element* as an
+# FME feature. Returning edge elements ensures that all network connectivity
+# information on complex edges is read.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_SPLIT_COMPLEX_EDGES "$(GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_SPLIT_COMPLEX_EDGES_GEODATABASE_SDE_1 yes%no Split Complex Edges
+#==============================================================================
+# Determines whether annotation features should be split up and each part
+# element read as a separate feature. The default behaviour is to treat an
+# entire annotation *feature* as an FME feature, rather than an annotation
+# *element* as an FME feature. Returning edge elements ensures that all
+# rotation and positional information for each element is preserved.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_SPLIT_MULTI_PART_ANNOS "$(GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_SPLIT_MULTI_PART_ANNOS_GEODATABASE_SDE_1 yes%no Split Multi-Part Annotations
+# ========================================================================
+# The following determines whether to read features from the geodatabase
+# tables/feature classes or to read metadata from those tables/feature
+# classes.
+DEFAULT_MACRO GEODATABASE_SDE_IN_FEATURE_READ_MODE_GEODATABASE_SDE_1 Features
+GEODATABASE_SDE_1_FEATURE_READ_MODE "$(GEODATABASE_SDE_IN_FEATURE_READ_MODE_GEODATABASE_SDE_1)"
+DEFAULT_MACRO GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_EXPOSE_ATTRS_GROUP "$(GEODATABASE_SDE_IN_EXPOSE_ATTRS_GROUP_GEODATABASE_SDE_1)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO GEODATABASE_SDE_IN_USE_SEARCH_ENVELOPE_GEODATABASE_SDE_1 NO
+GEODATABASE_SDE_1_USE_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_USE_SEARCH_ENVELOPE_GEODATABASE_SDE_1)"
+GUI ACTIVEDISCLOSUREGROUP GEODATABASE_SDE_IN_USE_SEARCH_ENVELOPE_GEODATABASE_SDE_1 GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_METHOD_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_METHOD_FILTER%GEODATABASE_SDE_IN_SEARCH_ORDER_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_SEARCH_FEATURE_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1 <Unused>,0 
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1 0
+GEODATABASE_SDE_1_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINX_GEODATABASE_SDE_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1 <Unused>,0 
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1 0
+GEODATABASE_SDE_1_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MINY_GEODATABASE_SDE_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1 <Unused>,0 
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1 0
+GEODATABASE_SDE_1_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXX_GEODATABASE_SDE_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1 <Unused>,0 
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1 0
+GEODATABASE_SDE_1_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_IN_SEARCH_ENVELOPE_MAXY_GEODATABASE_SDE_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1 <Unused>, 
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_SEARCH_ENVELOPE "$(GEODATABASE_SDE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1)"
+GUI OPTIONAL COORDSYS GEODATABASE_SDE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEODATABASE_SDE_1 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1 <Unused>,NO 
+DEFAULT_MACRO GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1 NO
+GEODATABASE_SDE_1_CLIP_TO_ENVELOPE "$(GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1)"
+GUI OPTIONAL CHECKBOX GEODATABASE_SDE_IN_CLIP_TO_ENVELOPE_GEODATABASE_SDE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO GEODATABASE_SDE_IN_GEODB_SDE_RDR_ADV_PARM_GEODATABASE_SDE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_IN_GEODB_SDE_RDR_ADV_PARM_GEODATABASE_SDE_1 GEODATABASE_SDE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_CHILD_VERSION_NAME_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_ARCHIVE_WHERE_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_STRIP_GUID_GLOBALID_BRACES_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_PERSISTENT_CONNECTION_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_READ_THREE_POINT_ARCS_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_BEGIN_SQL{0}_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_END_SQL{0}_GEODATABASE_SDE_1%GEODATABASE_SDE_IN_GEOMETRY_GEODATABASE_SDE_1 Advanced
+#==============================================================================
+# The following specifies that complex representations for annotation should
+# be split into simpler representations.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_SPLIT_COMPLEX_ANNOS "$(GEODATABASE_SDE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_SPLIT_COMPLEX_ANNOS_GEODATABASE_SDE_1 yes%no Split Complex Annotations:
+#==============================================================================
+# The following specifies whether to keep (YES) or clean up (NO) Esri's
+# multipatch texture caches.
+DEFAULT_MACRO GEODATABASE_SDE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_SDE_1 yes
+GEODATABASE_SDE_1_CACHE_MULTIPATCH_TEXTURES "$(GEODATABASE_SDE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_CACHE_MULTIPATCH_TEXTURES_GEODATABASE_SDE_1 yes%no Cache Multipatch Textures:
+# ========================================================================
+# Determines which type of search method to use. This keyword is only applicable
+# when either the keyword SEARCH_ENVELOPE or the keyword SEARCH_FEATURE is specified.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_METHOD_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_SEARCH_METHOD "$(GEODATABASE_SDE_IN_SEARCH_METHOD_GEODATABASE_SDE_1)"
+GUI OPTIONAL LOOKUP_CHOICE GEODATABASE_SDE_IN_SEARCH_METHOD_GEODATABASE_SDE_1 "\"Geodb Intersects\",GEODB_INTERSECTS"%"\"Geodb Envelope Intersects\",GEODB_ENVELOPE_INTERSECTS"%"\"Geodb Touches\",GEODB_TOUCHES"%"\"Geodb Overlaps\",GEODB_OVERLAPS"%"\"Geodb Crosses\",GEODB_CROSSES"%"\"Geodb Within\",GEODB_WITHIN"%"\"Geodb Contains\",GEODB_CONTAINS" Search Method:
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_METHOD_GEODATABASE_SDE_1 <Unused>, 
+# ========================================================================
+# Determines whether the spatial component or the attribute component of a
+# query is performed first. This is only applicable when both spatial and
+# non-spatial searches are being performed.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_ORDER_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_SEARCH_ORDER "$(GEODATABASE_SDE_IN_SEARCH_ORDER_GEODATABASE_SDE_1)"
+GUI OPTIONAL LOOKUP_CHOICE GEODATABASE_SDE_IN_SEARCH_ORDER_GEODATABASE_SDE_1 "\"Spatial First\",SPATIAL_FIRST"%"\"Attribute First\",ATTRIBUTE_FIRST" Search Order:
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_ORDER_GEODATABASE_SDE_1 <Unused>, 
+# ========================================================================
+# The following defines the search feature for the query. It defines an
+# arbitrarily complex search feature as a spatial contraint. It is in the
+# form <keyword>_SEARCH_FEATURE [<xCoord> <yCoord>]+.
+DEFAULT_MACRO GEODATABASE_SDE_IN_SEARCH_FEATURE_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_SEARCH_FEATURE "$(GEODATABASE_SDE_IN_SEARCH_FEATURE_GEODATABASE_SDE_1)"
+GUI OPTIONAL TEXT GEODATABASE_SDE_IN_SEARCH_FEATURE_GEODATABASE_SDE_1 Search Feature:
+GUI LOOKUP GEODATABASE_SDE_IN_SEARCH_FEATURE_GEODATABASE_SDE_1 <Unused>, 
+# ========================================================================
+# The following specifies the name of a child version to be created. After
+# the version has been created, tables will be read using this version
+# rather than the version specified by the VERSION keyword.
+DEFAULT_MACRO GEODATABASE_SDE_IN_CHILD_VERSION_NAME_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_CHILD_VERSION_NAME "$(GEODATABASE_SDE_IN_CHILD_VERSION_NAME_GEODATABASE_SDE_1)"
+GUI OPTIONAL TEXT GEODATABASE_SDE_IN_CHILD_VERSION_NAME_GEODATABASE_SDE_1 Child Version Name:
+# ========================================================================
+# The following specifies the archive where clause to be used when retrieving
+# features from an archived table in geodb.
+DEFAULT_MACRO GEODATABASE_SDE_IN_ARCHIVE_WHERE_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_ARCHIVE_WHERE "$(GEODATABASE_SDE_IN_ARCHIVE_WHERE_GEODATABASE_SDE_1)"
+GUI OPTIONAL TEXT GEODATABASE_SDE_IN_ARCHIVE_WHERE_GEODATABASE_SDE_1 Archive WHERE Clause:
+# ========================================================================
+# The following specifies that simple geometry should be checked for
+# when reading features.
+DEFAULT_MACRO GEODATABASE_SDE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_CHECK_SIMPLE_GEOM "$(GEODATABASE_SDE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_CHECK_SIMPLE_GEOM_GEODATABASE_SDE_1 yes%no Check for Simple Geometry:
+# ========================================================================
+# The following specifies whether feature-linked annotations should
+# be merged onto the main feature as a text list attribute when reading.
+DEFAULT_MACRO GEODATABASE_SDE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_MERGE_FEAT_LINKED_ANNOS "$(GEODATABASE_SDE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_MERGE_FEAT_LINKED_ANNOS_GEODATABASE_SDE_1 yes%no Merge Feature Linked Annotations:
+#=============================================================================
+# Strip braces off GlobalIDs and GUIDs
+DEFAULT_MACRO GEODATABASE_SDE_IN_STRIP_GUID_GLOBALID_BRACES_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_STRIP_GUID_GLOBALID_BRACES "$(GEODATABASE_SDE_IN_STRIP_GUID_GLOBALID_BRACES_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_STRIP_GUID_GLOBALID_BRACES_GEODATABASE_SDE_1 yes%no Strip braces off GlobalID and GUID:
+#==============================================================================
+# Determines whether the connection should persist after the reader/writer
+# has been shut down. The default is 'no'.
+DEFAULT_MACRO GEODATABASE_SDE_IN_PERSISTENT_CONNECTION_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_PERSISTENT_CONNECTION "$(GEODATABASE_SDE_IN_PERSISTENT_CONNECTION_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_PERSISTENT_CONNECTION_GEODATABASE_SDE_1 yes%no Persistent Connection
+#==============================================================================
+# Determines whether Arcs should be read as Three Point Arcs instead of
+# the default Center Point Arcs w/ End Points.
+DEFAULT_MACRO GEODATABASE_SDE_IN_READ_THREE_POINT_ARCS_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_READ_THREE_POINT_ARCS "$(GEODATABASE_SDE_IN_READ_THREE_POINT_ARCS_GEODATABASE_SDE_1)"
+GUI CHOICE GEODATABASE_SDE_IN_READ_THREE_POINT_ARCS_GEODATABASE_SDE_1 yes%no Read as Three Point Arcs:
+# ==============================================================================
+# The following specifies an SQL command to execute before opening the first
+# Geodatabase table.
+DEFAULT_MACRO GEODATABASE_SDE_IN_BEGIN_SQL{0}_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_BEGIN_SQL{0} "$(GEODATABASE_SDE_IN_BEGIN_SQL{0}_GEODATABASE_SDE_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_SDE_IN_BEGIN_SQL{0}_GEODATABASE_SDE_1 MODE,SQL;FORMAT,GEODATABASE_SDE SQL To Run Before Read
+# ==============================================================================
+# The following specifies an SQL command to execute after closing all the
+# Geodatabase tables.
+DEFAULT_MACRO GEODATABASE_SDE_IN_END_SQL{0}_GEODATABASE_SDE_1 
+GEODATABASE_SDE_1_END_SQL{0} "$(GEODATABASE_SDE_IN_END_SQL{0}_GEODATABASE_SDE_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_SDE_IN_END_SQL{0}_GEODATABASE_SDE_1 MODE,SQL;FORMAT,GEODATABASE_SDE SQL To Run After Read
+DEFAULT_MACRO GEODATABASE_SDE_IN_GEOMETRY_GEODATABASE_SDE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_IN_GEOMETRY_GEODATABASE_SDE_1 GEODATABASE_SDE_IN_SIMPLE_DONUT_GEOMETRY_GEODATABASE_SDE_1 Geometry
+# ============================================================================
+# Option to use simple donut geometry creation, which is faster than the
+# original creation method, but less meticulous at detecting and correcting
+# geometric anomalies
+DEFAULT_MACRO GEODATABASE_SDE_IN_SIMPLE_DONUT_GEOMETRY_GEODATABASE_SDE_1 no
+GEODATABASE_SDE_1_SIMPLE_DONUT_GEOMETRY "$(GEODATABASE_SDE_IN_SIMPLE_DONUT_GEOMETRY_GEODATABASE_SDE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_SDE_IN_SIMPLE_DONUT_GEOMETRY_GEODATABASE_SDE_1 "\"Orientation Only\",yes"%"\"Orientation and Spatial Relationship\",no" Donut Geometry Detection
+DEFAULT_MACRO GEODATABASE_SDE_IN_CREATE_FEATURE_TABLES_FROM_DATA_GEODATABASE_SDE_1 Yes
+GEODATABASE_SDE_1_CREATE_FEATURE_TABLES_FROM_DATA "$(GEODATABASE_SDE_IN_CREATE_FEATURE_TABLES_FROM_DATA_GEODATABASE_SDE_1)"
+# ============================================================================
+DEFAULT_MACRO GEODATABASE_SDE_IN_ATTRIBUTE_READING_GEODATABASE_SDE_1 DEFLINE
+GEODATABASE_SDE_1_ATTRIBUTE_READING "$(GEODATABASE_SDE_IN_ATTRIBUTE_READING_GEODATABASE_SDE_1)"
+# ============================================================================
+GEODATABASE_SDE_1_GENERATE_FME_BUILD_NUM 24202
+DEFAULT_MACRO _GEODB_IN_ALIAS_MODE_GEODATABASE_SDE_1 NONE
+GUI LOOKUP_CHOICE _GEODB_IN_ALIAS_MODE_GEODATABASE_SDE_1 None,NONE%Expose<space>Aliases<space>as<space>Metadata<space>Attributes<space><openparen><lt>name<gt>_alias<closeparen>,ON_DATA_FEATURES Alias Mode:
+GEODATABASE_SDE_1_ALIAS_MODE "$(_GEODB_IN_ALIAS_MODE_GEODATABASE_SDE_1)"
+GEODATABASE_SDE_1_DATASET "$(SourceDataset_GEODATABASE_SDE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEODATABASE_SDE_6"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_6
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GEODATABASE_SDE_6 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GEODATABASE_SDE GEODATABASE_SDE_6
+DEFAULT_MACRO DestDataset_GEODATABASE_SDE_6 TLDEVDBSFRS01_FIRST_FIRSTDW_Editor_V2
+GUI NAMED_DB_CONNECTION_ENCODED DestDataset_GEODATABASE_SDE_6 FAMILY:Esri<space>ArcSDE<space>Geodatabase Connection:
+GEODATABASE_SDE_6_DATASET "$(DestDataset_GEODATABASE_SDE_6)"
+DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_6 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_FME_CONNECTION_GROUP_GEODATABASE_SDE_6 GEODATABASE_SDE_OUT_NAMED_CONNECTION Database Connection
+# ============================================================================
+# ============================================================================
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_6 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_FME_GROUP_NAMED1_GEODATABASE_SDE_6 GEODATABASE_SDE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_SDE_6 General Parameters
+# ============================================================================
+# This option specifies the transaction type. This should be set to VERSIONING
+# when writing to a versioned table/feature class in an Enterprise Geodatabase.
+# Both TRANSACTIONS and NONE can be chosen only when writing to non-versioned
+# tables/feature classes.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_6 TRANSACTIONS
+GEODATABASE_SDE_6_TRANSACTION_TYPE "$(GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_6)"
+GUI LOOKUP_CHOICE GEODATABASE_SDE_OUT_TRANSACTION_TYPE_GEODATABASE_SDE_6 Versioned<space>Edit<space>Session,VERSIONING%Non-versioned<space>Edit<space>Session,EDIT_SESSION%Transactions,TRANSACTIONS%None,NONE Transaction Type:
+# ============================================================================__
+# Contains options relating to importing XML template files.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_SDE_6 NO
+GEODATABASE_SDE_6_IMPORT_XML_TEMPLATE_GROUP "$(GEODATABASE_SDE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_SDE_6)"
+GUI ACTIVEDISCLOSUREGROUP GEODATABASE_SDE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_SDE_6 GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_IMPORT_KIND_GEODATABASE_SDE_6 Import XML Workspace Document
+# ============================================================================__
+# Specifies how the writer should handle feature datasets whether set on the feature type or the feature
+DEFAULT_MACRO GEODATABASE_SDE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_SDE_6 WRITE
+GEODATABASE_SDE_6_FEATURE_DATASET_HANDLING "$(GEODATABASE_SDE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_SDE_6)"
+GUI LOOKUP_CHOICE GEODATABASE_SDE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_SDE_6 Write<space>Feature<space>Dataset,WRITE%Warn<space>and<space>Ignore<space>Feature<space>Dataset,IGNORE%Error<space>and<space>End<space>Translation,END%Off<space>-<space>Slashes<space>become<space>underscores,OFF Feature Dataset Handling:
+# ============================================================================__
+# Optional template file can be specified. This will load the schema
+# of the template file into the database before any writing occurs.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_6 <Unused>
+GEODATABASE_SDE_6_TEMPLATEFILE "$(GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_6)"
+GUI OPTIONAL FILENAME_MUSTEXIST GEODATABASE_SDE_OUT_TEMPLATEFILE_GEODATABASE_SDE_6 XML_Geodatabase_Files(*.xml)|*.xml|(*.zip)|*.zip|(*.z)|*.z|All_files(*)|* XML Workspace Document:
+# ============================================================================__
+# FMEENGINE-10409
+# Add option to import data from template, rather than just the schema.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_IMPORT_KIND_GEODATABASE_SDE_6 <Unused>
+GEODATABASE_SDE_6_IMPORT_KIND "$(GEODATABASE_SDE_OUT_IMPORT_KIND_GEODATABASE_SDE_6)"
+GUI CHOICE_ENCODED GEODATABASE_SDE_OUT_IMPORT_KIND_GEODATABASE_SDE_6 Schema<space>Only%Data<space>and<space>Schema Import
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_6 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_TABLE_PARAMETERS_GROUP_GEODATABASE_SDE_6 FME_DISCLOSURE_CLOSED%GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_6 Table Parameters
+# ========================================================================
+# Specifies if the geomtery is to be simplified or not. Default is no
+DEFAULT_MACRO GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_SIMPLIFY_GEOM "$(GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_6)"
+GUI LOOKUP_CHOICE GEODATABASE_SDE_OUT_SIMPLIFY_GEOM_GEODATABASE_SDE_6 yes%no Simplify Geometry:
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_ORIGIN_X "$(GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_ORIGIN_X_GEODATABASE_SDE_6 X Origin:
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_ORIGIN_Y "$(GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_ORIGIN_Y_GEODATABASE_SDE_6 Y Origin:
+# ========================================================================
+DEFAULT_MACRO GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_XY_SCALE "$(GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_XY_SCALE_GEODATABASE_SDE_6 Scale:
+# ========================================================================
+# Determines if dataset contains Z values. This value will be used if DEF lines
+# don't have anything set. The auto_detect option will use the first feature
+# headed for each feature class to determine whether the feature class should be
+# 2D or 3D.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_6 auto_detect
+GEODATABASE_SDE_6_HAS_Z_VALUES "$(GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_6)"
+GUI ACTIVECHOICE GEODATABASE_SDE_OUT_HAS_Z_VALUES_GEODATABASE_SDE_6 yes%no,GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_6,GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_6%auto_detect Contains Z Values:
+# ========================================================================
+# Determines false Z origin
+DEFAULT_MACRO GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_Z_ORIGIN "$(GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_Z_ORIGIN_GEODATABASE_SDE_6 Z Origin:
+# ========================================================================
+# ============================================================================
+# Determines Z scale
+DEFAULT_MACRO GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_6 1
+GEODATABASE_SDE_6_Z_SCALE "$(GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_Z_SCALE_GEODATABASE_SDE_6 Z Scale:
+# ========================================================================
+# ============================================================================
+# Determines global Grid 1 size. If there is no value on DEF line for the
+# the feature type then this value will be used otherwise it will be overridden
+# by the DEF line value. If the value is 0 then the grid size will be automatically
+# calculated
+DEFAULT_MACRO GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_GRID_1 "$(GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_GRID_1_GEODATABASE_SDE_6 Grid 1 Size:
+DEFAULT_MACRO GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_6 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_SDE_OUT_GEODB_SDE_WRT_ADV_PARM_GEODATABASE_SDE_6 GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_ENABLE_FAST_DELETES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_PRESERVE_GLOBALID_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_6%GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_6 Advanced
+# ============================================================================
+# Determines default Z value
+DEFAULT_MACRO GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_DEFAULT_Z_VALUE "$(GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_6)"
+GUI FLOAT GEODATABASE_SDE_OUT_DEFAULT_Z_VALUE_GEODATABASE_SDE_6 Default Z Value:
+# ============================================================================
+# This option specifies the starting transaction number. Normally
+# this will be zero, which will write every feature to the Geodatabase,
+# but it might be another value if a previous translation was interrupted.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_TRANSACTION "$(GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_6)"
+GUI OPTIONAL INTEGER GEODATABASE_SDE_OUT_TRANSACTION_GEODATABASE_SDE_6 Transaction Number:
+# ============================================================================
+# This option specifies how many features will be written to the Geodatabase on
+# each transaction.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_6 1000
+GEODATABASE_SDE_6_TRANSACTION_INTERVAL "$(GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_6)"
+GUI OPTIONAL INTEGER GEODATABASE_SDE_OUT_TRANSACTION_INTERVAL_GEODATABASE_SDE_6 Features Per Transaction
+# ============================================================================
+# Determines whether to continue the translation, despite having encountered
+# a feature that would normally stop the translation.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_IGNORE_FAILED_FEATURE_ENTRY "$(GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_6)"
+GUI OPTIONAL CHOICE GEODATABASE_SDE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_SDE_6 yes%no Ignore Failed Features:
+# ============================================================================
+# The number of features to ignore before stopping a translation due to a
+# problematic feature. Used only if IGNORE_FAILED_FEATURE_ENTRY is 'yes'.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_6 -1
+GEODATABASE_SDE_6_MAX_NUMBER_FAILED_FEATURES "$(GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_6)"
+GUI OPTIONAL INTEGER GEODATABASE_SDE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_SDE_6 Max Number of Features to Ignore:
+# ============================================================================
+# Determines whether to store failed features in an FFS file, so that they
+# can be viewed/manipulated at a later time. Only applicable if the keyword
+# IGNORE_FAILED_FEATURE_ENTRY is set to 'yes'.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_DUMP_FAILED_FEATURES "$(GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_6)"
+GUI OPTIONAL CHOICE GEODATABASE_SDE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_SDE_6 yes%no Dump Failed Features to File:
+# ============================================================================
+# If the keyword DUMP_FAILED_FEATURES is set to 'yes', determines where to
+# store the failed features. The location must specify both the path and the
+# filename. The filename must have an extension of 'ffs'.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_6 
+GEODATABASE_SDE_6_FFS_DUMP_FILE "$(GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_6)"
+GUI OPTIONAL FILENAME GEODATABASE_SDE_OUT_FFS_DUMP_FILE_GEODATABASE_SDE_6 FME_Feature_Store_Files(*.ffs)|*.ffs|All_files(*)|* Failed Feature Dump filename:
+# ============================================================================
+# Specifies the units to use when creating a new annotation feature class.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_6 unknown_units
+GEODATABASE_SDE_6_ANNOTATION_UNITS "$(GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_6)"
+GUI OPTIONAL LOOKUP_CHOICE GEODATABASE_SDE_OUT_ANNOTATION_UNITS_GEODATABASE_SDE_6 "\"Unknown Units\",unknown_units"%"\"Decimal Degrees\",decimal_degrees"%Inches,inches%Points,points%Feet,feet%Yards,yards%Miles,miles%"\"Nautical Miles\",nautical_miles"%Millimeters,millimeters%Centimeters,centimeters%Meters,meters%Kilometers,kilometers%Decimeters,decimeters Annotation Units:
+# ============================================================================
+# Determines if dataset contains measures. This value will be used if DEF lines
+# don't have anything set.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_HAS_MEASURES "$(GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_6)"
+GUI OPTIONAL CHOICE GEODATABASE_SDE_OUT_HAS_MEASURES_GEODATABASE_SDE_6 yes%no Contains Measures:
+# ============================================================================
+# Determines measures' origin value
+DEFAULT_MACRO GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_6 0
+GEODATABASE_SDE_6_MEASURES_ORIGIN "$(GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_6)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_OUT_MEASURES_ORIGIN_GEODATABASE_SDE_6 Measures Origin:
+# ============================================================================
+# Determines measures' scale value
+DEFAULT_MACRO GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_6 100
+GEODATABASE_SDE_6_MEASURES_SCALE "$(GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_6)"
+GUI OPTIONAL FLOAT GEODATABASE_SDE_OUT_MEASURES_SCALE_GEODATABASE_SDE_6 Measures Scale:
+# ============================================================================
+# This option specifies whether we are to reconcile the changes between the
+# version specified by VERSION and its parent version and then post those
+# changes to the parent version. Note: all tables that need to be reconciled,
+# even if they were not written to during the translation will be reconciled.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_RECONCILE_AND_POST "$(GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_6)"
+GUI OPTIONAL CHOICE GEODATABASE_SDE_OUT_RECONCILE_AND_POST_GEODATABASE_SDE_6 yes%no Reconcile and Post:
+# ============================================================================
+# Decide whether or not to delete the child version after a reconcile and post
+# operation
+DEFAULT_MACRO GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_6 yes
+GEODATABASE_SDE_6_DELETE_CHILD_AFTER_RECONCILE_AND_POST "$(GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_6)"
+GUI CHOICE GEODATABASE_SDE_OUT_DELETE_CHILD_AFTER_RECONCILE_AND_POST_GEODATABASE_SDE_6 yes%no Delete child state following reconcile and post:
+# ============================================================================
+# Enable fast deletes which will combine the WHERE clause (delete) conditions
+# and only create one query to the table per transaction
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ENABLE_FAST_DELETES_GEODATABASE_SDE_6 yes
+GEODATABASE_SDE_6_ENABLE_FAST_DELETES "$(GEODATABASE_SDE_OUT_ENABLE_FAST_DELETES_GEODATABASE_SDE_6)"
+GUI CHOICE GEODATABASE_SDE_OUT_ENABLE_FAST_DELETES_GEODATABASE_SDE_6 yes%no Enable Fast Deletes:
+# ============================================================================
+# Enable Load Only Mode when inserting features. This will disable updating of the spatial index
+# while data is loading, and rebuild the index after writing is done.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_ENABLE_LOAD_ONLY_MODE "$(GEODATABASE_SDE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_SDE_6)"
+GUI CHOICE GEODATABASE_SDE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_SDE_6 yes%no Enable Load Only Mode:
+# ============================================================================
+# Preserve GlobalIDs for geodatabase table replication
+DEFAULT_MACRO GEODATABASE_SDE_OUT_PRESERVE_GLOBALID_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_PRESERVE_GLOBALID "$(GEODATABASE_SDE_OUT_PRESERVE_GLOBALID_GEODATABASE_SDE_6)"
+GUI CHOICE GEODATABASE_SDE_OUT_PRESERVE_GLOBALID_GEODATABASE_SDE_6 yes%no Preserve GlobalID:
+# ============================================================================
+# Determines whether to perform validation on features being written to the
+# geodatabase. Default is no.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_VALIDATE_FEATURES "$(GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_6)"
+GUI OPTIONAL CHOICE GEODATABASE_SDE_OUT_VALIDATE_FEATURES_GEODATABASE_SDE_6 yes%no Validate Features to Write:
+# ============================================================================
+# Determines whether to perform simplification on network features being
+# written to the geodatabase. Default is no.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_SIMPLIFY_NETWORK_FEATURES "$(GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_6)"
+GUI OPTIONAL CHOICE GEODATABASE_SDE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_SDE_6 yes%no Simplify Network Features:
+#==============================================================================
+# Determines whether the connection should persist after the reader/writer
+# has been shut down. The default is 'no'.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_PERSISTENT_CONNECTION "$(GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_6)"
+GUI CHOICE GEODATABASE_SDE_OUT_PERSISTENT_CONNECTION_GEODATABASE_SDE_6 yes%no Persistent Connection
+#==============================================================================
+# Determines whether transactions should be committed at the end of each write,
+# as opposed to the start of the next. The default is 'no'.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_6 no
+GEODATABASE_SDE_6_COMMIT_TRANSACTIONS_AFTER_WRITE "$(GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_6)"
+GUI CHOICE GEODATABASE_SDE_OUT_COMMIT_TRANSACTIONS_AFTER_WRITE_GEODATABASE_SDE_6 yes%no Commit Transactions at end of Write
+# ==============================================================================
+# The following specifies an SQL command to execute before opening the first
+# Geodatabase table.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_6 
+GEODATABASE_SDE_6_BEGIN_SQL{0} "$(GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_6)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_SDE_OUT_BEGIN_SQL{0}_GEODATABASE_SDE_6 MODE,SQL;FORMAT,GEODATABASE_SDE SQL To Run Before Write
+# ==============================================================================
+# The following specifies an SQL command to execute after closing all the
+# Geodatabase tables.
+DEFAULT_MACRO GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_6 
+GEODATABASE_SDE_6_END_SQL{0} "$(GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_6)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_SDE_OUT_END_SQL{0}_GEODATABASE_SDE_6 MODE,SQL;FORMAT,GEODATABASE_SDE SQL To Run After Write
+DEFAULT_MACRO GEODATABASE_SDE_OUT_COORDINATE_SYSTEM_GRANULARITY_GEODATABASE_SDE_6 FEATURE_TYPE
+GEODATABASE_SDE_6_COORDINATE_SYSTEM_GRANULARITY "$(GEODATABASE_SDE_OUT_COORDINATE_SYSTEM_GRANULARITY_GEODATABASE_SDE_6)"
+# ============================================================================
+GEODATABASE_SDE_6_GENERATE_FME_BUILD_NUM 24187
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)FIACOUNTY.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.0.0.0 (20240304 - Build 24187 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_SNOWFLAKE_NONSPATIAL_1 SNOWFLAKE_NONSPATIAL_1
+DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_1 GEODATABASE_SDE_1
+DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_SDE_6 GEODATABASE_SDE_6
+# -------------------------------------------------------------------------
+
+SNOWFLAKE_NONSPATIAL_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+GEODATABASE_SDE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME FIACOUNTY
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE SNOWFLAKE_NONSPATIAL SNOWFLAKE_NONSPATIAL_1::PL_FIA.FACT_GROWTH_DRAIN_REMOVALS multi_reader_keyword,$(DATASET_KEYWORD_SNOWFLAKE_NONSPATIAL_1) TO FME_GENERIC ::PL_FIA.FACT_GROWTH_DRAIN_REMOVALS ALIAS_GEOMETRY    ROUTE SNOWFLAKE_NONSPATIAL SNOWFLAKE_NONSPATIAL_1::PL_FIA.DIM_COUNTY multi_reader_keyword,$(DATASET_KEYWORD_SNOWFLAKE_NONSPATIAL_1) TO FME_GENERIC ::PL_FIA.DIM_COUNTY ALIAS_GEOMETRY    ROUTE GEODATABASE_SDE GEODATABASE_SDE_1::dbo.County multi_reader_keyword,$(DATASET_KEYWORD_GEODATABASE_SDE_1) TO FME_GENERIC ::dbo.County ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+SNOWFLAKE_NONSPATIAL_1_MERGE_DEF SNOWFLAKE_NONSPATIAL_1::PL_FIA.FACT_GROWTH_DRAIN_REMOVALS EXACT PL_FIA.FACT_GROWTH_DRAIN_REMOVALS DEFLINE jdbc_where_clause,,jdbc_use_bulk_reading,NO,snowflake_bulk_read_variant_as,JSON,ACRES,number<openparen>26<comma>2<closeparen>,COUNTY_ID,varchar<openparen>4<closeparen>,EVALUATION_GROUP_CODE,number<openparen>10<comma>0<closeparen>,FOREST_TYPE_ID,varchar<openparen>4<closeparen>,FIBER_GROWTH,number<openparen>31<comma>5<closeparen>,FIBER_REMOVAL,number<openparen>31<comma>5<closeparen>,FIBER_VOLUME,number<openparen>31<comma>5<closeparen>,GROWTH,number<openparen>29<comma>5<closeparen>,GROWTH_GRADE,number<openparen>30<comma>5<closeparen>,OWNERSHIP_CLASS,varchar<openparen>7<closeparen>,PLOT_COUNT,number<openparen>5<comma>0<closeparen>,REMOVAL,number<openparen>29<comma>5<closeparen>,REMOVAL_GRADE,number<openparen>30<comma>5<closeparen>,STAND_AGE_ID,varchar<openparen>4<closeparen>,VOLUME,number<openparen>29<comma>5<closeparen>,VOLUME_GRADE,number<openparen>30<comma>5<closeparen>,SNOWFLAKE_LAST_UPDATED_DATE,timestamp_ntz
+SNOWFLAKE_NONSPATIAL_1_MERGE_DEF SNOWFLAKE_NONSPATIAL_1::PL_FIA.DIM_COUNTY EXACT PL_FIA.DIM_COUNTY DEFLINE jdbc_where_clause,,jdbc_use_bulk_reading,NO,snowflake_bulk_read_variant_as,JSON,COUNTY_ID,varchar<openparen>4<closeparen>,COUNTY_CODE,varchar<openparen>5<closeparen>,COUNTY_NAME,varchar<openparen>300<closeparen>,STATE_FIPS_CODE,varchar<openparen>2<closeparen>,STATE_ABBREVIATION,varchar<openparen>2<closeparen>
+GEODATABASE_SDE_1_MERGE_DEF GEODATABASE_SDE_1::dbo.County EXACT dbo.County DEFLINE geodb_type,geodb_polygon,geodb_where_wwjd,,fme_attribute_reading,defined,OBJECTID,integer,StateName,char<openparen>50<closeparen>,StateCode,char<openparen>2<closeparen>,StateFip,char<openparen>2<closeparen>,CountyName,char<openparen>50<closeparen>,CountyFip,char<openparen>3<closeparen>,StateCountyFip,char<openparen>5<closeparen>,Shape.STArea<openparen><closeparen>,double,Shape.STLength<openparen><closeparen>,double
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "dbo.County_GEODATABASE_SDE_1 Splitter"    INPUT FEATURE_TYPE dbo.County    OUTPUT FEATURE_TYPE dbo.County_GEODATABASE_SDE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PL_FIA.DIM_COUNTY_SNOWFLAKE_NONSPATIAL_1 Splitter"    INPUT FEATURE_TYPE PL_FIA.DIM_COUNTY    OUTPUT FEATURE_TYPE PL_FIA.DIM_COUNTY_SNOWFLAKE_NONSPATIAL_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PL_FIA.FACT_GROWTH_DRAIN_REMOVALS_SNOWFLAKE_NONSPATIAL_1 Splitter"    INPUT FEATURE_TYPE PL_FIA.FACT_GROWTH_DRAIN_REMOVALS    OUTPUT FEATURE_TYPE PL_FIA.FACT_GROWTH_DRAIN_REMOVALS_SNOWFLAKE_NONSPATIAL_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} StringValueFactory    FACTORY_NAME { MAKE_VALUES_UPPER }    INPUT  FEATURE_TYPE dbo.County_GEODATABASE_SDE_1    FACTORY_MODE ATTRIBUTE_CASE_CHANGER    ATTRCHOICE { SELECTED }       ATTRLIST { "CountyName StateCode StateName" }       CHANGE_TYPE { upper }    OUTPUT { OUTPUT FEATURE_TYPE MAKE_VALUES_UPPER_OUTPUT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FIA_SCHEMATIC }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE PL_FIA.FACT_GROWTH_DRAIN_REMOVALS_SNOWFLAKE_NONSPATIAL_1    INPUT RIGHT FEATURE_TYPE PL_FIA.DIM_COUNTY_SNOWFLAKE_NONSPATIAL_1    JOIN_MODE { Inner }    JOIN_KEYS { COUNTY_ID COUNTY_ID AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FIA_SCHEMATIC_JOINED        }    OUTPUT { <REJECTED> FEATURE_TYPE FIA_SCHEMATIC_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FIA_SCHEMATIC_<Rejected> INPUT FEATURE_TYPE FIA_SCHEMATIC_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FIA_SCHEMATIC<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { SPATIALLY_ENRICH }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE FIA_SCHEMATIC_JOINED    INPUT RIGHT FEATURE_TYPE MAKE_VALUES_UPPER_OUTPUT    JOIN_MODE { Full }    JOIN_KEYS { COUNTY_NAME CountyName AUTO COUNTY_CODE StateCountyFip AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_RIGHT }    OUTPUT { JOINED FEATURE_TYPE SPATIALLY_ENRICH_JOINED        }    OUTPUT { <REJECTED> FEATURE_TYPE SPATIALLY_ENRICH_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SPATIALLY_ENRICH_<Rejected> INPUT FEATURE_TYPE SPATIALLY_ENRICH_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SPATIALLY_ENRICH<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { MAKE_COLUMNS_UPPER }    INPUT  FEATURE_TYPE SPATIALLY_ENRICH_JOINED    OUTPUT { FEATURE_TYPE MAKE_COLUMNS_UPPER_OUTPUT        @RenameAttributes(PATTERN_REPLACE, CASECHANGE, <Unused>, "<Unused>", "<Unused>", "upper", "ACRES COUNTY_CODE COUNTY_ID COUNTY_NAME CountyFip CountyName EVALUATION_GROUP_CODE FIBER_GROWTH FIBER_REMOVAL FIBER_VOLUME FOREST_TYPE_ID GROWTH GROWTH_GRADE OBJECTID OWNERSHIP_CLASS PLOT_COUNT REMOVAL REMOVAL_GRADE SNOWFLAKE_LAST_UPDATED_DATE STAND_AGE_ID STATE_ABBREVIATION STATE_FIPS_CODE StateCode StateCountyFip StateFip StateName VOLUME VOLUME_GRADE", "-_", "RENAME", "SELECTED")         }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC MAKE_COLUMNS_UPPER_OUTPUT TO GEODATABASE_SDE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>FIACOUNTY<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+GEODATABASE_SDE_6_DEF FIACOUNTY   geodb_type                   geodb_polygon   GEODB_UPDATE_KEY_COLUMNS     ""   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             SHAPE   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_XORIGIN                ""   GEODB_YORIGIN                ""   GEODB_XYSCALE                ""   GEODB_HAS_Z_VALUES           ""   GEODB_ZORIGIN                ""   GEODB_ZSCALE                 ""   GEODB_HAS_MEASURES           ""   GEODB_MEASURES_ORIGIN        ""   GEODB_MEASURES_SCALE         ""   GEODB_ANNO_REFERENCE_SCALE   ""   ACRES                        double(25,10)   EVALUATION_GROUP_CODE        bigint   FOREST_TYPE_ID               char(4)   FIBER_GROWTH                 double(30,12)   FIBER_REMOVAL                double(30,12)   FIBER_VOLUME                 double(30,12)   GROWTH                       double(28,12)   GROWTH_GRADE                 double(29,12)   OWNERSHIP_CLASS              char(7)   PLOT_COUNT                   integer   REMOVAL                      double(28,12)   REMOVAL_GRADE                double(29,12)   STAND_AGE_ID                 char(4)   VOLUME                       double(28,12)   VOLUME_GRADE                 double(29,12)   SNOWFLAKE_LAST_UPDATED_DATE  date   STATE_ABBREVIATION           char(2)   OBJECTID                     integer   STATENAME                    char(50)   STATECODE                    char(2)   STATEFIP                     char(2)   COUNTYNAME                   char(50)   COUNTYFIP                    char(3)   STATECOUNTYFIP               char(5)   Shape_STArea__               double   Shape_STLength__             double

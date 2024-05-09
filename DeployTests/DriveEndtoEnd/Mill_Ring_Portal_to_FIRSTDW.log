@@ -1,0 +1,138 @@
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|Current FME version: FME 2024.0.0.0 (20240304 - Build 24187 - WIN64)
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|System Time: 20240411154134 UTC
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME_HOME is 'D:\FME\'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Form (floating)
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|Temporary License: 81 days left.
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|Machine host name is: TLTSTAPGISFME01
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|OS Locale Name     : en_US
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\Projects\FIRST/'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Mill_Ring_Portal_to_FIRSTDW.fmw'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.0.0.0'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|Operating System: Microsoft Windows Server 2019 64-bit  (Build 17763)
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Platform: WIN64
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|System Status: 29.88 GB of disk space available in the FME temporary folder (C:\Users\WYADML~1\AppData\Local\Temp\3\wbrun_1712837363550_13936\fmetmp_3)
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|System Status: 31.73 GB of physical memory available
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|System Status: 126.94 GB of virtual memory available
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|START - ProcessID: 14724, peak process memory usage: 74176 kB, current process memory usage: 73860 kB
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `D:\FME\fme.exe' `D:\Projects\FIRST\wb-xlate-1712850085729_13936' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `60939' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `59598'
+2024-04-11 08:41:33|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\wyadmLeonardL1\AppData\Roaming\Safe Software\FME\'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for formats are : D:\FME\datasources;C:\Users\wyadmLeonardL1\Documents\FME\Formats
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\wyadmLeonardL1\AppData\Roaming\Safe Software\FME\Packages\24187-win64\transformers;D:\FME\transformers;C:\Users\wyadmLeonardL1\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : D:\FME_Share\CoordinateSystems;C:\Users\wyadmLeonardL1\Documents\FME\CoordinateSystems
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\wyadmLeonardL1\Documents\FME\CoordinateSystemExceptions
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\wyadmLeonardL1\Documents\FME\CoordinateSystemGridOverrides
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\wyadmLeonardL1\Documents\FME\CsmapTransformationExceptions
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\wyadmLeonardL1\Documents\FME\TransformerCategories
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `PRIMARY_DEST'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `PRIMARY_DEST_DEF'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `D:\Projects\FIRST'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\WYADML~1\AppData\Local\Temp\3\wbrun_1712837363550_13936\fmetmp_3', set from environment variable `FME_TEMP'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\WYADML~1\AppData\Local\Temp\3'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `D:\FME\'
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 95.20 GB
+2024-04-11 08:41:34|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 71.40 GB
+2024-04-11 08:41:34|   0.1|  0.1|INFORM|Creating writer for format: 
+2024-04-11 08:41:34|   0.1|  0.0|INFORM|Creating reader for format: 
+2024-04-11 08:41:34|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2024-04-11 08:41:34|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding ARCGISPORTALFEATURES Reader with keyword ARCGISPORTALFEATURES_1
+2024-04-11 08:41:34|   0.1|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2024-04-11 08:41:35|   1.7|  1.6|INFORM|Creating reader for format: Esri ArcGIS Portal Feature Service
+2024-04-11 08:41:35|   1.8|  0.1|INFORM|Trying to find a PYTHON plugin for reader named `ARCGISPORTALFEATURES'
+2024-04-11 08:41:35|   1.8|  0.0|INFORM|Using Python interpreter from `D:\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python39.dll' with PYTHONHOME `D:\ArcGIS\Pro\bin\Python\envs\arcgispro-py3'
+2024-04-11 08:41:35|   1.8|  0.0|INFORM|Python version 3.9 loaded successfully
+2024-04-11 08:41:36|   2.1|  0.3|INFORM|ArcGIS for the Python interpreter initialized in 4.2773348 seconds
+2024-04-11 08:41:37|   3.1|  1.0|INFORM|Loaded Python module `arcgisonlinefeatures' from file `D:\FME\python\fme-plugins-py39.zip\arcgisonlinefeatures\__init__.pyc'
+2024-04-11 08:41:38|   4.0|  0.9|INFORM|ArcGIS Portal Feature Service Reader: Logging into 'https://webgis-uat.weyer.com/gisportal/' as user 'svc-fme'
+2024-04-11 08:41:38|   4.2|  0.2|INFORM|ArcGIS Portal Feature Service Reader: Searching for all groups in the organization accessible to user 'svc-fme'
+2024-04-11 08:41:38|   4.2|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Requesting portal information
+2024-04-11 08:41:38|   4.3|  0.1|INFORM|ARCGISPORTALFEATURES reader: Creating bulk features from individual features
+2024-04-11 08:41:38|   4.3|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2024-04-11 08:41:38|   4.3|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2024-04-11 08:41:38|   4.3|  0.0|INFORM|Loaded module 'LogCount_func' from file 'D:\FME\plugins/LogCount_func.dll'
+2024-04-11 08:41:38|   4.3|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2024-04-11 08:41:38|   4.3|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Requesting metadata for Feature Service at 'https://webgis-uat.weyer.com/gishosting/rest/services/Hosted/a136b7/FeatureServer'
+2024-04-11 08:41:39|   4.8|  0.5|INFORM|The ESRIWKID number of the FME coordinate system 'SPHERICAL_MERCATOR' is '3857'
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Requesting metadata for Feature Service at 'https://webgis-uat.weyer.com/gishosting/rest/services/Hosted/a136b7/FeatureServer'
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Found layer/table 'FIRST_RINGS' with ID 0 for feature type 'FIRST_RINGS'
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Requesting metadata for layer/table 0 of Feature Service at 'https://webgis-uat.weyer.com/gishosting/rest/services/Hosted/a136b7/FeatureServer'
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Querying layer/table 0 for object IDs, where '1=1'
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Got 3 results for layer/table ID 0
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Splitting reading of 3 features into 1 batches of up to 1000 features
+2024-04-11 08:41:39|   4.8|  0.0|INFORM|ArcGIS Portal Feature Service Reader: Getting feature results 0 up to 1000 of layer/table 'FIRST_RINGS'
+2024-04-11 08:41:39|   4.9|  0.1|INFORM|FME Configuration: Source coordinate system for reader ARCGISPORTALFEATURES_1[ARCGISPORTALFEATURES] set to `SPHERICAL_MERCATOR' as read from input data
+2024-04-11 08:41:39|   4.9|  0.0|INFORM|Coordinate System `SPHERICAL_MERCATOR' parameters: CS_NAME=`SPHERICAL_MERCATOR' DESC_NM=`Spherical Mercator' DT_NAME=`WGS84_SPHERICAL' GROUP=`WORLD' MAP_SCL=`1' MAX_LAT=`85' MAX_LNG=`180' MIN_LAT=`-85' MIN_LNG=`-180' PROJ=`MRCAT' QUAD=`1' SCL_RED=`1' SOURCE=`Safe Software' UNIT=`METER'
+2024-04-11 08:41:39|   5.0|  0.1|INFORM|FIRST_RINGS Feature Recorder -1 2147549186 (RecorderFactory): Splitting bulk features into individual features
+2024-04-11 08:41:40|   5.5|  0.5|INFORM|Creating writer for format: Esri Geodatabase (ArcSDE Geodb)
+2024-04-11 08:41:40|   5.6|  0.1|INFORM|Trying to find a DYNAMIC plugin for writer named `GEODATABASE_SDE'
+2024-04-11 08:41:40|   5.6|  0.0|INFORM|Loaded module 'GEODATABASE_SDE' from file 'D:\FME\plugins/..\geodatabase9.dll'
+2024-04-11 08:41:40|   5.6|  0.0|INFORM|FME API version of module '..\geodatabase9' matches current internal version (4.0 20240212)
+2024-04-11 08:41:40|   5.6|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-04-11 08:41:40|   5.6|  0.0|INFORM|Writer `GEODATABASE_SDE_1' of type `GEODATABASE_SDE' using group definition keyword `GEODATABASE_SDE_1_DEF'
+2024-04-11 08:41:40|   5.9|  0.3|INFORM|An ArcGIS license is already checked out. The product checked out is 'Advanced'
+2024-04-11 08:41:40|   5.9|  0.0|INFORM|Installed ArcGIS version is '3.0.1'
+2024-04-11 08:41:41|   6.2|  0.3|INFORM|Connection made to server 'TLDEVDBSFRS01' for dataset 'FIRSTDW' (transactional version 'sde.DEFAULT') using instance 'sde:sqlserver:TLDEVDBSFRS01' and user ID 'first'
+2024-04-11 08:41:41|   6.2|  0.0|INFORM|ArcSDE release: '11.2'. Underlying database: 'SQL Server'
+2024-04-11 08:41:41|   6.2|  0.0|INFORM|Fast deletes enabled
+2024-04-11 08:41:41|   6.2|  0.0|INFORM|The 'HAS_Z_VALUES' keyword is set to 'AUTO_DETECT'. With the exception of MultiPatch feature classes, the dimensionality of new feature classes will be based on the first feature written to the feature class. (Features with no geometry are considered 2D)
+2024-04-11 08:41:41|   6.2|  0.0|INFORM|A default z-value of '0' will be used for all 3D features where z-values are not provided
+2024-04-11 08:41:41|   6.2|  0.0|INFORM|Esri Geodatabase Writer: Not simplifying geometries being written
+2024-04-11 08:41:41|   6.2|  0.0|INFORM|Transactions are being used by the Esri Geodatabase Writer
+2024-04-11 08:41:41|   6.2|  0.0|WARN  |User field name 'objectid' conflicts with value of feature type parameter 'Object ID Field' ('OBJECTID') for table/feature class 'MillsRingTest'.  User field will be ignored
+2024-04-11 08:41:41|   6.3|  0.1|INFORM|Esri Geodatabase Writer: Creating feature type `MillsRingTest'
+2024-04-11 08:41:44|   6.7|  0.4|INFORM|Esri Geodatabase Writer: The field 'OBJECTID' in feature type 'MillsRingTest' will not be updated since it is not editable
+2024-04-11 08:41:44|   6.7|  0.0|INFORM|Esri Geodatabase Writer: The field 'SHAPE.STArea()' in feature type 'MillsRingTest' will not be updated since it is not editable
+2024-04-11 08:41:44|   6.7|  0.0|INFORM|Esri Geodatabase Writer: The field 'SHAPE.STLength()' in feature type 'MillsRingTest' will not be updated since it is not editable
+2024-04-11 08:41:44|   6.7|  0.0|INFORM|FIRST_RINGS Feature Recorder -1 2147549186 (RecorderFactory): Processed 1 of 2 features
+2024-04-11 08:41:44|   6.9|  0.2|INFORM|FIRST_RINGS Feature Recorder -1 2147549186 (RecorderFactory): Processed 2 of 2 features
+2024-04-11 08:41:44|   6.9|  0.0|INFORM|FIRST_RINGS Feature Recorder -1 2147549186 (RecorderFactory): Splitting bulk features into individual features
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 3 features from 1 readers
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|Emptying factory pipeline
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 3 input feature(s), wrote 3 output feature(s): 3 matched merge filters, 3 were routed to output, 0 could not be routed.
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2024-04-11 08:41:45|   6.9|  0.0|STATS |FIRST_RINGS_ARCGISPORTALFEATURES_1 Splitter (TeeFactory): Cloned 3 input feature(s) into 3 output feature(s)
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 3 input feature(s), wrote 3 output feature(s): 0 matched merge filters, 3 were routed to output, 0 could not be routed.
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2024-04-11 08:41:45|   6.9|  0.0|STATS |GeodatabaseRelationshipFeaturesPipeline::GeodatabaseRelationshipFeatures (SortFactory): Finished sorting a total of 0 features.
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|Transaction #1 (final transaction) was successfully committed
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|Closing the Esri Geodatabase writer
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|Feature output statistics for `GEODATABASE_SDE' writer using keyword `GEODATABASE_SDE_1':
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |                               Features Written
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |MillsRingTest                                                                3
+2024-04-11 08:41:45|   6.9|  0.0|STATS |==============================================================================
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Total Features Written                                                       3
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |                            Features Read Summary
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |FIRST_RINGS                                                                  3
+2024-04-11 08:41:45|   6.9|  0.0|STATS |==============================================================================
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Total Features Read                                                          3
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |                           Features Written Summary
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|STATS |MillsRingTest                                                                3
+2024-04-11 08:41:45|   6.9|  0.0|STATS |==============================================================================
+2024-04-11 08:41:45|   6.9|  0.0|STATS |Total Features Written                                                       3
+2024-04-11 08:41:45|   6.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~                                                                             ~-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~                                                                             ~-
+2024-04-11 08:41:45|   6.9|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|Translation was SUCCESSFUL with 8 warning(s) (3 feature(s) output)
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|FME Session Duration: 12 seconds. (CPU: 3.3s user, 3.6s system)
+2024-04-11 08:41:45|   6.9|  0.0|INFORM|END - ProcessID: 14724, peak process memory usage: 233824 kB, current process memory usage: 189112 kB
